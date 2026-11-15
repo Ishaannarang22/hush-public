@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "modelId": "zzvymDx5ty7",
+  "weighting": "A",
+  "units": "dBA",
+  "note": "Per-room predictions of the Hush noise model for calibrating the heat map. All levels are A-weighted equivalent levels inside the room (windows and doors as modelled), the energy mean of each block's hours; range_dba is the model's stated range; dnl_dba is the daily score. null means below the 15 dBA reporting floor.",
+  "modelVersion": "0.2.0",
+  "blockHours": {
+    "overnight": [
+      0,
+      6
+    ],
+    "morning_rush": [
+      6,
+      10
+    ],
+    "midday": [
+      10,
+      16
+    ],
+    "evening_rush": [
+      16,
+      20
+    ],
+    "evening": [
+      20,
+      24
+    ]
+  },
+  "rooms": {
+    "h26t7ky77ew74yb0pg8qqf5rd": {
+      "name": "Untagged room h26t7k",
+      "blocks": {
+        "overnight": {
+          "dba": 26.18,
+          "range_dba": [
+            21.18,
+            31.18
+          ]
+        },
+        "morning_rush": {
+          "dba": 32.58,
+          "range_dba": [
+            27.58,
+            37.58
+          ]
+        },
+        "midday": {
+          "dba": 33.51,
+          "range_dba": [
+            28.51,
+            38.51
+          ]
+        },
+        "evening_rush": {
+          "dba": 33.59,
+          "range_dba": [
+            28.59,
+            38.59
+          ]
+        },
+        "evening": {
+          "dba": 29.79,
+          "range_dba": [
+            24.79,
+            34.79
+          ]
+        }
+      },
+      "l24_dba": 31.78,
+      "dnl_dba": 35.48,
+      "range_db": 5
+    },
+    "613htqkzf66zz7hf7n8kzszed": {
+      "name": "Kitchen and living",
+      "blocks": {
+        "overnight": {
+          "dba": 35.3,
+          "range_dba": [
+            32.3,
+            38.3
+          ]
+        },
+        "morning_rush": {
+          "dba": 41.7,
+          "range_dba": [
+            38.7,
+            44.7
+          ]
+        },
+        "midday": {
+          "dba": 42.64,
+          "range_dba": [
+            39.64,
+            45.64
+          ]
+        },
+        "evening_rush": {
+          "dba": 42.72,
+          "range_dba": [
+            39.72,
+            45.72
+          ]
+        },
+        "evening": {
+          "dba": 38.91,
+          "range_dba": [
+            35.91,
+            41.91
+          ]
+        }
+      },
+      "l24_dba": 40.9,
+      "dnl_dba": 44.6,
+      "range_db": 3
+    },
+    "cdz3fkt38kae7tapstpt0eaeb": {
+      "name": "Bedroom",
+      "blocks": {
+        "overnight": {
+          "dba": 34.48,
+          "range_dba": [
+            31.48,
+            37.48
+          ]
+        },
+        "morning_rush": {
+          "dba": 40.88,
+          "range_dba": [
+            37.88,
+            43.88
+          ]
+        },
+        "midday": {
+          "dba": 41.81,
+          "range_dba": [
+            38.81,
+            44.81
+          ]
+        },
+        "evening_rush": {
+          "dba": 41.89,
+          "range_dba": [
+            38.89,
+            44.89
+          ]
+        },
+        "evening": {
+          "dba": 38.09,
+          "range_dba": [
+            35.09,
+            41.09
+          ]
+        }
+      },
+      "l24_dba": 40.08,
+      "dnl_dba": 43.78,
+      "range_db": 3
+    },
+    "xy2x8mpaaqknp7q2c3nnbw1ma": {
+      "name": "Bathroom",
+      "blocks": {
+        "overnight": {
+          "dba": 29.57,
+          "range_dba": [
+            24.57,
+            34.57
+          ]
+        },
+        "morning_rush": {
+          "dba": 35.97,
+          "range_dba": [
+            30.97,
+            40.97
+          ]
+        },
+        "midday": {
+          "dba": 36.91,
+          "range_dba": [
+            31.91,
+            41.91
+          ]
+        },
+        "evening_rush": {
+          "dba": 36.98,
+          "range_dba": [
+            31.98,
+            41.98
+          ]
+        },
+        "evening": {
+          "dba": 33.18,
+          "range_dba": [
+            28.18,
+            38.18
+          ]
+        }
+      },
+      "l24_dba": 35.17,
+      "dnl_dba": 38.87,
+      "range_db": 5
+    },
+    "tt6gm2a0463x9wmnx7rn6gugc": {
+      "name": "Closet",
+      "blocks": {
+        "overnight": {
+          "dba": 26.53,
+          "range_dba": [
+            21.53,
+            31.53
+          ]
+        },
+        "morning_rush": {
+          "dba": 32.92,
+          "range_dba": [
+            27.92,
+            37.92
+          ]
+        },
+        "midday": {
+          "dba": 33.86,
+          "range_dba": [
+            28.86,
+            38.86
+          ]
+        },
+        "evening_rush": {
+          "dba": 33.94,
+          "range_dba": [
+            28.94,
+            38.94
+          ]
+        },
+        "evening": {
+          "dba": 30.13,
+          "range_dba": [
+            25.13,
+            35.13
+          ]
+        }
+      },
+      "l24_dba": 32.13,
+      "dnl_dba": 35.82,
+      "range_db": 5
+    }
+  }
+}

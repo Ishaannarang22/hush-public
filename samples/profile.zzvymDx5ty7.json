@@ -1,0 +1,884 @@
+{
+  "schemaVersion": 1,
+  "propertyId": "matterport-zzvymDx5ty7",
+  "modelId": "zzvymDx5ty7",
+  "fields": [
+    {
+      "key": "year_built",
+      "field": "year_built",
+      "target": null,
+      "label_text": "Year built",
+      "group": "building",
+      "scope": "building",
+      "kind": "number",
+      "value": null,
+      "value_text": "Not known",
+      "label": "assumed",
+      "note": "Not known; the construction era below sets the defaults",
+      "model_value": null,
+      "effect": "1 to 2 dB through the era defaults for wall, window and frame leakage",
+      "element": null,
+      "min": 1800,
+      "max": 2030,
+      "integer": false
+    },
+    {
+      "key": "era",
+      "field": "era",
+      "target": null,
+      "label_text": "Construction era",
+      "group": "building",
+      "scope": "building",
+      "kind": "choice",
+      "value": "2000_on",
+      "value_text": "2000 onward",
+      "label": "assumed",
+      "note": "docs/BUILD_BRIEF.md section 5 step 4: year built not in the response; 2000 onward defaults, overridable with --set property.era=...",
+      "model_value": "2000_on",
+      "effect": "1 to 2 dB",
+      "element": null,
+      "choices": [
+        {
+          "value": "before_1960",
+          "text": "Before 1960"
+        },
+        {
+          "value": "1960_1979",
+          "text": "1960 to 1979"
+        },
+        {
+          "value": "1980_1999",
+          "text": "1980 to 1999"
+        },
+        {
+          "value": "2000_on",
+          "text": "2000 onward"
+        }
+      ]
+    },
+    {
+      "key": "storeys",
+      "field": "storeys",
+      "target": null,
+      "label_text": "Building floors",
+      "group": "building",
+      "scope": "building",
+      "kind": "number",
+      "value": 1,
+      "value_text": "1",
+      "label": "inferred",
+      "note": "Not known; the model treats the unit floor as the top floor",
+      "model_value": 1,
+      "effect": "Small alone",
+      "element": null,
+      "min": 1,
+      "max": 200,
+      "integer": true
+    },
+    {
+      "key": "unit_floor",
+      "field": "unit_floor",
+      "target": null,
+      "label_text": "Unit floor",
+      "group": "unit",
+      "scope": "unit",
+      "kind": "number",
+      "value": 1,
+      "value_text": "1",
+      "label": "assumed",
+      "note": "Not in the response (the scan's floor sequence is not the building storey); ground floor assumed",
+      "model_value": 1,
+      "effect": "Small alone",
+      "element": null,
+      "min": 1,
+      "max": 200,
+      "integer": true
+    },
+    {
+      "key": "outside_wall_material",
+      "field": "outside_wall_material",
+      "target": null,
+      "label_text": "Outside wall material (whole building)",
+      "group": "building",
+      "scope": "building",
+      "kind": "choice",
+      "value": "brick_veneer",
+      "value_text": "Brick veneer",
+      "label": "assumed",
+      "note": "Era default (2000_on)",
+      "model_value": "brick_veneer",
+      "effect": "Under 0.5 dB when the wall has windows",
+      "element": null,
+      "choices": [
+        {
+          "value": "vinyl_siding_2x4",
+          "text": "Vinyl siding, 2x4 studs"
+        },
+        {
+          "value": "vinyl_siding_2x6",
+          "text": "Vinyl siding, 2x6 studs"
+        },
+        {
+          "value": "aluminum_siding_2x6",
+          "text": "Aluminium siding"
+        },
+        {
+          "value": "eifs_stucco_2x6",
+          "text": "Synthetic stucco (EIFS)"
+        },
+        {
+          "value": "cement_stucco_2x6",
+          "text": "Cement stucco"
+        },
+        {
+          "value": "brick_veneer",
+          "text": "Brick veneer"
+        },
+        {
+          "value": "fiber_cement_upper_floor",
+          "text": "Fibre cement"
+        },
+        {
+          "value": "concrete_block",
+          "text": "Concrete block"
+        }
+      ]
+    },
+    {
+      "key": "windows_open",
+      "field": "windows_open",
+      "target": null,
+      "label_text": "Windows open",
+      "group": "unit",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "closed",
+      "value_text": "Closed",
+      "label": "assumed",
+      "note": "Default: closed",
+      "model_value": "closed",
+      "effect": "About 12 dB when open",
+      "element": null,
+      "choices": [
+        {
+          "value": "closed",
+          "text": "Closed"
+        },
+        {
+          "value": "open",
+          "text": "Open"
+        }
+      ]
+    },
+    {
+      "key": "exposure@wall:xg384kwe2cs7c69dayf84kudd",
+      "field": "exposure",
+      "target": "wall:xg384kwe2cs7c69dayf84kudd",
+      "label_text": "Faces",
+      "group": "sides",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "outdoors",
+      "value_text": "Outdoors",
+      "label": "scan",
+      "note": "default rule: the wall has a surveyed window or glazed door",
+      "model_value": "outdoors",
+      "effect": "Up to 9 dB",
+      "element": {
+        "kind": "side",
+        "wall": "xg384kwe2cs7c69dayf84kudd",
+        "room": "613htqkzf66zz7hf7n8kzszed",
+        "room_name": "Kitchen and living",
+        "facing": "east",
+        "azimuth_deg": 84.0,
+        "area_m2": 10.726
+      },
+      "choices": [
+        {
+          "value": "outdoors",
+          "text": "Outdoors"
+        },
+        {
+          "value": "corridor",
+          "text": "Shared corridor"
+        },
+        {
+          "value": "neighbouring_unit",
+          "text": "Neighbouring unit"
+        },
+        {
+          "value": "unknown",
+          "text": "Unknown (treated as not outdoors)"
+        }
+      ],
+      "map_note": "Map: the nearest counted road is 24 m away, 22 degrees off this wall's facing"
+    },
+    {
+      "key": "exposure@wall:z6q9f2tfcd3aumsmgkzh94ssb",
+      "field": "exposure",
+      "target": "wall:z6q9f2tfcd3aumsmgkzh94ssb",
+      "label_text": "Faces",
+      "group": "sides",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "outdoors",
+      "value_text": "Outdoors",
+      "label": "scan",
+      "note": "default rule: the wall has a surveyed window or glazed door",
+      "model_value": "outdoors",
+      "effect": "Up to 9 dB",
+      "element": {
+        "kind": "side",
+        "wall": "z6q9f2tfcd3aumsmgkzh94ssb",
+        "room": "cdz3fkt38kae7tapstpt0eaeb",
+        "room_name": "Bedroom",
+        "facing": "east",
+        "azimuth_deg": 84.0,
+        "area_m2": 9.397
+      },
+      "choices": [
+        {
+          "value": "outdoors",
+          "text": "Outdoors"
+        },
+        {
+          "value": "corridor",
+          "text": "Shared corridor"
+        },
+        {
+          "value": "neighbouring_unit",
+          "text": "Neighbouring unit"
+        },
+        {
+          "value": "unknown",
+          "text": "Unknown (treated as not outdoors)"
+        }
+      ],
+      "map_note": "Map: the nearest counted road is 24 m away, 22 degrees off this wall's facing"
+    },
+    {
+      "key": "exposure@wall:39qwa63z3ytdk06dipfq6bd2b",
+      "field": "exposure",
+      "target": "wall:39qwa63z3ytdk06dipfq6bd2b",
+      "label_text": "Faces",
+      "group": "sides",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "unknown",
+      "value_text": "Unknown (treated as not outdoors)",
+      "label": "assumed",
+      "note": "The scan cannot tell outdoors from a neighbour or corridor; treated as not outdoors",
+      "model_value": "unknown",
+      "effect": "Up to 9 dB",
+      "element": {
+        "kind": "side",
+        "wall": "39qwa63z3ytdk06dipfq6bd2b",
+        "room": "613htqkzf66zz7hf7n8kzszed",
+        "room_name": "Kitchen and living",
+        "facing": "south",
+        "azimuth_deg": 173.9,
+        "area_m2": 8.221
+      },
+      "choices": [
+        {
+          "value": "outdoors",
+          "text": "Outdoors"
+        },
+        {
+          "value": "corridor",
+          "text": "Shared corridor"
+        },
+        {
+          "value": "neighbouring_unit",
+          "text": "Neighbouring unit"
+        },
+        {
+          "value": "unknown",
+          "text": "Unknown (treated as not outdoors)"
+        }
+      ]
+    },
+    {
+      "key": "exposure@wall:dspg7u52d6ue2q44zbnnex1fa",
+      "field": "exposure",
+      "target": "wall:dspg7u52d6ue2q44zbnnex1fa",
+      "label_text": "Faces",
+      "group": "sides",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "unknown",
+      "value_text": "Unknown (treated as not outdoors)",
+      "label": "assumed",
+      "note": "The scan cannot tell outdoors from a neighbour or corridor; treated as not outdoors",
+      "model_value": "unknown",
+      "effect": "Up to 9 dB",
+      "element": {
+        "kind": "side",
+        "wall": "dspg7u52d6ue2q44zbnnex1fa",
+        "room": "613htqkzf66zz7hf7n8kzszed",
+        "room_name": "Kitchen and living",
+        "facing": "south",
+        "azimuth_deg": 173.9,
+        "area_m2": 12.08
+      },
+      "choices": [
+        {
+          "value": "outdoors",
+          "text": "Outdoors"
+        },
+        {
+          "value": "corridor",
+          "text": "Shared corridor"
+        },
+        {
+          "value": "neighbouring_unit",
+          "text": "Neighbouring unit"
+        },
+        {
+          "value": "unknown",
+          "text": "Unknown (treated as not outdoors)"
+        }
+      ]
+    },
+    {
+      "key": "exposure@wall:dxi2egrhtf3w58ykn9uf22z6d",
+      "field": "exposure",
+      "target": "wall:dxi2egrhtf3w58ykn9uf22z6d",
+      "label_text": "Faces",
+      "group": "sides",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "corridor",
+      "value_text": "Shared corridor",
+      "label": "inferred",
+      "note": "The entry-door side is taken as the shared corridor (plan section 3)",
+      "model_value": "corridor",
+      "effect": "Up to 9 dB",
+      "element": {
+        "kind": "side",
+        "wall": "dxi2egrhtf3w58ykn9uf22z6d",
+        "room": "613htqkzf66zz7hf7n8kzszed",
+        "room_name": "Kitchen and living",
+        "facing": "west",
+        "azimuth_deg": 264.0,
+        "area_m2": 10.199
+      },
+      "choices": [
+        {
+          "value": "outdoors",
+          "text": "Outdoors"
+        },
+        {
+          "value": "corridor",
+          "text": "Shared corridor"
+        },
+        {
+          "value": "neighbouring_unit",
+          "text": "Neighbouring unit"
+        },
+        {
+          "value": "unknown",
+          "text": "Unknown (treated as not outdoors)"
+        }
+      ]
+    },
+    {
+      "key": "exposure@wall:hfdi1ts2fsg6ph5cky3xhit7a",
+      "field": "exposure",
+      "target": "wall:hfdi1ts2fsg6ph5cky3xhit7a",
+      "label_text": "Faces",
+      "group": "sides",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "unknown",
+      "value_text": "Unknown (treated as not outdoors)",
+      "label": "assumed",
+      "note": "The scan cannot tell outdoors from a neighbour or corridor; treated as not outdoors",
+      "model_value": "unknown",
+      "effect": "Up to 9 dB",
+      "element": {
+        "kind": "side",
+        "wall": "hfdi1ts2fsg6ph5cky3xhit7a",
+        "room": "cdz3fkt38kae7tapstpt0eaeb",
+        "room_name": "Bedroom",
+        "facing": "north",
+        "azimuth_deg": 353.9,
+        "area_m2": 10.908
+      },
+      "choices": [
+        {
+          "value": "outdoors",
+          "text": "Outdoors"
+        },
+        {
+          "value": "corridor",
+          "text": "Shared corridor"
+        },
+        {
+          "value": "neighbouring_unit",
+          "text": "Neighbouring unit"
+        },
+        {
+          "value": "unknown",
+          "text": "Unknown (treated as not outdoors)"
+        }
+      ]
+    },
+    {
+      "key": "exposure@wall:6w62tz9kgpaazdn5wn7m0nkac",
+      "field": "exposure",
+      "target": "wall:6w62tz9kgpaazdn5wn7m0nkac",
+      "label_text": "Faces",
+      "group": "sides",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "unknown",
+      "value_text": "Unknown (treated as not outdoors)",
+      "label": "assumed",
+      "note": "The scan cannot tell outdoors from a neighbour or corridor; treated as not outdoors",
+      "model_value": "unknown",
+      "effect": "Up to 9 dB",
+      "element": {
+        "kind": "side",
+        "wall": "6w62tz9kgpaazdn5wn7m0nkac",
+        "room": "xy2x8mpaaqknp7q2c3nnbw1ma",
+        "room_name": "Bathroom",
+        "facing": "west",
+        "azimuth_deg": 264.0,
+        "area_m2": 4.469
+      },
+      "choices": [
+        {
+          "value": "outdoors",
+          "text": "Outdoors"
+        },
+        {
+          "value": "corridor",
+          "text": "Shared corridor"
+        },
+        {
+          "value": "neighbouring_unit",
+          "text": "Neighbouring unit"
+        },
+        {
+          "value": "unknown",
+          "text": "Unknown (treated as not outdoors)"
+        }
+      ]
+    },
+    {
+      "key": "exposure@wall:dy87i3p45na5y7ngg9kbbr3ia",
+      "field": "exposure",
+      "target": "wall:dy87i3p45na5y7ngg9kbbr3ia",
+      "label_text": "Faces",
+      "group": "sides",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "unknown",
+      "value_text": "Unknown (treated as not outdoors)",
+      "label": "assumed",
+      "note": "The scan cannot tell outdoors from a neighbour or corridor; treated as not outdoors",
+      "model_value": "unknown",
+      "effect": "Up to 9 dB",
+      "element": {
+        "kind": "side",
+        "wall": "dy87i3p45na5y7ngg9kbbr3ia",
+        "room": "xy2x8mpaaqknp7q2c3nnbw1ma",
+        "room_name": "Bathroom",
+        "facing": "north",
+        "azimuth_deg": 353.9,
+        "area_m2": 9.316
+      },
+      "choices": [
+        {
+          "value": "outdoors",
+          "text": "Outdoors"
+        },
+        {
+          "value": "corridor",
+          "text": "Shared corridor"
+        },
+        {
+          "value": "neighbouring_unit",
+          "text": "Neighbouring unit"
+        },
+        {
+          "value": "unknown",
+          "text": "Unknown (treated as not outdoors)"
+        }
+      ]
+    },
+    {
+      "key": "exposure@wall:w5ksrwzecq08c205nt7dt1uba",
+      "field": "exposure",
+      "target": "wall:w5ksrwzecq08c205nt7dt1uba",
+      "label_text": "Faces",
+      "group": "sides",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "unknown",
+      "value_text": "Unknown (treated as not outdoors)",
+      "label": "assumed",
+      "note": "The scan cannot tell outdoors from a neighbour or corridor; treated as not outdoors",
+      "model_value": "unknown",
+      "effect": "Up to 9 dB",
+      "element": {
+        "kind": "side",
+        "wall": "w5ksrwzecq08c205nt7dt1uba",
+        "room": "xy2x8mpaaqknp7q2c3nnbw1ma",
+        "room_name": "Bathroom",
+        "facing": "north",
+        "azimuth_deg": 353.9,
+        "area_m2": 2.184
+      },
+      "choices": [
+        {
+          "value": "outdoors",
+          "text": "Outdoors"
+        },
+        {
+          "value": "corridor",
+          "text": "Shared corridor"
+        },
+        {
+          "value": "neighbouring_unit",
+          "text": "Neighbouring unit"
+        },
+        {
+          "value": "unknown",
+          "text": "Unknown (treated as not outdoors)"
+        }
+      ]
+    },
+    {
+      "key": "window_area_m2@wall:xg384kwe2cs7c69dayf84kudd",
+      "field": "window_area_m2",
+      "target": "wall:xg384kwe2cs7c69dayf84kudd",
+      "label_text": "Window area (m2)",
+      "group": "windows",
+      "scope": "unit",
+      "kind": "number",
+      "value": 0.0,
+      "value_text": "0",
+      "label": "scan",
+      "note": "Measured in the scan or its window survey",
+      "model_value": 0.0,
+      "effect": "Up to several dB",
+      "element": {
+        "kind": "outdoor_wall",
+        "wall": "xg384kwe2cs7c69dayf84kudd",
+        "room": "613htqkzf66zz7hf7n8kzszed",
+        "room_name": "Kitchen and living",
+        "facing": "east",
+        "azimuth_deg": 84.0,
+        "area_m2": 10.726
+      },
+      "min": 0,
+      "max": null,
+      "integer": false
+    },
+    {
+      "key": "window_area_m2@wall:z6q9f2tfcd3aumsmgkzh94ssb",
+      "field": "window_area_m2",
+      "target": "wall:z6q9f2tfcd3aumsmgkzh94ssb",
+      "label_text": "Window area (m2)",
+      "group": "windows",
+      "scope": "unit",
+      "kind": "number",
+      "value": 2.544,
+      "value_text": "2.544",
+      "label": "scan",
+      "note": "Measured in the scan or its window survey",
+      "model_value": 2.544,
+      "effect": "Up to several dB",
+      "element": {
+        "kind": "outdoor_wall",
+        "wall": "z6q9f2tfcd3aumsmgkzh94ssb",
+        "room": "cdz3fkt38kae7tapstpt0eaeb",
+        "room_name": "Bedroom",
+        "facing": "east",
+        "azimuth_deg": 84.0,
+        "area_m2": 9.397
+      },
+      "min": 0,
+      "max": null,
+      "integer": false
+    },
+    {
+      "key": "window_type@wall:z6q9f2tfcd3aumsmgkzh94ssb",
+      "field": "window_type",
+      "target": "wall:z6q9f2tfcd3aumsmgkzh94ssb",
+      "label_text": "Window type",
+      "group": "windows",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "double_pane_2000_on",
+      "value_text": "Double pane (2000s single-hung)",
+      "label": "assumed",
+      "note": "Era default (2000_on)",
+      "model_value": "double_pane_2000_on",
+      "effect": "2 to 9 dB",
+      "element": {
+        "kind": "window_wall",
+        "wall": "z6q9f2tfcd3aumsmgkzh94ssb",
+        "room": "cdz3fkt38kae7tapstpt0eaeb",
+        "room_name": "Bedroom",
+        "facing": "east",
+        "azimuth_deg": 84.0,
+        "area_m2": 9.397
+      },
+      "choices": [
+        {
+          "value": "single_pane",
+          "text": "Single pane"
+        },
+        {
+          "value": "double_pane_1980_1999",
+          "text": "Double pane (1980s-90s slider)"
+        },
+        {
+          "value": "double_pane_2000_on",
+          "text": "Double pane (2000s single-hung)"
+        },
+        {
+          "value": "double_pane_fixed",
+          "text": "Double pane, fixed"
+        },
+        {
+          "value": "with_storm",
+          "text": "Double pane with a storm window"
+        },
+        {
+          "value": "laminated_acoustic",
+          "text": "Laminated acoustic glass"
+        }
+      ]
+    },
+    {
+      "key": "wall_material@wall:xg384kwe2cs7c69dayf84kudd",
+      "field": "wall_material",
+      "target": "wall:xg384kwe2cs7c69dayf84kudd",
+      "label_text": "Wall material",
+      "group": "outside_walls",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "brick_veneer",
+      "value_text": "Brick veneer",
+      "label": "inferred",
+      "note": "From the building's outside wall material",
+      "model_value": "brick_veneer",
+      "effect": "Small when the wall has a window or door, larger for a blank wall",
+      "element": {
+        "kind": "outdoor_wall",
+        "wall": "xg384kwe2cs7c69dayf84kudd",
+        "room": "613htqkzf66zz7hf7n8kzszed",
+        "room_name": "Kitchen and living",
+        "facing": "east",
+        "azimuth_deg": 84.0,
+        "area_m2": 10.726
+      },
+      "choices": [
+        {
+          "value": "vinyl_siding_2x4",
+          "text": "Vinyl siding, 2x4 studs"
+        },
+        {
+          "value": "vinyl_siding_2x6",
+          "text": "Vinyl siding, 2x6 studs"
+        },
+        {
+          "value": "aluminum_siding_2x6",
+          "text": "Aluminium siding"
+        },
+        {
+          "value": "eifs_stucco_2x6",
+          "text": "Synthetic stucco (EIFS)"
+        },
+        {
+          "value": "cement_stucco_2x6",
+          "text": "Cement stucco"
+        },
+        {
+          "value": "brick_veneer",
+          "text": "Brick veneer"
+        },
+        {
+          "value": "fiber_cement_upper_floor",
+          "text": "Fibre cement"
+        },
+        {
+          "value": "concrete_block",
+          "text": "Concrete block"
+        }
+      ]
+    },
+    {
+      "key": "wall_material@wall:z6q9f2tfcd3aumsmgkzh94ssb",
+      "field": "wall_material",
+      "target": "wall:z6q9f2tfcd3aumsmgkzh94ssb",
+      "label_text": "Wall material",
+      "group": "outside_walls",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "brick_veneer",
+      "value_text": "Brick veneer",
+      "label": "inferred",
+      "note": "From the building's outside wall material",
+      "model_value": "brick_veneer",
+      "effect": "Small when the wall has a window or door, larger for a blank wall",
+      "element": {
+        "kind": "outdoor_wall",
+        "wall": "z6q9f2tfcd3aumsmgkzh94ssb",
+        "room": "cdz3fkt38kae7tapstpt0eaeb",
+        "room_name": "Bedroom",
+        "facing": "east",
+        "azimuth_deg": 84.0,
+        "area_m2": 9.397
+      },
+      "choices": [
+        {
+          "value": "vinyl_siding_2x4",
+          "text": "Vinyl siding, 2x4 studs"
+        },
+        {
+          "value": "vinyl_siding_2x6",
+          "text": "Vinyl siding, 2x6 studs"
+        },
+        {
+          "value": "aluminum_siding_2x6",
+          "text": "Aluminium siding"
+        },
+        {
+          "value": "eifs_stucco_2x6",
+          "text": "Synthetic stucco (EIFS)"
+        },
+        {
+          "value": "cement_stucco_2x6",
+          "text": "Cement stucco"
+        },
+        {
+          "value": "brick_veneer",
+          "text": "Brick veneer"
+        },
+        {
+          "value": "fiber_cement_upper_floor",
+          "text": "Fibre cement"
+        },
+        {
+          "value": "concrete_block",
+          "text": "Concrete block"
+        }
+      ]
+    },
+    {
+      "key": "door_material@wall:xg384kwe2cs7c69dayf84kudd",
+      "field": "door_material",
+      "target": "wall:xg384kwe2cs7c69dayf84kudd",
+      "label_text": "Door",
+      "group": "outside_doors",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "sliding_glass",
+      "value_text": "Sliding glass",
+      "label": "scan",
+      "note": "Identified in the scan or its survey",
+      "model_value": "sliding_glass",
+      "effect": "Large. A door is often the weakest part of its wall",
+      "element": {
+        "kind": "outdoor_door",
+        "wall": "xg384kwe2cs7c69dayf84kudd",
+        "room": "613htqkzf66zz7hf7n8kzszed",
+        "room_name": "Kitchen and living",
+        "facing": "east",
+        "azimuth_deg": 84.0,
+        "area_m2": 10.726,
+        "door_area_m2": 4.848
+      },
+      "choices": [
+        {
+          "value": "hollow_core",
+          "text": "Hollow wood"
+        },
+        {
+          "value": "solid_core",
+          "text": "Solid wood"
+        },
+        {
+          "value": "sliding_glass",
+          "text": "Sliding glass"
+        },
+        {
+          "value": "solid_core_storm",
+          "text": "Solid wood with a storm door"
+        }
+      ]
+    },
+    {
+      "key": "door_material@wall:dxi2egrhtf3w58ykn9uf22z6d",
+      "field": "door_material",
+      "target": "wall:dxi2egrhtf3w58ykn9uf22z6d",
+      "label_text": "Door",
+      "group": "outside_doors",
+      "scope": "unit",
+      "kind": "choice",
+      "value": "solid_core",
+      "value_text": "Solid wood",
+      "label": "inferred",
+      "note": "Entry door onto the corridor: solid wood by default (plan section 3). Corridor noise waits on building sources (phase D).",
+      "model_value": "solid_core",
+      "effect": "Large. A door is often the weakest part of its wall",
+      "element": {
+        "kind": "entry_door",
+        "wall": "dxi2egrhtf3w58ykn9uf22z6d",
+        "room": "613htqkzf66zz7hf7n8kzszed",
+        "room_name": "Kitchen and living",
+        "facing": "west",
+        "azimuth_deg": 264.0,
+        "area_m2": 10.199,
+        "door_area_m2": 2.765,
+        "door_area_source": "measured in the scan (1.08 x 2.56 m)"
+      },
+      "choices": [
+        {
+          "value": "hollow_core",
+          "text": "Hollow wood"
+        },
+        {
+          "value": "solid_core",
+          "text": "Solid wood"
+        },
+        {
+          "value": "sliding_glass",
+          "text": "Sliding glass"
+        },
+        {
+          "value": "solid_core_storm",
+          "text": "Solid wood with a storm door"
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "assumed": 12,
+    "inferred": 5,
+    "scan": 5
+  },
+  "summary": "5 values from data, 17 assumed or inferred",
+  "context": {
+    "used": false,
+    "keys": []
+  },
+  "groups": {
+    "building": "Building",
+    "unit": "Unit",
+    "sides": "What each side of the unit faces",
+    "windows": "Windows",
+    "outside_walls": "Outside walls",
+    "outside_doors": "Outside doors"
+  },
+  "notes": [
+    "Interior doors and walls keep one default each (a hollow-core door, a stud wall); they and every assumptions.yaml key stay under advanced settings (--set) and are not profile fields.",
+    "Building sources (gym, elevator, pool, corridor, neighbours), through-wall air conditioners and room finish wait on research S1, S2 and S3 (phases D and E, issue #37)."
+  ],
+  "dataChanges": []
+}

@@ -1,0 +1,300 @@
+{
+  "id": "2125-yale-unit-205",
+  "address": "2125 Yale St, Houston TX 77008 (unit 205)",
+  "lat": 29.8058666,
+  "lon": -95.3993738,
+  "source": "Matterport model D9CVkjeMoQx: address, geolocation, description 'Unit #205' (samples/matterport_model_D9CVkjeMoQx.json)",
+  "north_offset_deg": 0,
+  "north_offset_note": "Added to every wall azimuth. R10 takes compass north from the Matterport Model API (source 'processing') and says it could be wrong by 90 or 180 degrees. Correct it here, in one place.",
+  "facade_point": {
+    "lat": 29.805907,
+    "lon": -95.399432,
+    "source": "North-east corner of the Vexcel footprint (first vertex of footprint.wkt in samples/vexcel_property_extract_2125_yale.json). R5 and R10 place the unit at the block's north-east corner; the Matterport point itself is offset by more than 10 m (R10 Conflicts). Used as the receiver for every exterior wall."
+  },
+  "year_built": null,
+  "construction": null,
+  "era": {
+    "value": "2000_on",
+    "status": "assumed",
+    "source": "docs/BUILD_BRIEF.md section 5: year built unknown (CoStar not reachable, R5); use the 2000 onward defaults"
+  },
+  "storeys": 5,
+  "storeys_source": "Vexcel structure-extract roof height 14.54 m / 3.0 m storey height (assumptions rooms.storey_height), rounded; R5",
+  "unit_floor": 2,
+  "unit_floor_status": "assumed",
+  "unit_floor_source": "Unit number 205 in the Matterport description, read as second floor. Not measured. Means: not the top floor (no roof exposure) and the 2000-onward upper-floor wall type applies.",
+  "geometry_quality": "measured",
+  "geometry_source": "Rooms: Matterport Model API (R5). Exterior walls, openings and partitions: R10 (samples/R10_yale_exterior_walls.csv, samples/R10_yale_partitions.csv), measured from the MatterPak mesh at 1 cm per pixel, openings +/- 5 cm.",
+  "rooms": [
+    {
+      "id": "living",
+      "name": "Living, kitchen and dining",
+      "type": "living",
+      "matterport_id": "613htqkzf66zz7hf7n8kzszed",
+      "area_m2": 45.072,
+      "height_m": 2.873,
+      "volume_m3": 129.482,
+      "source": "Matterport rooms[0] dimensions (tags kitchen, living, dining)",
+      "exterior_walls": [
+        {
+          "id": "living-n-nook",
+          "azimuth_deg": 358,
+          "area_m2": 6.31,
+          "wall_type": null,
+          "window_area_m2": 0,
+          "window_type": null,
+          "door_area_m2": 0,
+          "door_type": null,
+          "source": "R10 table 1: north kitchen nook, 2.20 x 2.87 m, no window (cabinets)"
+        },
+        {
+          "id": "living-e-step",
+          "azimuth_deg": 88,
+          "area_m2": 1.87,
+          "wall_type": null,
+          "window_area_m2": 0,
+          "window_type": null,
+          "door_area_m2": 0,
+          "door_type": null,
+          "source": "R10 table 1: east-facing return behind the fridge, 0.65 x 2.87 m, no window"
+        },
+        {
+          "id": "living-n-glazing",
+          "azimuth_deg": 358,
+          "area_m2": 9.24,
+          "wall_type": null,
+          "window_area_m2": 7.50,
+          "window_type": null,
+          "window_fixed": true,
+          "door_area_m2": 0,
+          "door_type": null,
+          "source": "R10 table 1: north dining glazing, wall 3.22 x 2.87 m, window wall 2.85 x 2.63 m (outer frame). Fixed floor-to-ceiling glass: era window rating, sealed-unit leak (docs/BUILD_BRIEF.md section 5)"
+        },
+        {
+          "id": "living-e-glazing",
+          "azimuth_deg": 88,
+          "area_m2": 9.93,
+          "wall_type": null,
+          "window_area_m2": 9.35,
+          "window_type": null,
+          "window_fixed": true,
+          "door_area_m2": 0,
+          "door_type": null,
+          "source": "R10 table 1: east dining glazing, wall 3.46 x 2.87 m, window wall 3.40 x 2.75 m (outer frame). Fixed floor-to-ceiling glass: era window rating, sealed-unit leak (docs/BUILD_BRIEF.md section 5)"
+        },
+        {
+          "id": "living-s-balcony",
+          "azimuth_deg": 178,
+          "area_m2": 3.50,
+          "wall_type": null,
+          "window_area_m2": 0.42,
+          "window_type": null,
+          "door_area_m2": 1.83,
+          "door_type": "sliding_glass",
+          "door_type_status": "assumed",
+          "source": "R10 table 1: south wall onto the balcony, 1.22 x 2.87 m; full-lite glazed door 0.90 x 2.03 m plus transom window 0.85 x 0.49 m. Door rating: the only glass-door rating in assumptions.yaml (sliding glass, EWR 20); the door's own type was not measured"
+        },
+        {
+          "id": "living-e-balcony",
+          "azimuth_deg": 88,
+          "area_m2": 11.31,
+          "wall_type": null,
+          "window_area_m2": 4.72,
+          "window_type": null,
+          "door_area_m2": 0,
+          "door_type": null,
+          "source": "R10 table 1: east wall onto the balcony, 3.94 x 2.87 m; three sashes in one frame, 2.55 x 1.85 m"
+        }
+      ]
+    },
+    {
+      "id": "bed1",
+      "name": "Bedroom 1",
+      "type": "bedroom",
+      "matterport_id": "cdz3fkt38kae7tapstpt0eaeb",
+      "area_m2": 19.785,
+      "height_m": 2.865,
+      "volume_m3": 56.683,
+      "source": "Matterport rooms[1] dimensions (tag bedroom, 19.8 m2)",
+      "exterior_walls": [
+        {
+          "id": "bed1-n",
+          "azimuth_deg": 358,
+          "area_m2": 14.21,
+          "wall_type": null,
+          "window_area_m2": 3.64,
+          "window_type": null,
+          "door_area_m2": 0,
+          "door_type": null,
+          "source": "R10 table 1: north wall 4.95 x 2.87 m; window pair 1.66 x 2.19 m"
+        }
+      ]
+    },
+    {
+      "id": "bed2",
+      "name": "Bedroom 2",
+      "type": "bedroom",
+      "matterport_id": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "area_m2": 15.114,
+      "height_m": 2.861,
+      "volume_m3": 43.237,
+      "source": "Matterport rooms[2] dimensions (tag bedroom, 15.1 m2)",
+      "exterior_walls": [
+        {
+          "id": "bed2-e",
+          "azimuth_deg": 88,
+          "area_m2": 10.78,
+          "wall_type": null,
+          "window_area_m2": 3.72,
+          "window_type": null,
+          "door_area_m2": 0,
+          "door_type": null,
+          "source": "R10 table 1: east wall 3.77 x 2.86 m; window pair 1.69 x 2.20 m"
+        }
+      ]
+    },
+    {
+      "id": "corridor",
+      "name": "Corridor",
+      "type": "corridor",
+      "matterport_id": "tt6gm2a0463x9wmnx7rn6gugc",
+      "area_m2": 8.032,
+      "height_m": 2.893,
+      "volume_m3": 23.236,
+      "source": "Matterport rooms[3] dimensions (tag corridor)",
+      "exterior_walls": []
+    },
+    {
+      "id": "bath_a",
+      "name": "Bathroom A",
+      "type": "bathroom",
+      "matterport_id": "h26t7ky77ew74yb0pg8qqf5rd",
+      "area_m2": 8.132,
+      "height_m": 2.518,
+      "volume_m3": 20.475,
+      "source": "Matterport rooms[4] dimensions (tag bathroom, 8.13 m2; R10 matches it to mesh room 6 by size rank, medium confidence)",
+      "exterior_walls": []
+    },
+    {
+      "id": "bath_b",
+      "name": "Bathroom B",
+      "type": "bathroom",
+      "matterport_id": "3m54yff1z7crxaywd8if9rb0d",
+      "area_m2": 7.569,
+      "height_m": 2.525,
+      "volume_m3": 19.109,
+      "source": "Matterport rooms[5] dimensions (tag bathroom, 7.57 m2; R10 matches it to mesh room 7 by size rank, medium confidence)",
+      "exterior_walls": []
+    },
+    {
+      "id": "closet_bath",
+      "name": "Closet off bathroom B",
+      "type": "closet",
+      "matterport_id": "2qdmc5i9byxi79ry1pxdkqzea",
+      "area_m2": 4.039,
+      "height_m": 2.869,
+      "volume_m3": 11.588,
+      "source": "Matterport rooms[6] dimensions (tags closet, bathroom; 4.04 m2)",
+      "exterior_walls": []
+    },
+    {
+      "id": "closet_a",
+      "name": "Closet A",
+      "type": "closet",
+      "matterport_id": "a5f9age4zzxewres6iqux2emc",
+      "area_m2": 2.995,
+      "height_m": 2.863,
+      "volume_m3": 8.576,
+      "source": "Matterport rooms[7] dimensions (tag closet, 2.99 m2)",
+      "exterior_walls": []
+    },
+    {
+      "id": "closet_b",
+      "name": "Closet B",
+      "type": "closet",
+      "matterport_id": "19ab05tns5h6y4qm42esqqpea",
+      "area_m2": 2.139,
+      "height_m": 2.894,
+      "volume_m3": 6.192,
+      "source": "Matterport rooms[8] dimensions (tag closet, 2.14 m2)",
+      "exterior_walls": []
+    }
+  ],
+  "partitions": [
+    {
+      "id": "p-living-bed1", "room_a": "living", "room_b": "bed1", "area_m2": 10.5, "kind": "wall",
+      "partition_type": null, "door": "closed", "door_area_m2": null, "door_type": null, "door_status": "assumed",
+      "source": "R10 table 4 (adjacency.py: 3.65 m x 2.87 m). Door: not measured (R10); one hollow-core door of the default size, closed, from bedroom 1 onto the living area (docs/BUILD_BRIEF.md section 5; colour plan)"
+    },
+    {
+      "id": "p-living-closet_a", "room_a": "living", "room_b": "closet_a", "area_m2": 7.9, "kind": "wall",
+      "partition_type": null, "door": "none",
+      "source": "R10 table 4 (2.75 m x 2.86 m)"
+    },
+    {
+      "id": "p-living-bed2", "room_a": "living", "room_b": "bed2", "area_m2": 8.4, "kind": "wall",
+      "partition_type": null, "door": "none",
+      "source": "R10 table 4 (2.95 m x 2.86 m)"
+    },
+    {
+      "id": "p-living-bed2-return", "room_a": "living", "room_b": "bed2", "area_m2": 3.1, "kind": "wall",
+      "partition_type": null, "door": "closed", "door_area_m2": null, "door_type": null, "door_status": "assumed",
+      "source": "R10 table 4 ('return near its door', 1.10 m x 2.86 m). Door: one hollow-core door of the default size, closed, from bedroom 2 onto the living area (docs/BUILD_BRIEF.md section 5)"
+    },
+    {
+      "id": "p-living-bath_b", "room_a": "living", "room_b": "bath_b", "area_m2": 4.9, "kind": "wall",
+      "partition_type": null, "door": "closed", "door_area_m2": null, "door_type": null, "door_status": "assumed",
+      "source": "R10 table 4 (1.95 m x 2.52 m). Door: one hollow-core door of the default size, closed, from bathroom B onto the living area (docs/BUILD_BRIEF.md section 5; colour plan)"
+    },
+    {
+      "id": "p-bed2-bath_b", "room_a": "bed2", "room_b": "bath_b", "area_m2": 6.1, "kind": "wall",
+      "partition_type": null, "door": "none",
+      "source": "R10 table 4 (2.40 m x 2.52 m)"
+    },
+    {
+      "id": "p-corridor-bath_a", "room_a": "corridor", "room_b": "bath_a", "area_m2": 5.9, "kind": "wall",
+      "partition_type": null, "door": "closed", "door_area_m2": null, "door_type": null, "door_status": "assumed",
+      "source": "R10 table 4 (2.35 m x 2.52 m, 0.85 m doorway gap seen in the mesh). Door: one hollow-core door of the default size, closed (docs/BUILD_BRIEF.md section 5)"
+    },
+    {
+      "id": "p-corridor-closet_a", "room_a": "corridor", "room_b": "closet_a", "area_m2": 2.1, "kind": "wall",
+      "partition_type": null, "door": "none",
+      "source": "R10 table 4 (0.75 m x 2.86 m)"
+    },
+    {
+      "id": "p-bath_a-bed1", "room_a": "bath_a", "room_b": "bed1", "area_m2": 7.1, "kind": "wall",
+      "partition_type": null, "door": "none",
+      "source": "R10 table 4 (2.80 m x 2.52 m)"
+    },
+    {
+      "id": "p-bath_b-closet_bath", "room_a": "bath_b", "room_b": "closet_bath", "area_m2": 4.9, "kind": "wall",
+      "partition_type": null, "door": "closed", "door_area_m2": null, "door_type": null, "door_status": "assumed",
+      "source": "R10 table 4 (1.95 m x 2.52 m). The 4.04 m2 room is tagged closet and bathroom; it opens onto bathroom B on the colour plan. Door: one hollow-core door of the default size, closed (docs/BUILD_BRIEF.md section 5)"
+    },
+    {
+      "id": "p-closet_a-closet_b", "room_a": "closet_a", "room_b": "closet_b", "area_m2": 4.9, "kind": "wall",
+      "partition_type": null, "door": "none",
+      "source": "R10 table 4 (1.70 m x 2.86 m)"
+    },
+    {
+      "id": "p-closet_b-bath_a", "room_a": "closet_b", "room_b": "bath_a", "area_m2": 4.7, "kind": "wall",
+      "partition_type": null, "door": "none",
+      "source": "R10 table 4 (1.85 m x 2.52 m)"
+    },
+    {
+      "id": "p-corridor-living", "room_a": "corridor", "room_b": "living", "area_m2": 4.09, "kind": "opening",
+      "door": "open",
+      "source": "R10 table 4: open plan, no wall (seen on the colour plan). Opening area = corridor width 1.414 m x height 2.893 m (Matterport corridor dimensions); not measured"
+    },
+    {
+      "id": "p-bed1-closet_b", "room_a": "bed1", "room_b": "closet_b", "area_m2": null, "kind": "opening",
+      "door": "open", "door_status": "assumed",
+      "source": "R10 table 4: open doorway from bedroom 1 into the 2.14 m2 closet (colour plan). Size not measured: the default door area (partitions.door_area)"
+    }
+  ],
+  "boundary_walls_not_exposed": {
+    "status": "assumed",
+    "source": "samples/R10_yale_boundary_walls_no_window.csv: 9 unit-boundary walls, 60.3 m2, no windows. R10 cannot tell party walls from blank facades or the building corridor. Treated as not exposed to outdoor noise (docs/BUILD_BRIEF.md section 5); neighbour noise through them is not modelled.",
+    "walls": ["bed1-w", "bath-a-w", "corridor-w", "corridor-s-entry", "closet-w", "closet-s", "bath-b-s", "bed2-s", "bed2-w-balcony-part"]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "hotel-room",
+  "address": null,
+  "lat": null,
+  "lon": null,
+  "north_offset_deg": 0,
+  "year_built": null,
+  "era": {
+    "value": "1980_1999",
+    "status": "assumed",
+    "source": "Not known yet. Placeholder until Alejandro confirms the building age."
+  },
+  "storeys": null,
+  "unit_floor": null,
+  "geometry_quality": "measured",
+  "rooms": [
+    {
+      "id": "room1",
+      "name": "Hotel room",
+      "type": "bedroom",
+      "area_m2": 23.5,
+      "height_m": 2.44,
+      "volume_m3": 57.0,
+      "source": "Alejandro, phone measurements, 2026-11-14: room 23 ft x 11 ft, ceiling 8 ft (7 ft 1 in for the first foot at the entrance), window 6 ft x 3 ft 3 in, window wall faces 34 degrees (north-east).",
+      "exterior_walls": [
+        {
+          "id": "room1-window-wall",
+          "azimuth_deg": 34,
+          "area_m2": 8.18,
+          "wall_type": null,
+          "window_area_m2": 1.81,
+          "window_type": null,
+          "window_fixed": false,
+          "door_area_m2": 0,
+          "door_type": null,
+          "source": "Alejandro, phone measurements, 2026-11-14: room 23 ft x 11 ft, ceiling 8 ft (7 ft 1 in for the first foot at the entrance), window 6 ft x 3 ft 3 in, window wall faces 34 degrees (north-east)."
+        }
+      ]
+    }
+  ],
+  "partitions": []
+}

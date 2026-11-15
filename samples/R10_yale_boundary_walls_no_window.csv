@@ -1,0 +1,10 @@
+wall_id,room_tags,mesh_room_sub,azimuth_deg,wall_width_m,room_height_m,wall_area_m2,what_is_on_it,status
+bed1-w,bedroom (19.8 m2),3,268,3.66,2.87,10.50,bed headboard; no window,unit boundary; party wall or blank facade (not determinable from the scan)
+bath-a-w,bathroom (8.13 m2 by size rank),6,268,2.78,2.52,7.01,towel bars; no window,unit boundary; not determinable
+corridor-w,corridor,5,268,2.26,2.89,6.53,plain wall,unit boundary; not determinable
+corridor-s-entry,corridor,5,178,1.52,2.89,4.39,panel door (likely the entry door; not measured),unit boundary; most likely the common corridor
+closet-w,closet;bathroom (4.04 m2),8,268,1.96,2.87,5.62,shelves; no window,unit boundary; not determinable
+closet-s,closet;bathroom (4.04 m2),8,178,2.02,2.87,5.80,shelves; no window,unit boundary; not determinable
+bath-b-s,bathroom (7.57 m2 by size rank),7,178,2.74,2.53,6.93,vanity mirror; no window,unit boundary; not determinable
+bed2-s,bedroom (15.1 m2),4,178,3.82,2.86,10.93,bed headboard and nightstand; no window,unit boundary; not determinable
+bed2-w-balcony-part,bedroom (15.1 m2),4,358,0.92,2.86,2.63,plain wall,may face the balcony; balcony extent not captured

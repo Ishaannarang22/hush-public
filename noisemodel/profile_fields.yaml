@@ -1,0 +1,215 @@
+# Unit profile fields (docs/UNIT_PROFILE_PLAN.md sections 3 and 9; docs/UNIT_PROFILE.md for integrators).
+#
+# One entry per field. The UI renders the profile from this file through the pipeline, so labels and
+# options exist once. Keys:
+#   label       what the client sees
+#   scope       building: a manager's edit applies to every unit of the building; unit: this unit only
+#   element     none (one value per unit or building), side (every boundary wall of the unit),
+#               outdoor_wall (every wall that faces outdoors), window_wall (outdoor walls with glass),
+#               outdoor_door (every door in an outdoor wall)
+#   kind        choice | number
+#   choices     a fixed list, or choices_from: a section of assumptions.yaml. With choices_from, every
+#               key of that section with a numeric rating is offered (keys ending _offset are not
+#               materials), so adding a rated entry to assumptions.yaml adds a choice with no code change.
+#   fill        the sources tried in order; the first with a value wins. The last is always a default.
+#               scan = the Matterport scan or its window survey, as loaded into the property file
+#               costar = the local CoStar context record (work/costar-kit, never committed)
+#               map = aerial or traffic data (Vexcel heights, road bearings)
+#               inferred = worked out from another field; assumed = a stated model default
+#   sets        the property input (or assumptions.yaml key) a value changes
+#   alternatives  for numbers: the values "worth checking" tries
+#   effect      the plan's effect size, for the UI
+schemaVersion: 1
+labels: [scan, costar, map, inferred, assumed, edited]
+confirmed_labels: [scan, costar, map, edited]
+
+groups:
+  building: Building
+  unit: Unit
+  sides: What each side of the unit faces
+  windows: Windows
+  outside_walls: Outside walls
+  outside_doors: Outside doors
+
+fields:
+  year_built:
+    label: Year built
+    group: building
+    scope: building
+    element: none
+    kind: number
+    min: 1800
+    max: 2030
+    fill: [scan, costar, assumed]
+    sets: property.year_built (and property.era, unless the era is set by an edit)
+    alternatives: [1950, 1970, 1990, 2010]
+    effect: 1 to 2 dB through the era defaults for wall, window and frame leakage
+
+  era:
+    label: Construction era
+    group: building
+    scope: building
+    element: none
+    kind: choice
+    choices_from: era_defaults
+    fill: [inferred, scan, assumed]
+    sets: property.era (picks era_defaults.<era> for wall, window and leakage defaults)
+    effect: 1 to 2 dB
+
+  storeys:
+    label: Building floors
+    group: building
+    scope: building
+    element: none
+    kind: number
+    min: 1
+    max: 200
+    integer: true
+    fill: [costar, map, scan, inferred]
+    sets: property.storeys (whether the unit is on the top floor, which adds the roof for aircraft)
+    alternatives: [1, 3, 10]
+    effect: Small alone
+
+  unit_floor:
+    label: Unit floor
+    group: unit
+    scope: unit
+    element: none
+    kind: number
+    min: 1
+    max: 200
+    integer: true
+    fill: [costar, scan, assumed]
+    sets: property.unit_floor (receiver height, top-floor roof, the upper-floor wall type of 2000-onward buildings)
+    alternatives: [1, 2, 3]
+    effect: Small alone
+
+  outside_wall_material:
+    label: Outside wall material (whole building)
+    group: building
+    scope: building
+    element: none
+    kind: choice
+    choices_from: walls
+    fill: [costar, inferred, assumed]
+    sets: exterior_walls[].wall_type of every outside wall without its own value
+    effect: Under 0.5 dB when the wall has windows
+
+  windows_open:
+    label: Windows open
+    group: unit
+    scope: unit
+    element: none
+    kind: choice
+    choices: [closed, open]
+    fill: [assumed]
+    sets: exterior_walls[].window_open of every operable window. The model has no overnight-only state, so
+      open means open all day (nearest fallback to the plan's "windows open at night").
+    effect: About 12 dB when open
+
+  exposure:
+    label: Faces
+    group: sides
+    scope: unit
+    element: side
+    kind: choice
+    choices: [outdoors, corridor, neighbouring_unit, unknown]
+    fill: [scan, map, assumed]
+    sets: moves the wall between exterior_walls (outdoors) and other_boundary_walls (anything else). Only
+      outdoors lets outdoor sound in; corridor and neighbour noise wait on building sources (plan section 5).
+    effect: Up to 9 dB
+
+  window_area_m2:
+    label: Window area (m2)
+    group: windows
+    scope: unit
+    element: outdoor_wall
+    kind: number
+    min: 0
+    fill: [scan, assumed]
+    sets: exterior_walls[].window_area_m2
+    effect: Up to several dB
+
+  window_type:
+    label: Window type
+    group: windows
+    scope: unit
+    element: window_wall
+    kind: choice
+    choices_from: windows
+    fill: [scan, costar, assumed]
+    sets: exterior_walls[].window_type
+    effect: 2 to 9 dB
+
+  wall_material:
+    label: Wall material
+    group: outside_walls
+    scope: unit
+    element: outdoor_wall
+    kind: choice
+    choices_from: walls
+    fill: [scan, inferred]
+    sets: exterior_walls[].wall_type (overrides the building-level outside wall material for this wall only)
+    effect: Small when the wall has a window or door, larger for a blank wall
+
+  door_material:
+    label: Door
+    group: outside_doors
+    scope: unit
+    element: outdoor_door
+    kind: choice
+    choices_from: doors_exterior
+    fill: [scan, costar, inferred, assumed]
+    sets: exterior_walls[].door_type. The entry door onto a shared corridor is listed too (inferred from the
+      scan's entry-door wall, default solid wood); it feeds corridor noise, which waits on building sources
+      (plan section 5), so it moves no level today unless that side is set to outdoors.
+    effect: Large. A door is often the weakest part of its wall
+
+# Display names for assumptions.yaml keys and fixed choices. A key with no name here is shown with its
+# underscores replaced; it is still offered.
+names:
+  closed: Closed
+  open: Open
+  outdoors: Outdoors
+  corridor: Shared corridor
+  neighbouring_unit: Neighbouring unit
+  unknown: Unknown (treated as not outdoors)
+  not_outdoor: Not outdoors (interior or neighbour)
+  before_1960: Before 1960
+  "1960_1979": 1960 to 1979
+  "1980_1999": 1980 to 1999
+  2000_on: 2000 onward
+  vinyl_siding_2x4: Vinyl siding, 2x4 studs
+  vinyl_siding_2x6: Vinyl siding, 2x6 studs
+  aluminum_siding_2x6: Aluminium siding
+  eifs_stucco_2x6: Synthetic stucco (EIFS)
+  cement_stucco_2x6: Cement stucco
+  brick_veneer: Brick veneer
+  fiber_cement_upper_floor: Fibre cement
+  concrete_block: Concrete block
+  single_pane: Single pane
+  double_pane_1980_1999: Double pane (1980s-90s slider)
+  double_pane_2000_on: Double pane (2000s single-hung)
+  double_pane_fixed: Double pane, fixed
+  with_storm: Double pane with a storm window
+  laminated_acoustic: Laminated acoustic glass
+  hollow_core: Hollow wood
+  solid_core: Solid wood
+  sliding_glass: Sliding glass
+  solid_core_storm: Solid wood with a storm door
+
+# Phase B: what a CoStar construction class implies for the building's outside walls. An inference, not a
+# record (labelled inferred); classes not listed fall through to the era default. Research S6 refines it.
+construction_class_walls:
+  masonry: brick_veneer
+  reinforced concrete: concrete_block
+  concrete: concrete_block
+
+# Phase B: listing features that set a field when present. A missing feature is not a "no".
+listing_features:
+  brick exterior: {field: outside_wall_material, value: brick_veneer}
+  stucco exterior: {field: outside_wall_material, value: cement_stucco_2x6}
+  vinyl siding: {field: outside_wall_material, value: vinyl_siding_2x4}
+  double pane windows: {field: window_type, value: era_double_pane}
+  storm windows: {field: window_type, value: with_storm}
+  insulated doors: {field: door_material, value: solid_core}

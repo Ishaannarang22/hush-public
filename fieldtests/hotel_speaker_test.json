@@ -1,0 +1,36 @@
+{
+  "name": "Bluetooth speaker through a hotel room's window wall, 2026-11-14",
+  "source": "Alejandro, phone sound-level app, A-weighted. Dimensions by phone measurement. See hotel_speaker_test.md.",
+  "background_dba": 45.0,
+  "base": {
+    "room": {
+      "length_m": 7.01, "width_m": 3.353, "height_m": 2.438, "volume_m3": 57.0,
+      "note": "23 ft x 11 ft, ceiling 8 ft (7 ft 1 in for the first foot at the entrance)"
+    },
+    "wall": {"width_m": 3.353, "height_m": 2.438, "type": "brick_veneer"},
+    "window": {
+      "width_m": 1.829, "height_m": 0.991, "type": "double_pane_1980_1999", "leak_fraction": "1980_1999",
+      "note": "6 ft x 3 ft 3 in. Assumed centred in the wall: its position was not measured."
+    },
+    "speaker": {
+      "distance_from_wall_m": 0.3048, "offset_from_window_centre_m": 0.0, "reference_distance_m": 0.3048,
+      "note": "About 1 ft from the wall. Level read about 1 ft from the speaker."
+    },
+    "listener": {"distance_from_wall_m": 1.219, "note": "About 4 ft from the window wall, inside"}
+  },
+  "setups": {
+    "as_predicted": {
+      "note": "What was assumed when the predictions were given: brick wall, a double-pane window that opens, speaker aimed at the window's centre."
+    },
+    "confirmed": {
+      "note": "What Alejandro confirmed by eye afterwards: stucco wall, a window that does not open but leaks like one that does, speaker under 1 ft off-centre (0.5 ft used).",
+      "wall": {"type": "cement_stucco_2x6"},
+      "window": {"type": "double_pane_fixed"},
+      "speaker": {"offset_from_window_centre_m": 0.1524}
+    }
+  },
+  "runs": [
+    {"name": "run 1", "speaker_dba_at_reference": [79, 79], "measured_dba": [50, 53], "blind": false},
+    {"name": "run 2", "speaker_dba_at_reference": [82, 86], "measured_dba": [52, 56], "blind": true}
+  ]
+}

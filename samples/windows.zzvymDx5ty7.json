@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "modelId": "zzvymDx5ty7",
+  "units": "meters",
+  "openings": [
+    {
+      "id": "survey-living-east-sliding-door",
+      "wallId": "xg384kwe2cs7c69dayf84kudd",
+      "kind": "door",
+      "centerFraction": 0.5897,
+      "widthM": 2.40,
+      "heightM": 2.02,
+      "lowerElevationM": 0.0,
+      "evidence": {
+        "kind": "measured",
+        "source": "MatterPak point cloud (cloud.xyz) of zzvymDx5ty7, R10 elevation method (research/R10-scripts/elev.py and detect.py, adapted to any edge direction): points 0.04 m inside to 3 m outside the wall line, read in 2 cm bins along the wall and up it",
+        "note": "Glazed sliding door behind full-height vertical blinds and side curtains. Width 2.40 m is the visible glazing, from u = 1.10 to 3.50 m along the edge from its first vertex: bright blind slats at u 1.12 to 2.78 m, then recessed glass (8 cm behind the wall line) at 3.04 to 3.48 m with see-through points beyond it. Both ends are hidden by curtains (u 0.72 to 1.08 and 3.52 to 3.75 m), so the frame can be up to 0.6 m wider. Height 2.02 m is the top of the vertical blinds (z 0.00 to 2.02 m); the head of the door is at or below it. +/- 0.05 m where visible. Kind is 'door' because it reaches the floor; the model rates it with doorType, the simulation treats it as a door."
+      },
+      "doorType": "sliding_glass",
+      "operable": true
+    },
+    {
+      "id": "survey-bedroom-east-window",
+      "wallId": "z6q9f2tfcd3aumsmgkzh94ssb",
+      "kind": "window",
+      "centerFraction": 0.4812,
+      "widthM": 1.60,
+      "heightM": 1.59,
+      "lowerElevationM": 0.73,
+      "evidence": {
+        "kind": "measured",
+        "source": "MatterPak point cloud (cloud.xyz) of zzvymDx5ty7, R10 elevation method (research/R10-scripts/elev.py and detect.py, adapted to any edge direction): window recess read in 2 cm bins",
+        "note": "Window with closed horizontal blinds in a recess. The blinds sit 0 to 5 cm outside the edge line while the wall face is about 10 cm inside it, so the recess outline gives the opening: u 0.85 to 2.45 m along the edge from its first vertex, z 0.73 to 2.32 m. A horizontal rail at about 1.45 m is visible behind the blinds, so it is read as an operable hung window. +/- 0.04 m. Glazing type cannot be seen in the scan, so glazing is left out and the era default applies."
+      },
+      "operable": true
+    }
+  ],
+  "exposure": [
+    {
+      "wallId": "dxi2egrhtf3w58ykn9uf22z6d",
+      "exposure": "not_outdoor",
+      "evidence": {"kind": "derived", "source": "MatterPak elevation of the wall: the entry door (panel door with a deadbolt above the knob) at the API doorway, 1.08 x 2.56 m; nothing scanned beyond it", "note": "Entry door wall (docs/BUILD_BRIEF.md section 5 default rule)."}
+    },
+    {
+      "wallId": "2wktbnfuc8atf7ib1pqe816pd",
+      "exposure": "not_outdoor",
+      "evidence": {"kind": "derived", "source": "Room outline: one of three walls around a 0.68 x 0.80 m closet notch entered by a 0.70 m API doorway (8w1xdcimsana9c3tmckb4hydb); R10 behind-wall test 65,000 points per m2 (the living room lies beyond it)"}
+    },
+    {
+      "wallId": "8w1xdcimsana9c3tmckb4hydb",
+      "exposure": "not_outdoor",
+      "evidence": {"kind": "derived", "source": "Room outline: the 0.70 m doorway into the closet notch, inside the unit"}
+    },
+    {
+      "wallId": "8ragbhf06bb6tx14aebedwk4a",
+      "exposure": "not_outdoor",
+      "evidence": {"kind": "derived", "source": "Room outline: closet notch wall; R10 behind-wall test 61,000 points per m2 (the living room lies beyond it)"}
+    },
+    {
+      "wallId": "iwqxer7qtpy39r054rcg25hcc",
+      "exposure": "not_outdoor",
+      "evidence": {"kind": "derived", "source": "Room outlines: wall with a 1.03 m API doorway into an unscanned 2.0 x 1.1 m space that the bathroom also opens onto (1.15 m doorway on ggg5cyh3hkrhy3nss0her66pa); the space is enclosed by the living room and bathroom, so it is inside the unit"}
+    },
+    {
+      "wallId": "be68b8eei8s2aebxqwttx81xb",
+      "exposure": "not_outdoor",
+      "evidence": {"kind": "derived", "source": "Room outlines: faces the same unscanned space inside the unit (see iwqxer7qtpy39r054rcg25hcc)"}
+    },
+    {
+      "wallId": "ggg5cyh3hkrhy3nss0her66pa",
+      "exposure": "not_outdoor",
+      "evidence": {"kind": "derived", "source": "Room outlines: bathroom wall with a 1.15 m API doorway into the same unscanned space inside the unit"}
+    },
+    {
+      "wallId": "uzuqexsz5mwbhb953gwq598tb",
+      "exposure": "not_outdoor",
+      "evidence": {"kind": "derived", "source": "Room outlines: bathroom wall facing the same unscanned space inside the unit; R10 behind-wall test 23,000 points per m2"}
+    },
+    {
+      "wallId": "dspg7u52d6ue2q44zbnnex1fa",
+      "exposure": "unknown",
+      "evidence": {"kind": "measured", "source": "MatterPak elevation: flat wall face 5 cm inside the line over its whole length (a painting, a sofa and plants in front); no recess and no see-through points, so no window"}
+    },
+    {
+      "wallId": "39qwa63z3ytdk06dipfq6bd2b",
+      "exposure": "unknown",
+      "evidence": {"kind": "measured", "source": "MatterPak elevation: kitchen cabinets and counter over the whole wall; no recess or see-through points visible, so no window found (a window behind upper cabinets cannot be ruled out)"}
+    },
+    {
+      "wallId": "hfdi1ts2fsg6ph5cky3xhit7a",
+      "exposure": "unknown",
+      "evidence": {"kind": "measured", "source": "MatterPak elevation: flat wall face on the edge line from 0.6 to 2.7 m over its whole length (bed headboard in front); no recess, so no window"}
+    },
+    {
+      "wallId": "dy87i3p45na5y7ngg9kbbr3ia",
+      "exposure": "unknown",
+      "evidence": {"kind": "measured", "source": "MatterPak elevation: shower curtain, toilet, a picture and a framed mirror over the vanity. The points 1.2 to 2.6 m beyond this wall are the mirror's reflection (the scan's geometry behind the mirror), not a view outside"}
+    },
+    {
+      "wallId": "w5ksrwzecq08c205nt7dt1uba",
+      "exposure": "unknown",
+      "evidence": {"kind": "measured", "source": "MatterPak elevation: points beyond this short wall are the bathroom mirror's reflection (see dy87i3p45na5y7ngg9kbbr3ia); no window"}
+    },
+    {
+      "wallId": "6w62tz9kgpaazdn5wn7m0nkac",
+      "exposure": "unknown",
+      "evidence": {"kind": "measured", "source": "MatterPak elevation: bath tub wall, shower curtain in front up to 2.2 m; flat wall above it. A small window behind the curtain cannot be ruled out"}
+    }
+  ],
+  "method": "Surveyed on 2026-11-14 from the MatterPak bundle of zzvymDx5ty7 (unlocked; downloaded to a temporary folder, not committed). Every boundary edge of the saved Model API response was rendered as a wall elevation from the coloured point cloud at 1 cm per pixel and read as a depth map in 10 cm cells and 2 cm profiles (R10 method). Found: one glazed sliding door and one window, both on the east-facing edge (azimuth 84 deg). Other boundary walls are listed under exposure with what was seen. The MatterPak and the model API share the same plan coordinates (point cloud x from -3.0 to 4.4 m and y from -8.1 to 0.7 m, matching the API outlines). Extra fields read by the noise model and ignored by the simulation: glazing, operable, doorType, exposure, method."
+}

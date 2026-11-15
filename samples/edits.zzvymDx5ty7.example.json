@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "modelId": "zzvymDx5ty7",
+  "note": "Made-up example edits for the demo apartment (docs/UNIT_PROFILE.md). Not a real resident's answers.",
+  "edits": [
+    {
+      "field": "window_type",
+      "target": "wall:z6q9f2tfcd3aumsmgkzh94ssb",
+      "value": "laminated_acoustic",
+      "edited_by": "resident",
+      "edited_at": "2026-11-14T19:40:00-05:00"
+    },
+    {
+      "field": "door_material",
+      "target": "wall:xg384kwe2cs7c69dayf84kudd",
+      "value": "solid_core_storm",
+      "edited_by": "resident",
+      "edited_at": "2026-11-14T19:41:00-05:00"
+    },
+    {
+      "field": "exposure",
+      "target": "wall:hfdi1ts2fsg6ph5cky3xhit7a",
+      "value": "neighbouring_unit",
+      "edited_by": "manager",
+      "edited_at": "2026-11-14T19:42:00-05:00"
+    }
+  ]
+}

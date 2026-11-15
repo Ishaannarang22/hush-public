@@ -1,0 +1,42 @@
+{
+  "modelId": "zzvymDx5ty7",
+  "block": "midday",
+  "grid": { "resolution": 48, "receiverHeightM": 1.2, "reflections": true, "diffraction": true },
+  "sourceInputs": {
+    "source": "Illustrative multi-source scenario, not measurements of this property. Replace with provider data later.",
+    "roads": [],
+    "rail": [],
+    "flights": [],
+    "barriers": [],
+    "outdoor_levels_dba": {
+      "road": 65,
+      "road_profile": "flat",
+      "road_bearing_deg": 90,
+      "road_distance_m": 30,
+      "rail": 60,
+      "rail_bearing_deg": 180,
+      "rail_distance_m": 150,
+      "aviation": 55,
+      "source": "Assumed daily outdoor levels for demonstration; no Google or live traffic feed."
+    },
+    "construction": [{
+      "id": "demo-site",
+      "name": "Illustrative excavation",
+      "lat": 29.7955898,
+      "lon": -95.7047,
+      "equipment": ["excavator"],
+      "active_blocks": ["midday"],
+      "source": "Assumed equipment, schedule and location. Emission factors from the existing model."
+    }],
+    "mechanical": [{
+      "id": "demo-ac",
+      "name": "Illustrative outdoor equipment",
+      "lat": 29.7955898,
+      "lon": -95.705,
+      "height_m": 1.5,
+      "level_at_1m_dba": 75,
+      "duty_fraction": 0.5,
+      "evidence": "Assumed source level, height, duty and location for demonstration."
+    }]
+  }
+}

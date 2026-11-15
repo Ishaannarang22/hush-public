@@ -1,0 +1,10 @@
+wall_id,room_tags,matterport_room_id,mesh_room_sub,class,azimuth_deg,wall_width_m,room_height_m,wall_area_m2,opening,opening_width_m,opening_height_m,sill_m,head_m,opening_area_m2,measured_how
+living-n-nook,kitchen;living;dining,613htqkzf66zz7hf7n8kzszed,2,facade,358,2.20,2.87,6.31,none,,,,,0,wall line from plan slice; no window seen (cabinets and fridge cover the wall)
+living-e-step,kitchen;living;dining,613htqkzf66zz7hf7n8kzszed,2,facade,88,0.65,2.87,1.87,none,,,,,0,wall line from plan slice; behind fridge
+living-n-glazing,kitchen;living;dining,613htqkzf66zz7hf7n8kzszed,2,facade,358,3.22,2.87,9.24,window,2.85,2.63,0.13,2.76,7.50,elevation image N3 (outer frame); glass not in mesh (hole)
+living-e-glazing,kitchen;living;dining,613htqkzf66zz7hf7n8kzszed,2,facade,88,3.46,2.87,9.93,window,3.40,2.75,0.11,2.86,9.35,elevation image E1 (outer frame); glass not in mesh (hole); tree outside visible
+living-s-balcony,kitchen;living;dining,613htqkzf66zz7hf7n8kzszed,2,facade (onto balcony),178,1.22,2.87,3.50,door,0.90,2.03,0.00,2.03,1.83,elevation image Estep; full-lite glazed door with blinds
+living-s-balcony,kitchen;living;dining,613htqkzf66zz7hf7n8kzszed,2,facade (onto balcony),178,,,,window (transom),0.85,0.49,2.06,2.55,0.42,elevation image Estep; transom above the door
+living-e-balcony,kitchen;living;dining,613htqkzf66zz7hf7n8kzszed,2,facade (onto balcony),88,3.94,2.87,11.31,window (3 units),2.55,1.85,0.78,2.63,4.72,elevation image E2; three sashes with blinds; sill partly hidden by sofa
+bed1-n,bedroom,cdz3fkt38kae7tapstpt0eaeb,3,facade,358,4.95,2.87,14.21,window (pair),1.66,2.19,0.46,2.65,3.64,elevation image N1; blinds flush with wall plane
+bed2-e,bedroom,xy2x8mpaaqknp7q2c3nnbw1ma,4,facade,88,3.77,2.86,10.78,window (pair),1.69,2.20,0.47,2.67,3.72,elevation image E3; blinds flush with wall plane

@@ -1,0 +1,4 @@
+# Verified with Python 3.11; used by the model and its regression tests.
+numpy==2.4.2
+PyYAML==6.0.2
+pytest==9.0.2

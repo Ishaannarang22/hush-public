@@ -1,0 +1,115 @@
+{
+  "data" : {
+    "model" : {
+      "id" : "D9CVkjeMoQx",
+      "options" : {
+        "roomBoundsEnabled" : true,
+        "floorplanEnabled" : true
+      },
+      "views" : [ {
+        "id" : "D9CVkjeMoQx",
+        "name" : "",
+        "type" : "matterport.model.layered",
+        "enabled" : true,
+        "layers" : [ {
+          "visible" : true,
+          "layer" : {
+            "id" : "yz7ddzszwiqkcm2n0ywe08n9c",
+            "name" : "matterport.user.data",
+            "type" : "matterport.user.data",
+            "label" : ""
+          }
+        }, {
+          "visible" : true,
+          "layer" : {
+            "id" : "aaaaaaaaaaaaaaaaaaaaaaaaa",
+            "type" : "matterport.base",
+            "label" : ""
+          }
+        } ]
+      } ],
+      "bundles" : [ {
+        "id" : "bim:cad",
+        "name" : "BIM",
+        "availability" : "unavailable"
+      }, {
+        "id" : "capsvcs:digitalpro",
+        "name" : "Digital Pro bundle including a floorplan, photos and video.",
+        "availability" : "unavailable"
+      }, {
+        "id" : "floorplan:schematic",
+        "name" : "Schematic Floorplan",
+        "availability" : "unavailable"
+      }, {
+        "id" : "gsv:publish",
+        "name" : "Google Street View",
+        "availability" : "unavailable"
+      }, {
+        "id" : "homeaway:publish",
+        "name" : "Vrbo - HomeAway",
+        "availability" : "unavailable"
+      }, {
+        "id" : "mp:cotality-fml",
+        "name" : "Cotality™ .fml file",
+        "availability" : "unavailable"
+      }, {
+        "id" : "mp:defurnish",
+        "name" : "Defurnished version of model",
+        "availability" : "unavailable"
+      }, {
+        "id" : "mp:e57",
+        "name" : "e57 Point Cloud",
+        "availability" : "unavailable"
+      }, {
+        "id" : "mp:exteriorsplat",
+        "name" : "Produce exterior splat from drone images of a property (Costar)",
+        "availability" : "unavailable"
+      }, {
+        "id" : "mp:flythrough",
+        "name" : "Flythrough version of model",
+        "availability" : "unavailable"
+      }, {
+        "id" : "mp:imagery",
+        "name" : "Advanced Imagery Pack",
+        "availability" : "locked"
+      }, {
+        "id" : "mp:matterpak",
+        "name" : "Matterpak",
+        "availability" : "unlocked"
+      }, {
+        "id" : "mp:modelmerge",
+        "name" : "Matterport Model Merge",
+        "availability" : "unavailable"
+      }, {
+        "id" : "mp:obj-low-res",
+        "name" : "Low Resolution Geometry",
+        "availability" : "unavailable"
+      }, {
+        "id" : "mp:obj",
+        "name" : "Model Geometry",
+        "availability" : "unavailable"
+      }, {
+        "id" : "mp:object-detection",
+        "name" : "Object Detection",
+        "availability" : "unavailable"
+      }, {
+        "id" : "mp:videogenerator",
+        "name" : "Record a video of the showcase experience for a given model.",
+        "availability" : "unavailable"
+      }, {
+        "id" : "standard:cad",
+        "name" : "Standard CAD",
+        "availability" : "unavailable"
+      }, {
+        "id" : "trueplan:schematic",
+        "name" : "TruePlan™ Schematic",
+        "availability" : "unavailable"
+      } ],
+      "floors" : [ {
+        "id" : "tsmq1wak12rhgn0mawksxcwcd",
+        "vertices" : [ ],
+        "edges" : [ ]
+      } ]
+    }
+  }
+}

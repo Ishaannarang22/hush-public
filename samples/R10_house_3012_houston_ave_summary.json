@@ -1,0 +1,70 @@
+{
+ "model": "M7BdXkpzrrE",
+ "name": "3012 Houston Ave",
+ "address": "3012 Houston Ave, Houston, TX, 77009, US",
+ "api_floor_area_m2": 720.6,
+ "api_rooms_per_floor": {
+  "0": {
+   "total": 15,
+   "untagged_without_dimensions": 9
+  },
+  "1": {
+   "total": 29,
+   "untagged_without_dimensions": 19
+  },
+  "2": {
+   "total": 23,
+   "untagged_without_dimensions": 13
+  },
+  "3": {
+   "total": 6,
+   "untagged_without_dimensions": 3
+  }
+ },
+ "geocoordinates_source": "processing",
+ "model_axis_bearings_deg_from_geoLocationOf": {
+  "+x": 86.9,
+  "+y": 356.8
+ },
+ "matterpak": {
+  "zip_bytes": 556226515,
+  "unzipped_bytes": 1987691227,
+  "obj_bytes": 43798868,
+  "mtl_bytes": 28999,
+  "texture_jpgs": 208,
+  "texture_jpg_bytes": 126581368,
+  "cloud_xyz_bytes": 1810184828,
+  "cloud_points_approx": 45500000,
+  "colorplan_pdf_bytes": 4622742,
+  "ceilingcolorplan_pdf_bytes": 2277417,
+  "readme_pdf_bytes": 197005,
+  "colorplan_jpg": "absent (the readme says one per floor; this bundle has the PDFs only)"
+ },
+ "obj": {
+  "vertices": 265966,
+  "groups": 291,
+  "group_name_pattern": "chunkNNN_groupFFF_subRRR (FFF floor, RRR room)",
+  "mirror_marker_groups": 32,
+  "window_groups": 0,
+  "floor_levels_z_m": {
+   "0": -3.6,
+   "1": 0.0,
+   "2": 3.3,
+   "3": 6.5
+  }
+ },
+ "auto_pipeline_run": {
+  "segments": 272,
+  "exterior_by_probe": 108,
+  "exterior_with_little_behind": 56,
+  "window_candidates_on_those": 43,
+  "door_candidates_on_those": 16,
+  "spot_check": [
+   "floor 1 room 18 west wall: two curtained windows; the detector called one a 1.3 x 2.2 m door (curtains reach the floor) and the other a 1.7 x 1.8 m window",
+   "floor 1 room 17 north wall: a 3.1 x 1.5 m 'window' is a wall of decorative plates (false positive from the texture cue)",
+   "floor 0 room 3: an outdoor yard or patio scanned as a room; its 19.8 m 'door' is a garden fence",
+   "floor 2 room 31 east wall (15 m): stair, arches and interior doors; called exterior by the probe because the spaces beyond are not tagged rooms (the behind-wall test does flag it as interior)"
+  ],
+  "verdict": "not reliable enough to use as data without a manual pass"
+ }
+}

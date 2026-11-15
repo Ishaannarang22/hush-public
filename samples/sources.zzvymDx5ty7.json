@@ -1,0 +1,58 @@
+{
+  "property_id": "matterport-zzvymDx5ty7",
+  "location": {
+    "address": "2219 Greenhouse Rd, Houston, TX, 77084, US",
+    "city": "Houston, Texas",
+    "lat": 29.7955898,
+    "lon": -95.7051799,
+    "source": "samples/matterport_model_zzvymDx5ty7.json: address and geolocation (geocoordinates source 'processing'). Houston is in Texas, so R9's time-of-day shares and R7's truck split (Texas data) apply without a flag.",
+    "position_note": "Matterport's georeference is a processing estimate, not a survey; R10 found it more than 10 m off at Yale St. No building footprint was fetched for this address, so the unit's distance to the road is only as good as that estimate."
+  },
+  "roads": [
+    {
+      "id": "s-greenhouse-rd",
+      "name": "S Greenhouse Rd",
+      "road_class": "arterial",
+      "road_class_source": "TxDOT 2020 Roadway Inventory F_SYSTEM 4 (minor arterial); R9 arterial hourly table",
+      "aadt": 13626,
+      "aadt_year": 2016,
+      "medium_trucks_per_day": 245,
+      "heavy_trucks_per_day": 191,
+      "speed_kmh": 96.56,
+      "ground": null,
+      "status": "placeholder",
+      "count_record": {
+        "dataset": "TxDOT 2020 Roadway Inventory (feature service in R7 [TXRI])",
+        "objectid": 365902,
+        "ria_rte_id": "102AA4104",
+        "control_section": "AA41-04",
+        "from_dfo": 1.096,
+        "to_dfo": 2.117,
+        "traffic_station_id": "102U4231",
+        "adt_year": 2016,
+        "annual_station_record": "None: TxDOT AADT Annuals (R7 [TXA]) has no record for station 102U4231, so no newer count exists in that layer."
+      },
+      "source": "TxDOT 2020 Roadway Inventory segment OBJECTID 365902 (S GREENHOUSE RD, CR0000 KG, Harris County, control section AA41-04, DFO 1.096 to 2.117): ADT_CUR 13,626 counted in 2016 at traffic station 102U4231, AADT_SINGLE_UNIT 245 (medium trucks, R7 E7), AADT_COMBINATION 191 (heavy trucks), SPD_MAX 60 mph = 96.56 km/h, 2 lanes, 24 ft surface. Queried once on 2026-11-14 (point query, 600 m radius). Marked placeholder: the count is older than 2020, and the truck split (3.2%: 1.8% single-unit, 1.4% combination) is the pattern R7 conflict 5 flags as a likely default rather than a count. SPD_MAX is used as R7 instructs (posted speed for the model); 60 mph is the inventory value for this county road and the posted limit was not checked on site.",
+      "geometry": [[-95.7061143, 29.7857023], [-95.7061352, 29.790324], [-95.7058233, 29.7926329], [-95.7051229, 29.7948182], [-95.7044927, 29.7967463], [-95.7044192, 29.7970294], [-95.7043854, 29.7972029], [-95.7042619, 29.7977824], [-95.7041673, 29.7983042], [-95.7041127, 29.7986427], [-95.7040711, 29.7989666], [-95.7040496, 29.7991681], [-95.7040279, 29.799417], [-95.7040187, 29.79959], [-95.704008, 29.7997809], [-95.7040014, 29.7999465], [-95.7039994, 29.8000907], [-95.7040005, 29.8001997], [-95.7039985, 29.8003134]],
+      "geometry_source": "The TxDOT linework of the same inventory segment (OBJECTID 365902, all 19 vertices, WGS84, rounded to 1e-7 deg). It passes 24 m east of the unit's facade point (bearing 106 deg), so the east-facing walls (azimuth 84 deg) face it.",
+      "which_side_faces_the_road": "East. The road linework runs about 16 deg east of north past the unit and lies east of it; the unit's sliding door and bedroom window are on the east-facing edge (azimuth 84 deg, from Matterport geoLocationOf). If Matterport north is off (R10), change north_offset_deg in samples/property.zzvymDx5ty7.json."
+    }
+  ],
+  "roads_note": "Searched the TxDOT 2020 Roadway Inventory within 600 m of the unit. S Greenhouse Rd (24 m) is the only road within 300 m. The next nearest are local streets (Long Lake Dr 334 m, Mayde Creek Dr 348 m, Blind Lake Dr 370 m), each with ADT_CUR 330 under TRF_STA_ID 'DefLoc-102-4', a county default for local streets, not a count, and all outside 300 m. The nearest annual count stations (TxDOT AADT Annuals within 1.5 km) are 102D89WBSR and 102D90EBSR, the I-10 frontage roads about 1.3 km south (2025 AADT 46,082 and 40,460); they are outside the brief's 300 m and are not modelled.",
+  "flights": [],
+  "flights_note": "Left empty. R8 has real tracks only for one day (ADS-B Exchange sample, licensed for testing and evaluation only) evaluated at four points near IAH and HOU; none covers this location.",
+  "construction": [],
+  "construction_note": "No research file or saved data names an active construction site near this address.",
+  "rail": [],
+  "rail_note": "No rail line or decoded BTS rail pixel for this location is in the research.",
+  "barriers": [],
+  "barriers_note": "None recorded. No saved data file covers walls or buildings between the unit and S Greenhouse Rd.",
+  "building_rows": null,
+  "building_rows_note": "Unknown. The unit is in an apartment complex and other buildings may stand between it and the road, but no footprint data for this address is saved, so no building-row loss is applied (an upper-bound reading for the east walls).",
+  "outdoor_levels_dba": {
+    "road": null,
+    "rail": null,
+    "aviation": null,
+    "source": "Not available. The BTS 2020 per-mode values come from LERC-encoded tiles (R1 E1) and no decoder is in the repository; the Esri service rejects point queries (identify and getSamples return 'Invalid URL'), and no research file decoded a pixel at this location. So there is no BTS road value for the check, and no BTS aviation value: aircraft are absent from this run, not zero by measurement."
+  }
+}

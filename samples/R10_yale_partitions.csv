@@ -1,0 +1,15 @@
+room_a,room_b,mesh_subs,shared_length_m,height_m,area_m2,wall_thickness_m,door_seen_in_mesh,source
+living/kitchen/dining,bedroom 19.8,2-3,3.65,2.87,10.5,0.18,no,adjacency.py
+living/kitchen/dining,closet 2.99,2-9,2.75,2.86,7.9,0.18,no,adjacency.py
+living/kitchen/dining,bedroom 15.1,2-4,2.95,2.86,8.4,0.16,no,adjacency.py
+living/kitchen/dining,bedroom 15.1 (return near its door),2-4,1.10,2.86,3.1,0.18,no,adjacency.py
+living/kitchen/dining,bathroom 7.57,2-7,1.95,2.52,4.9,0.26,no,adjacency.py
+bedroom 15.1,bathroom 7.57,4-7,2.40,2.52,6.1,0.20,no,adjacency.py
+corridor,bathroom 8.13,5-6,2.35,2.52,5.9,0.18-0.26,yes (0.85 m gap),adjacency.py
+corridor,closet 2.99,5-9,0.75,2.86,2.1,0.30,no,adjacency.py
+bathroom 8.13,bedroom 19.8,6-3,2.80,2.52,7.1,0.24,no,adjacency.py
+bathroom 7.57,closet+bathroom 4.04,7-8,1.95,2.52,4.9,0.20,no,adjacency.py
+closet 2.99,closet 2.14,9-10,1.70,2.86,4.9,0.18,no,adjacency.py
+closet 2.14,bathroom 8.13,10-6,1.85,2.52,4.7,0.20,no,adjacency.py
+corridor,living/kitchen/dining,5-2,,,,,open plan (no wall),not found by adjacency.py; seen on colour plan
+bedroom 19.8,closet 2.14,3-10,,,,,opening,not found by adjacency.py; seen on colour plan

@@ -1,0 +1,1241 @@
+{
+  "_saved": {
+    "fetched": "2026-11-14",
+    "endpoint": "POST https://api.matterport.com/api/models/graph (basic auth; read query; keys not stored)",
+    "query": "query($id:ID!) { model(id:$id) { id name description created modified address { address locality administrativeArea postalCode countryCode } geolocation { lat long altitude } geocoordinates { latitude longitude altitude source rotation { x y z w } translation { x y z } origin: geoLocationOf(modelLocation:{x:0,y:0,z:0}) { lat long } plusX10m: geoLocationOf(modelLocation:{x:10,y:0,z:0}) { lat long } plusY10m: geoLocationOf(modelLocation:{x:0,y:10,z:0}) { lat long } } bundles { id name availability } matterpak: bundle(id:\"mp:matterpak\") { id availability assets { url filename } } rooms { id label tags floor { id sequence label } dimensions { height units } dimensionEstimates { height lowerElevation units } boundary { edges { id type thickness openings { id type width height lowerElevation relativeCenter } vertices { position { x y } } } } holes { edges { id type thickness openings { id type width height lowerElevation relativeCenter } vertices { position { x y } } } } } } }",
+    "variables": {
+      "id": "zzvymDx5ty7"
+    },
+    "removed": "data.model.matterpak.assets[].url (signed, expiring download links) set to null; nothing else changed",
+    "note": "One-time setup step (docs/BUILD_BRIEF.md section 5 step 1). The model reads only this file. Room fields are the query the simulation uses (web/vite.config.ts) plus tags; geocoordinates.origin/plusX10m/plusY10m are geoLocationOf samples for compass north (R10)."
+  },
+  "data": {
+    "model": {
+      "id": "zzvymDx5ty7",
+      "name": "1BR, 1BA - 664SF",
+      "description": "",
+      "created": "2026-11-11T15:26:08Z",
+      "modified": "2026-11-12T03:58:06Z",
+      "address": {
+        "address": "2219 Greenhouse Rd, Houston, TX, 77084, US",
+        "locality": "Houston",
+        "administrativeArea": "TX",
+        "postalCode": "77084",
+        "countryCode": "US"
+      },
+      "geolocation": {
+        "lat": "29.7955898",
+        "long": "-95.7051799",
+        "altitude": "null"
+      },
+      "geocoordinates": {
+        "latitude": 29.795589811374004,
+        "longitude": -95.70517986816233,
+        "altitude": 0.0,
+        "source": "processing",
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.7430170992825826,
+          "w": -0.669272433448216
+        },
+        "translation": {
+          "x": -3.5281911500724688,
+          "y": -2.3526790545269103,
+          "z": 0.0
+        },
+        "origin": {
+          "lat": "29.795568653225182",
+          "long": "-95.70521643147552"
+        },
+        "plusX10m": {
+          "lat": "29.795658096330946",
+          "long": "-95.70522722465729"
+        },
+        "plusY10m": {
+          "lat": "29.795559286899238",
+          "long": "-95.70531949977774"
+        }
+      },
+      "bundles": [
+        {
+          "id": "bim:cad",
+          "name": "BIM",
+          "availability": "unavailable"
+        },
+        {
+          "id": "capsvcs:digitalpro",
+          "name": "Digital Pro bundle including a floorplan, photos and video.",
+          "availability": "unavailable"
+        },
+        {
+          "id": "floorplan:schematic",
+          "name": "Schematic Floorplan",
+          "availability": "unavailable"
+        },
+        {
+          "id": "gsv:publish",
+          "name": "Google Street View",
+          "availability": "unavailable"
+        },
+        {
+          "id": "homeaway:publish",
+          "name": "Vrbo - HomeAway",
+          "availability": "unavailable"
+        },
+        {
+          "id": "mp:cotality-fml",
+          "name": "Cotality\u2122 .fml file",
+          "availability": "unavailable"
+        },
+        {
+          "id": "mp:defurnish",
+          "name": "Defurnished version of model",
+          "availability": "unlocked"
+        },
+        {
+          "id": "mp:e57",
+          "name": "e57 Point Cloud",
+          "availability": "unavailable"
+        },
+        {
+          "id": "mp:exteriorsplat",
+          "name": "Produce exterior splat from drone images of a property (Costar)",
+          "availability": "unavailable"
+        },
+        {
+          "id": "mp:flythrough",
+          "name": "Flythrough version of model",
+          "availability": "unavailable"
+        },
+        {
+          "id": "mp:imagery",
+          "name": "Advanced Imagery Pack",
+          "availability": "locked"
+        },
+        {
+          "id": "mp:matterpak",
+          "name": "Matterpak",
+          "availability": "unlocked"
+        },
+        {
+          "id": "mp:modelmerge",
+          "name": "Matterport Model Merge",
+          "availability": "unavailable"
+        },
+        {
+          "id": "mp:obj-low-res",
+          "name": "Low Resolution Geometry",
+          "availability": "unavailable"
+        },
+        {
+          "id": "mp:obj",
+          "name": "Model Geometry",
+          "availability": "unavailable"
+        },
+        {
+          "id": "mp:object-detection",
+          "name": "Object Detection",
+          "availability": "unavailable"
+        },
+        {
+          "id": "mp:videogenerator",
+          "name": "Record a video of the showcase experience for a given model.",
+          "availability": "unavailable"
+        },
+        {
+          "id": "standard:cad",
+          "name": "Standard CAD",
+          "availability": "unavailable"
+        },
+        {
+          "id": "trueplan:schematic",
+          "name": "TruePlan\u2122 Schematic",
+          "availability": "unavailable"
+        }
+      ],
+      "matterpak": {
+        "id": "mp:matterpak",
+        "availability": "unlocked",
+        "assets": [
+          {
+            "url": null,
+            "filename": "mp_matterpak_1BR-1BA-664SF_zzvymDx5ty7.zip"
+          }
+        ]
+      },
+      "rooms": [
+        {
+          "id": "h26t7ky77ew74yb0pg8qqf5rd",
+          "tags": [],
+          "floor": {
+            "id": "tsmq1wak12rhgn0mawksxcwcd",
+            "sequence": 0,
+            "label": "Floor 1"
+          },
+          "dimensionEstimates": {
+            "units": "imperial"
+          },
+          "boundary": {
+            "edges": [
+              {
+                "id": "yw3gebxa248kis0qte0tnqcga",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 1.5111772936176544,
+                      "y": -2.03349262455215
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 1.666271550166559,
+                      "y": -2.033261300817219
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ep9c1m4frps7tf1ic9ti8x66d",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [
+                  {
+                    "id": "h129xhnr54t5wmxd5y37pquac",
+                    "type": "doorway",
+                    "width": 0.8863751251019952,
+                    "height": 2.2120001316070557,
+                    "lowerElevation": -0.003000020980834961,
+                    "relativeCenter": 0.5123435725027343
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 0.9370427454076032,
+                      "y": -2.0343389386165347
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.9384713259305485,
+                      "y": -3.0031113267968625
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "k7spbbu5ydr8wf0itg2ami1na",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 1.666271550166559,
+                      "y": -2.033261300817219
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 1.6677223132101953,
+                      "y": -3.0020290434686587
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "sr72kx21t3k0aywfzwmp16skb",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 1.5111772936176544,
+                      "y": -2.03349262455215
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.9370427454076032,
+                      "y": -2.0343389386165347
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "2h6k887wdz5a663bc5hddch1b",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 0.9384713259305485,
+                      "y": -3.0031113267968625
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 1.6677223132101953,
+                      "y": -3.0020290434686587
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "holes": []
+        },
+        {
+          "id": "613htqkzf66zz7hf7n8kzszed",
+          "tags": [
+            "kitchen",
+            "living"
+          ],
+          "floor": {
+            "id": "tsmq1wak12rhgn0mawksxcwcd",
+            "sequence": 0,
+            "label": "Floor 1"
+          },
+          "dimensions": {
+            "height": 9.02231,
+            "units": "imperial"
+          },
+          "dimensionEstimates": {
+            "height": 9.02231,
+            "lowerElevation": -0.08858268,
+            "units": "imperial"
+          },
+          "boundary": {
+            "edges": [
+              {
+                "id": "i338igku71q095mi3kw6b1wsd",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 0.9384713259305485,
+                      "y": -3.0031113267968625
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.9397784289945531,
+                      "y": -3.888658765945981
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "p3m1dmrcc2kq185dkt87kw20d",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [
+                  {
+                    "id": "0qhf69d77nh6mas5q6a94nrqc",
+                    "type": "opening",
+                    "width": 0.7992947050026902,
+                    "height": 2.0055984258651733,
+                    "lowerElevation": 0.04264676570892334,
+                    "relativeCenter": 0.8445529055081602
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 0.9457252037064116,
+                      "y": -7.869853954969625
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.9397784289945531,
+                      "y": -3.888658765945981
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "iwqxer7qtpy39r054rcg25hcc",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [
+                  {
+                    "id": "rb07dyir1p9ih487289epca3d",
+                    "type": "doorway",
+                    "width": 1.0338185199857657,
+                    "height": 2.20899985358119,
+                    "lowerElevation": 0.00299999862909317,
+                    "relativeCenter": 0.48310421715883706
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 0.7437869184552697,
+                      "y": -0.8298322182832687
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.7420802055813841,
+                      "y": 0.31281802305722867
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "2wktbnfuc8atf7ib1pqe816pd",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": -2.961163411373127,
+                      "y": -3.4828436875944853
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": -2.276099979248479,
+                      "y": -3.4818179825005067
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "8w1xdcimsana9c3tmckb4hydb",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [
+                  {
+                    "id": "dh7qe0wu55c0pkwnfmggck3ua",
+                    "type": "doorway",
+                    "width": 0.6994523204719671,
+                    "height": 2.1489999294281006,
+                    "lowerElevation": 0.0,
+                    "relativeCenter": 0.478425836587804
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": -2.276099979248479,
+                      "y": -3.4818179825005067
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": -2.2772949698310443,
+                      "y": -2.6811514618416785
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "dxi2egrhtf3w58ykn9uf22z6d",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [
+                  {
+                    "id": "s14f6xgzinhbu9y7849si26ub",
+                    "type": "doorway",
+                    "width": 1.0791025317250287,
+                    "height": 2.5569999823346734,
+                    "lowerElevation": -0.0029999997932463884,
+                    "relativeCenter": 0.17596114742893132
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 0.7420802055813841,
+                      "y": 0.31281802305722867
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": -2.966742631003369,
+                      "y": 0.30728500345821425
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "xnanfa7f1q3tnkc2w613hydna",
+                "type": "wall",
+                "thickness": 0.11,
+                "openings": [
+                  {
+                    "id": "dxhz6yfktd3aaptz3aha5rafa",
+                    "type": "opening",
+                    "width": 0.8624751364780463,
+                    "height": 2.0279354453086853,
+                    "lowerElevation": 0.019897937774658203,
+                    "relativeCenter": 0.504016884985103
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 1.5111772936176544,
+                      "y": -2.03349262455215
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 1.5093701118047225,
+                      "y": -0.8286844456447764
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "be68b8eei8s2aebxqwttx81xb",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 0.7437869184552697,
+                      "y": -0.8298322182832687
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 1.5093701118047225,
+                      "y": -0.8286844456447764
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ep9c1m4frps7tf1ic9ti8x66d",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [
+                  {
+                    "id": "h129xhnr54t5wmxd5y37pquac",
+                    "type": "doorway",
+                    "width": 0.8863751251019952,
+                    "height": 2.2120001316070557,
+                    "lowerElevation": -0.003000020980834961,
+                    "relativeCenter": 0.5123435725027343
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 0.9370427454076032,
+                      "y": -2.0343389386165347
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.9384713259305485,
+                      "y": -3.0031113267968625
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "sr72kx21t3k0aywfzwmp16skb",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 1.5111772936176544,
+                      "y": -2.03349262455215
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.9370427454076032,
+                      "y": -2.0343389386165347
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "xg384kwe2cs7c69dayf84kudd",
+                "type": "wall",
+                "thickness": 0.08,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": -2.954588456491828,
+                      "y": -7.875694148726237
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.9457252037064116,
+                      "y": -7.869853954969625
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "8ragbhf06bb6tx14aebedwk4a",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": -2.962288542756337,
+                      "y": -2.6821755274144925
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": -2.2772949698310443,
+                      "y": -2.6811514618416785
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "dspg7u52d6ue2q44zbnnex1fa",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": -2.954588456491828,
+                      "y": -7.875694148726237
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": -2.961163411373127,
+                      "y": -3.4828436875944853
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "39qwa63z3ytdk06dipfq6bd2b",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": -2.962288542756337,
+                      "y": -2.6821755274144925
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": -2.966742631003369,
+                      "y": 0.30728500345821425
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "holes": []
+        },
+        {
+          "id": "cdz3fkt38kae7tapstpt0eaeb",
+          "tags": [
+            "bedroom"
+          ],
+          "floor": {
+            "id": "tsmq1wak12rhgn0mawksxcwcd",
+            "sequence": 0,
+            "label": "Floor 1"
+          },
+          "dimensions": {
+            "units": "imperial"
+          },
+          "dimensionEstimates": {
+            "height": 8.989501631288528,
+            "lowerElevation": -0.00328084,
+            "units": "imperial"
+          },
+          "boundary": {
+            "edges": [
+              {
+                "id": "p3m1dmrcc2kq185dkt87kw20d",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [
+                  {
+                    "id": "0qhf69d77nh6mas5q6a94nrqc",
+                    "type": "opening",
+                    "width": 0.7992947050026902,
+                    "height": 2.0055984258651733,
+                    "lowerElevation": 0.04264676570892334,
+                    "relativeCenter": 0.8445529055081602
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 0.9457252037064116,
+                      "y": -7.869853954969625
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.9397784289945531,
+                      "y": -3.888658765945981
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "z6q9f2tfcd3aumsmgkzh94ssb",
+                "type": "wall",
+                "thickness": 0.17,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 4.37539349701649,
+                      "y": -7.8646452315317745
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.9457252037064116,
+                      "y": -7.869853954969625
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "hfdi1ts2fsg6ph5cky3xhit7a",
+                "type": "wall",
+                "thickness": 0.09,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 4.37539349701649,
+                      "y": -7.8646452315317745
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 4.369342527161159,
+                      "y": -3.88346130727449
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "b8qf8qm6xztdafm5mrwwbu47c",
+                "type": "wall",
+                "thickness": 0.13,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 2.5504427322031074,
+                      "y": -3.8862243346758256
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.9397784289945531,
+                      "y": -3.888658765945981
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "5h8yzbs8yi0mzqgyr9c2bsh4d",
+                "type": "wall",
+                "thickness": 0.13,
+                "openings": [
+                  {
+                    "id": "9pancsfb3z60xbekxfir6zqfc",
+                    "type": "opening",
+                    "width": 0.8661387442311089,
+                    "height": 2.0352553129196167,
+                    "lowerElevation": 0.00988471508026123,
+                    "relativeCenter": 0.6655116205167029
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 4.369342527161159,
+                      "y": -3.88346130727449
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 2.5504427322031074,
+                      "y": -3.8862243346758256
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "holes": []
+        },
+        {
+          "id": "xy2x8mpaaqknp7q2c3nnbw1ma",
+          "tags": [
+            "bathroom"
+          ],
+          "floor": {
+            "id": "tsmq1wak12rhgn0mawksxcwcd",
+            "sequence": 0,
+            "label": "Floor 1"
+          },
+          "dimensions": {
+            "units": "imperial"
+          },
+          "dimensionEstimates": {
+            "height": 9.02231,
+            "lowerElevation": -0.10170604,
+            "units": "imperial"
+          },
+          "boundary": {
+            "edges": [
+              {
+                "id": "yw3gebxa248kis0qte0tnqcga",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 1.5111772936176544,
+                      "y": -2.03349262455215
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 1.666271550166559,
+                      "y": -2.033261300817219
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "6w62tz9kgpaazdn5wn7m0nkac",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 4.362618039949841,
+                      "y": 0.29839608091229386
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 2.737589179307245,
+                      "y": 0.29589642368340974
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "w5ksrwzecq08c205nt7dt1uba",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 4.367830324071831,
+                      "y": -3.0892620308362964
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 4.369342527161159,
+                      "y": -3.88346130727449
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "xnanfa7f1q3tnkc2w613hydna",
+                "type": "wall",
+                "thickness": 0.11,
+                "openings": [
+                  {
+                    "id": "dxhz6yfktd3aaptz3aha5rafa",
+                    "type": "opening",
+                    "width": 0.8624751364780463,
+                    "height": 2.0279354453086853,
+                    "lowerElevation": 0.019897937774658203,
+                    "relativeCenter": 0.504016884985103
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 1.5111772936176544,
+                      "y": -2.03349262455215
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 1.5093701118047225,
+                      "y": -0.8286844456447764
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "3np8ybd5tii27wx7wybb031td",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [
+                  {
+                    "id": "m1txs2grx3hentu9e190a33ia",
+                    "type": "opening",
+                    "width": 0.8607978698358477,
+                    "height": 2.078000068664551,
+                    "lowerElevation": -0.01100003719329834,
+                    "relativeCenter": 0.5059107291973114
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 2.5476404257977947,
+                      "y": -2.0319317419113627
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 2.5504427322031074,
+                      "y": -3.8862243346758256
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "dy87i3p45na5y7ngg9kbbr3ia",
+                "type": "wall",
+                "thickness": 0.13,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 4.362618039949841,
+                      "y": 0.29839608091229386
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 4.367830324071831,
+                      "y": -3.0892620308362964
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "uzuqexsz5mwbhb953gwq598tb",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 2.7393088579779308,
+                      "y": -0.8268108269835576
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 2.737589179307245,
+                      "y": 0.29589642368340974
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ggg5cyh3hkrhy3nss0her66pa",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [
+                  {
+                    "id": "s581gqicipw2u4dekxfzt59bd",
+                    "type": "doorway",
+                    "width": 1.1518885923411892,
+                    "height": 2.1740001440048218,
+                    "lowerElevation": -0.021000027656555176,
+                    "relativeCenter": 0.46827017174881447
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 2.7393088579779308,
+                      "y": -0.8268108269835576
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 1.5093701118047225,
+                      "y": -0.8286844456447764
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "chkah241kcf6xc66szyren78c",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 2.5476404257977947,
+                      "y": -2.0319317419113627
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 1.666271550166559,
+                      "y": -2.033261300817219
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ts5cwxdwesdx42n5kptuweyya",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [
+                  {
+                    "id": "whaeeku0f2r3a9wakt2wbd2mc",
+                    "type": "doorway",
+                    "width": 0.23057288981813392,
+                    "height": 2.072000026702881,
+                    "lowerElevation": 0.003000020980834961,
+                    "relativeCenter": 0.17134991412252434
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 3.6950181590350066,
+                      "y": -3.090303841787317
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 4.367830324071831,
+                      "y": -3.0892620308362964
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "5h8yzbs8yi0mzqgyr9c2bsh4d",
+                "type": "wall",
+                "thickness": 0.13,
+                "openings": [
+                  {
+                    "id": "9pancsfb3z60xbekxfir6zqfc",
+                    "type": "opening",
+                    "width": 0.8661387442311089,
+                    "height": 2.0352553129196167,
+                    "lowerElevation": 0.00988471508026123,
+                    "relativeCenter": 0.6655116205167029
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 4.369342527161159,
+                      "y": -3.88346130727449
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 2.5504427322031074,
+                      "y": -3.8862243346758256
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "holes": []
+        },
+        {
+          "id": "tt6gm2a0463x9wmnx7rn6gugc",
+          "tags": [
+            "closet"
+          ],
+          "floor": {
+            "id": "tsmq1wak12rhgn0mawksxcwcd",
+            "sequence": 0,
+            "label": "Floor 1"
+          },
+          "dimensions": {
+            "units": "imperial"
+          },
+          "dimensionEstimates": {
+            "height": 8.989501631288528,
+            "lowerElevation": -0.0164042,
+            "units": "imperial"
+          },
+          "boundary": {
+            "edges": [
+              {
+                "id": "i338igku71q095mi3kw6b1wsd",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 0.9384713259305485,
+                      "y": -3.0031113267968625
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.9397784289945531,
+                      "y": -3.888658765945981
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "3np8ybd5tii27wx7wybb031td",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [
+                  {
+                    "id": "m1txs2grx3hentu9e190a33ia",
+                    "type": "opening",
+                    "width": 0.8607978698358477,
+                    "height": 2.078000068664551,
+                    "lowerElevation": -0.01100003719329834,
+                    "relativeCenter": 0.5059107291973114
+                  }
+                ],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 2.5476404257977947,
+                      "y": -2.0319317419113627
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 2.5504427322031074,
+                      "y": -3.8862243346758256
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "k7spbbu5ydr8wf0itg2ami1na",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 1.666271550166559,
+                      "y": -2.033261300817219
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 1.6677223132101953,
+                      "y": -3.0020290434686587
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "b8qf8qm6xztdafm5mrwwbu47c",
+                "type": "wall",
+                "thickness": 0.13,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 2.5504427322031074,
+                      "y": -3.8862243346758256
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 0.9397784289945531,
+                      "y": -3.888658765945981
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "chkah241kcf6xc66szyren78c",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 2.5476404257977947,
+                      "y": -2.0319317419113627
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 1.666271550166559,
+                      "y": -2.033261300817219
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "2h6k887wdz5a663bc5hddch1b",
+                "type": "wall",
+                "thickness": 0.12,
+                "openings": [],
+                "vertices": [
+                  {
+                    "position": {
+                      "x": 0.9384713259305485,
+                      "y": -3.0031113267968625
+                    }
+                  },
+                  {
+                    "position": {
+                      "x": 1.6677223132101953,
+                      "y": -3.0020290434686587
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "holes": []
+        }
+      ]
+    }
+  }
+}

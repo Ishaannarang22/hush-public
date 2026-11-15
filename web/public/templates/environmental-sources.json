@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "modelId": "zzvymDx5ty7",
+  "coordinateSystem": "local-meters-y-up",
+  "blocks": {
+    "overnight": [],
+    "morning_rush": [],
+    "midday": [],
+    "evening_rush": [],
+    "evening": []
+  },
+  "omitted": [
+    "External traffic, construction, rail, aircraft and mechanical inputs are pending."
+  ]
+}

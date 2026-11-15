@@ -1,0 +1,43 @@
+{
+  "property_id": "2125-yale-unit-205",
+  "roads": [
+    {
+      "id": "yale-st",
+      "name": "Yale St",
+      "road_class": "arterial",
+      "road_class_source": "TxDOT 2020 Roadway Inventory F_SYSTEM 4 (minor arterial) for Yale St, quoted in R7 Values; R9 arterial hourly table",
+      "aadt": 21301,
+      "aadt_year": 2016,
+      "medium_trucks_per_day": 383,
+      "heavy_trucks_per_day": 298,
+      "speed_kmh": 48.28,
+      "ground": null,
+      "status": "placeholder",
+      "source": "R7 Values (TxDOT 2020 Roadway Inventory, Yale St LS0000 KG): AADT 21,301 counted in 2016, AADT_SINGLE_UNIT 383 (medium trucks, R7 E7), AADT_COMBINATION 298 (heavy trucks), SPD_MAX 30 mph = 48.28 km/h. R7 uses these for the demo unit and reports 63.3 dBA at 15 m (RD-77-108 REMELs; 63.0 with TNM REMELs). Marked placeholder because the count is older than 2020 (R7 conflict 5); no 2025 TxDOT station value for Yale St is in the research. Ground type not recorded: the model default (soft) applies.",
+      "geometry": [[-95.399277, 29.8031], [-95.399277, 29.8059], [-95.399277, 29.8086]],
+      "geometry_source": "Not the TxDOT linework (no research file records its coordinates). A straight north-south line: the Vexcel footprint's east edge runs due north-south (R5 worked example) and Yale St runs along it. Placed 15 m east of the street wall (footprint east edge at -95.399432), because R7 conflict 6 puts the TxDOT centreline within about 15 m of that wall and the model clamps D to 15 m anyway. Extent 29.8031 to 29.8086 covers the 300 m search radius either side of the unit.",
+      "which_side_faces_the_road": "East. (1) The Vexcel footprint's north-east edge, at the unit's corner, runs due north-south, the direction of Yale St, and faces east (azimuth 90, R5 worked example). (2) R5 and R10 put the unit at the block's north-east corner, and R10 found its windowed facades face north and east. (3) R7: the BTS road pixel at the unit reads 52.3 dBA and the pixel east of it, 'across the road line', 55.7, so the road line passes east of the unit. So the east windows (living-e-glazing, living-e-balcony, bed2-e) face Yale St and the north windows (bed1-n, living-n-glazing) are side walls. If Matterport north is off by 90 or 180 degrees (R10), change north_offset_deg in property.yale.json."
+    }
+  ],
+  "roads_note": "No other counted road within 300 m is named in R7 or R1. R7's other counted roads are N Durham Dr (TxDOT station 102U556, about 1.25 km west) and Shepherd Dr (about 1.1 km west), both outside 300 m. R7 mentions the local streets W 18th to W 24th St only as rows with default truck values and gives no counts for them.",
+  "flights": [],
+  "flights_note": "Left empty. R8 has real tracks only for one day (2026-10-01, ADS-B Exchange sample, licensed for testing and evaluation only) evaluated at four points near IAH and HOU; none is usable for this location.",
+  "construction": [],
+  "construction_note": "No research file names an active construction site near 2125 Yale St.",
+  "rail": [],
+  "rail_note": "No rail line or decoded BTS rail pixel for this location is in the research.",
+  "barriers": [],
+  "barriers_note": "None recorded. The Vexcel sample gives the block footprint and one commercial neighbour (feature 1), but no wall or building stands between the east facade and Yale St.",
+  "building_rows": null,
+  "building_rows_note": "The unit is on the street front, so no row of buildings lies between it and Yale St.",
+  "tree_cover": {
+    "fraction": 0.04,
+    "source": "Vexcel parcel-tree-cover.percent = 4 (samples/vexcel_property_extract_2125_yale.json; R5). Placeholder use per assumptions propagation.foliage.tree_cover_input. With the road 15 m away the tree path is 0.6 m, so the foliage loss is 0 dB."
+  },
+  "outdoor_levels_dba": {
+    "road": 52.3,
+    "rail": null,
+    "aviation": null,
+    "source": "BTS 2020 road layer at the demo unit pixel (29.8058666, -95.3993738), decoded by R7: 52.3 dBA LAeq,24h (the pixel east of it, across the road line, reads 55.7). Reported as a check only, because the road is computed from traffic counts (docs/BUILD_BRIEF.md section 4; R7 found the map about 11 dB low here). Rail and aviation: no BTS pixel at this location was decoded in any research file (R1 decoded City Hall and south of Hobby only), so they are null and the model treats those modes as absent."
+  }
+}

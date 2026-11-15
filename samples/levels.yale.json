@@ -1,0 +1,1773 @@
+{
+  "property_id": "2125-yale-unit-205",
+  "model_version": "0.2.0",
+  "era": "2000_on",
+  "rooms": [
+    {
+      "id": "living",
+      "name": "Living, kitchen and dining",
+      "type": "living",
+      "solved_with": [],
+      "range_db": 3,
+      "blocks": {
+        "overnight": {
+          "dba": 35.19,
+          "range_dba": [
+            32.19,
+            38.19
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 35.19
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "living-e-glazing",
+            "source": "road",
+            "share": 0.439
+          }
+        },
+        "morning_rush": {
+          "dba": 41.33,
+          "range_dba": [
+            38.33,
+            44.33
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 41.33
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "living-e-glazing",
+            "source": "road",
+            "share": 0.439
+          }
+        },
+        "midday": {
+          "dba": 42.48,
+          "range_dba": [
+            39.48,
+            45.48
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 42.48
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "living-e-glazing",
+            "source": "road",
+            "share": 0.439
+          }
+        },
+        "evening_rush": {
+          "dba": 42.11,
+          "range_dba": [
+            39.11,
+            45.11
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 42.11
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "living-e-glazing",
+            "source": "road",
+            "share": 0.439
+          }
+        },
+        "evening": {
+          "dba": 38.79,
+          "range_dba": [
+            35.79,
+            41.79
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 38.79
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "living-e-glazing",
+            "source": "road",
+            "share": 0.439
+          }
+        }
+      },
+      "l24_dba": 40.6,
+      "dnl_dba": 44.41,
+      "exceeds_hud_45": false,
+      "night_dba": 35.19,
+      "exceeds_who_30_night": true,
+      "paths_24h": {
+        "living-e-glazing:window": 0.4392,
+        "living-e-balcony:window": 0.2217,
+        "living-n-glazing:window": 0.1742,
+        "living-s-balcony:door": 0.0704,
+        "from:corridor": 0.0316,
+        "living-e-balcony:leak": 0.0126,
+        "living-e-glazing:leak": 0.0111,
+        "living-s-balcony:window": 0.0102,
+        "living-e-balcony:wall": 0.0098,
+        "living-n-glazing:leak": 0.0051,
+        "living-n-nook:wall": 0.0046,
+        "living-e-step:wall": 0.0028,
+        "living-s-balcony:leak": 0.002,
+        "living-n-glazing:wall": 0.0013,
+        "from:bed2": 0.0012,
+        "living-s-balcony:wall": 0.001,
+        "living-e-glazing:wall": 0.0009,
+        "from:bed1": 0.0004,
+        "from:bath_b": 0.0,
+        "from:closet_a": 0.0
+      },
+      "sources_24h": {
+        "road": 1.0
+      },
+      "fix": {
+        "action": "replace_window",
+        "target": "living-n-glazing, living-e-glazing, living-s-balcony, living-e-balcony",
+        "delta_db": -7.67,
+        "text": "Fit the windows on living-n-glazing, living-e-glazing, living-s-balcony, living-e-balcony with laminated acoustic glass (OITC 35) and new seals"
+      }
+    },
+    {
+      "id": "bed1",
+      "name": "Bedroom 1",
+      "type": "bedroom",
+      "solved_with": [],
+      "range_db": 3,
+      "blocks": {
+        "overnight": {
+          "dba": 29.05,
+          "range_dba": [
+            26.05,
+            32.05
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 29.05
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "bed1-n",
+            "source": "road",
+            "share": 0.8
+          }
+        },
+        "morning_rush": {
+          "dba": 35.2,
+          "range_dba": [
+            32.2,
+            38.2
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 35.2
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "bed1-n",
+            "source": "road",
+            "share": 0.8
+          }
+        },
+        "midday": {
+          "dba": 36.34,
+          "range_dba": [
+            33.34,
+            39.34
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 36.34
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "bed1-n",
+            "source": "road",
+            "share": 0.8
+          }
+        },
+        "evening_rush": {
+          "dba": 35.98,
+          "range_dba": [
+            32.98,
+            38.98
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 35.98
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "bed1-n",
+            "source": "road",
+            "share": 0.8
+          }
+        },
+        "evening": {
+          "dba": 32.66,
+          "range_dba": [
+            29.66,
+            35.66
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 32.66
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "bed1-n",
+            "source": "road",
+            "share": 0.8
+          }
+        }
+      },
+      "l24_dba": 34.47,
+      "dnl_dba": 38.27,
+      "exceeds_hud_45": false,
+      "night_dba": 29.05,
+      "exceeds_who_30_night": false,
+      "paths_24h": {
+        "bed1-n:window": 0.8001,
+        "bed1-n:leak": 0.0743,
+        "bed1-n:wall": 0.0735,
+        "from:closet_b": 0.0359,
+        "from:living": 0.0162,
+        "from:bath_a": 0.0
+      },
+      "sources_24h": {
+        "road": 1.0
+      },
+      "fix": {
+        "action": "replace_window",
+        "target": "bed1-n",
+        "delta_db": -6.74,
+        "text": "Fit the windows on bed1-n with laminated acoustic glass (OITC 35) and new seals"
+      }
+    },
+    {
+      "id": "bed2",
+      "name": "Bedroom 2",
+      "type": "bedroom",
+      "solved_with": [],
+      "range_db": 3,
+      "blocks": {
+        "overnight": {
+          "dba": 33.35,
+          "range_dba": [
+            30.35,
+            36.35
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 33.35
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "bed2-e",
+            "source": "road",
+            "share": 0.878
+          }
+        },
+        "morning_rush": {
+          "dba": 39.49,
+          "range_dba": [
+            36.49,
+            42.49
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 39.49
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "bed2-e",
+            "source": "road",
+            "share": 0.878
+          }
+        },
+        "midday": {
+          "dba": 40.64,
+          "range_dba": [
+            37.64,
+            43.64
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 40.64
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "bed2-e",
+            "source": "road",
+            "share": 0.878
+          }
+        },
+        "evening_rush": {
+          "dba": 40.27,
+          "range_dba": [
+            37.27,
+            43.27
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 40.27
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "bed2-e",
+            "source": "road",
+            "share": 0.878
+          }
+        },
+        "evening": {
+          "dba": 36.95,
+          "range_dba": [
+            33.95,
+            39.95
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 36.95
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "window glass",
+            "wall": "bed2-e",
+            "source": "road",
+            "share": 0.878
+          }
+        }
+      },
+      "l24_dba": 38.76,
+      "dnl_dba": 42.56,
+      "exceeds_hud_45": false,
+      "night_dba": 33.35,
+      "exceeds_who_30_night": true,
+      "paths_24h": {
+        "bed2-e:window": 0.8779,
+        "bed2-e:leak": 0.0605,
+        "bed2-e:wall": 0.0527,
+        "from:living": 0.0089,
+        "from:bath_b": 0.0
+      },
+      "sources_24h": {
+        "road": 1.0
+      },
+      "fix": {
+        "action": "replace_window",
+        "target": "bed2-e",
+        "delta_db": -7.8,
+        "text": "Fit the windows on bed2-e with laminated acoustic glass (OITC 35) and new seals"
+      }
+    },
+    {
+      "id": "corridor",
+      "name": "Corridor",
+      "type": "corridor",
+      "solved_with": [],
+      "range_db": 5,
+      "blocks": {
+        "overnight": {
+          "dba": 30.67,
+          "range_dba": [
+            25.67,
+            35.67
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 30.67
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 1.0
+          }
+        },
+        "morning_rush": {
+          "dba": 36.81,
+          "range_dba": [
+            31.81,
+            41.81
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 36.81
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 1.0
+          }
+        },
+        "midday": {
+          "dba": 37.96,
+          "range_dba": [
+            32.96,
+            42.96
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 37.96
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 1.0
+          }
+        },
+        "evening_rush": {
+          "dba": 37.6,
+          "range_dba": [
+            32.6,
+            42.6
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 37.6
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 1.0
+          }
+        },
+        "evening": {
+          "dba": 34.28,
+          "range_dba": [
+            29.28,
+            39.28
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 34.28
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 1.0
+          }
+        }
+      },
+      "l24_dba": 36.08,
+      "dnl_dba": 39.89,
+      "exceeds_hud_45": false,
+      "night_dba": 30.67,
+      "exceeds_who_30_night": true,
+      "paths_24h": {
+        "from:living": 0.9999,
+        "from:bath_a": 0.0001,
+        "from:closet_a": 0.0
+      },
+      "sources_24h": {
+        "road": 1.0
+      },
+      "fix": null
+    },
+    {
+      "id": "bath_a",
+      "name": "Bathroom A",
+      "type": "bathroom",
+      "solved_with": [],
+      "range_db": 5,
+      "blocks": {
+        "overnight": {
+          "dba": null,
+          "range_dba": null,
+          "below_15_dba": true,
+          "by_source": {
+            "road": null
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from corridor",
+            "wall": null,
+            "source": "road",
+            "share": 0.761
+          }
+        },
+        "morning_rush": {
+          "dba": 17.86,
+          "range_dba": [
+            12.86,
+            22.86
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 17.86
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from corridor",
+            "wall": null,
+            "source": "road",
+            "share": 0.761
+          }
+        },
+        "midday": {
+          "dba": 19.0,
+          "range_dba": [
+            14.0,
+            24.0
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 19.0
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from corridor",
+            "wall": null,
+            "source": "road",
+            "share": 0.761
+          }
+        },
+        "evening_rush": {
+          "dba": 18.64,
+          "range_dba": [
+            13.64,
+            23.64
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 18.64
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from corridor",
+            "wall": null,
+            "source": "road",
+            "share": 0.761
+          }
+        },
+        "evening": {
+          "dba": 15.32,
+          "range_dba": [
+            10.32,
+            20.32
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 15.32
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from corridor",
+            "wall": null,
+            "source": "road",
+            "share": 0.761
+          }
+        }
+      },
+      "l24_dba": 17.13,
+      "dnl_dba": 20.93,
+      "exceeds_hud_45": false,
+      "night_dba": null,
+      "exceeds_who_30_night": false,
+      "paths_24h": {
+        "from:corridor": 0.761,
+        "from:bed1": 0.1846,
+        "from:closet_b": 0.0544
+      },
+      "sources_24h": {
+        "road": 1.0
+      },
+      "fix": {
+        "action": "door_sweep",
+        "target": "p-corridor-bath_a",
+        "delta_db": -0.55,
+        "text": "Add a sweep to the interior door on p-corridor-bath_a (no undercut gap)"
+      }
+    },
+    {
+      "id": "bath_b",
+      "name": "Bathroom B",
+      "type": "bathroom",
+      "solved_with": [],
+      "range_db": 5,
+      "blocks": {
+        "overnight": {
+          "dba": 15.95,
+          "range_dba": [
+            10.95,
+            20.95
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 15.95
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 0.828
+          }
+        },
+        "morning_rush": {
+          "dba": 22.09,
+          "range_dba": [
+            17.09,
+            27.09
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 22.09
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 0.828
+          }
+        },
+        "midday": {
+          "dba": 23.24,
+          "range_dba": [
+            18.24,
+            28.24
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 23.24
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 0.828
+          }
+        },
+        "evening_rush": {
+          "dba": 22.87,
+          "range_dba": [
+            17.87,
+            27.87
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 22.87
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 0.828
+          }
+        },
+        "evening": {
+          "dba": 19.55,
+          "range_dba": [
+            14.55,
+            24.55
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 19.55
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 0.828
+          }
+        }
+      },
+      "l24_dba": 21.36,
+      "dnl_dba": 25.17,
+      "exceeds_hud_45": false,
+      "night_dba": 15.95,
+      "exceeds_who_30_night": false,
+      "paths_24h": {
+        "from:living": 0.8276,
+        "from:bed2": 0.1723,
+        "from:closet_bath": 0.0002
+      },
+      "sources_24h": {
+        "road": 1.0
+      },
+      "fix": {
+        "action": "door_sweep",
+        "target": "p-living-bath_b, p-bath_b-closet_bath",
+        "delta_db": -0.64,
+        "text": "Add a sweep to the interior door on p-living-bath_b, p-bath_b-closet_bath (no undercut gap)"
+      }
+    },
+    {
+      "id": "closet_bath",
+      "name": "Closet off bathroom B",
+      "type": "closet",
+      "solved_with": [],
+      "range_db": 5,
+      "blocks": {
+        "overnight": {
+          "dba": null,
+          "range_dba": null,
+          "below_15_dba": true,
+          "by_source": {
+            "road": null
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from bath_b",
+            "wall": null,
+            "source": "road",
+            "share": 1.0
+          }
+        },
+        "morning_rush": {
+          "dba": null,
+          "range_dba": null,
+          "below_15_dba": true,
+          "by_source": {
+            "road": null
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from bath_b",
+            "wall": null,
+            "source": "road",
+            "share": 1.0
+          }
+        },
+        "midday": {
+          "dba": null,
+          "range_dba": null,
+          "below_15_dba": true,
+          "by_source": {
+            "road": null
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from bath_b",
+            "wall": null,
+            "source": "road",
+            "share": 1.0
+          }
+        },
+        "evening_rush": {
+          "dba": null,
+          "range_dba": null,
+          "below_15_dba": true,
+          "by_source": {
+            "road": null
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from bath_b",
+            "wall": null,
+            "source": "road",
+            "share": 1.0
+          }
+        },
+        "evening": {
+          "dba": null,
+          "range_dba": null,
+          "below_15_dba": true,
+          "by_source": {
+            "road": null
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from bath_b",
+            "wall": null,
+            "source": "road",
+            "share": 1.0
+          }
+        }
+      },
+      "l24_dba": null,
+      "dnl_dba": null,
+      "exceeds_hud_45": false,
+      "night_dba": null,
+      "exceeds_who_30_night": false,
+      "paths_24h": {
+        "from:bath_b": 1.0
+      },
+      "sources_24h": {
+        "road": 1.0
+      },
+      "fix": {
+        "action": "door_sweep",
+        "target": "p-bath_b-closet_bath",
+        "delta_db": -0.79,
+        "text": "Add a sweep to the interior door on p-bath_b-closet_bath (no undercut gap)"
+      }
+    },
+    {
+      "id": "closet_a",
+      "name": "Closet A",
+      "type": "closet",
+      "solved_with": [],
+      "range_db": 5,
+      "blocks": {
+        "overnight": {
+          "dba": 15.4,
+          "range_dba": [
+            10.4,
+            20.4
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 15.4
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 0.861
+          }
+        },
+        "morning_rush": {
+          "dba": 21.54,
+          "range_dba": [
+            16.54,
+            26.54
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 21.54
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 0.861
+          }
+        },
+        "midday": {
+          "dba": 22.69,
+          "range_dba": [
+            17.69,
+            27.69
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 22.69
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 0.861
+          }
+        },
+        "evening_rush": {
+          "dba": 22.33,
+          "range_dba": [
+            17.33,
+            27.33
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 22.33
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 0.861
+          }
+        },
+        "evening": {
+          "dba": 19.01,
+          "range_dba": [
+            14.01,
+            24.01
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 19.01
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from living",
+            "wall": null,
+            "source": "road",
+            "share": 0.861
+          }
+        }
+      },
+      "l24_dba": 20.81,
+      "dnl_dba": 24.62,
+      "exceeds_hud_45": false,
+      "night_dba": 15.4,
+      "exceeds_who_30_night": false,
+      "paths_24h": {
+        "from:living": 0.8611,
+        "from:corridor": 0.0809,
+        "from:closet_b": 0.058
+      },
+      "sources_24h": {
+        "road": 1.0
+      },
+      "fix": null
+    },
+    {
+      "id": "closet_b",
+      "name": "Closet B",
+      "type": "closet",
+      "solved_with": [],
+      "range_db": 5,
+      "blocks": {
+        "overnight": {
+          "dba": 25.54,
+          "range_dba": [
+            20.54,
+            30.54
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 25.54
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from bed1",
+            "wall": null,
+            "source": "road",
+            "share": 0.999
+          }
+        },
+        "morning_rush": {
+          "dba": 31.68,
+          "range_dba": [
+            26.68,
+            36.68
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 31.68
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from bed1",
+            "wall": null,
+            "source": "road",
+            "share": 0.999
+          }
+        },
+        "midday": {
+          "dba": 32.83,
+          "range_dba": [
+            27.83,
+            37.83
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 32.83
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from bed1",
+            "wall": null,
+            "source": "road",
+            "share": 0.999
+          }
+        },
+        "evening_rush": {
+          "dba": 32.47,
+          "range_dba": [
+            27.47,
+            37.47
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 32.47
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from bed1",
+            "wall": null,
+            "source": "road",
+            "share": 0.999
+          }
+        },
+        "evening": {
+          "dba": 29.15,
+          "range_dba": [
+            24.15,
+            34.15
+          ],
+          "below_15_dba": false,
+          "by_source": {
+            "road": 29.15
+          },
+          "peak_dba": null,
+          "dominant": {
+            "path": "from bed1",
+            "wall": null,
+            "source": "road",
+            "share": 0.999
+          }
+        }
+      },
+      "l24_dba": 30.96,
+      "dnl_dba": 34.76,
+      "exceeds_hud_45": false,
+      "night_dba": 25.54,
+      "exceeds_who_30_night": false,
+      "paths_24h": {
+        "from:bed1": 0.9994,
+        "from:closet_a": 0.0004,
+        "from:bath_a": 0.0002
+      },
+      "sources_24h": {
+        "road": 1.0
+      },
+      "fix": null
+    }
+  ],
+  "outdoor": [
+    {
+      "wall": "living-n-nook",
+      "room": "living",
+      "azimuth_deg": 358.0,
+      "blocks": {
+        "overnight": {
+          "by_source": {
+            "road": 54.45
+          }
+        },
+        "morning_rush": {
+          "by_source": {
+            "road": 60.59
+          }
+        },
+        "midday": {
+          "by_source": {
+            "road": 61.74
+          }
+        },
+        "evening_rush": {
+          "by_source": {
+            "road": 61.38
+          }
+        },
+        "evening": {
+          "by_source": {
+            "road": 58.06
+          }
+        }
+      },
+      "shielded_source": "road",
+      "alpha_deg": 92.0,
+      "source_distance_m": 15.0,
+      "orientation_loss_db": 3.11,
+      "barrier_loss_db": 0.0,
+      "foliage_loss_db": 0.0,
+      "rows_loss_db": 0.0,
+      "total_shielding_db": 3.11
+    },
+    {
+      "wall": "living-e-step",
+      "room": "living",
+      "azimuth_deg": 88.0,
+      "blocks": {
+        "overnight": {
+          "by_source": {
+            "road": 57.51
+          }
+        },
+        "morning_rush": {
+          "by_source": {
+            "road": 63.65
+          }
+        },
+        "midday": {
+          "by_source": {
+            "road": 64.8
+          }
+        },
+        "evening_rush": {
+          "by_source": {
+            "road": 64.44
+          }
+        },
+        "evening": {
+          "by_source": {
+            "road": 61.12
+          }
+        }
+      },
+      "shielded_source": "road",
+      "alpha_deg": 2.0,
+      "source_distance_m": 15.0,
+      "orientation_loss_db": 0.05,
+      "barrier_loss_db": 0.0,
+      "foliage_loss_db": 0.0,
+      "rows_loss_db": 0.0,
+      "total_shielding_db": 0.05
+    },
+    {
+      "wall": "living-n-glazing",
+      "room": "living",
+      "azimuth_deg": 358.0,
+      "blocks": {
+        "overnight": {
+          "by_source": {
+            "road": 54.45
+          }
+        },
+        "morning_rush": {
+          "by_source": {
+            "road": 60.59
+          }
+        },
+        "midday": {
+          "by_source": {
+            "road": 61.74
+          }
+        },
+        "evening_rush": {
+          "by_source": {
+            "road": 61.38
+          }
+        },
+        "evening": {
+          "by_source": {
+            "road": 58.06
+          }
+        }
+      },
+      "shielded_source": "road",
+      "alpha_deg": 92.0,
+      "source_distance_m": 15.0,
+      "orientation_loss_db": 3.11,
+      "barrier_loss_db": 0.0,
+      "foliage_loss_db": 0.0,
+      "rows_loss_db": 0.0,
+      "total_shielding_db": 3.11
+    },
+    {
+      "wall": "living-e-glazing",
+      "room": "living",
+      "azimuth_deg": 88.0,
+      "blocks": {
+        "overnight": {
+          "by_source": {
+            "road": 57.51
+          }
+        },
+        "morning_rush": {
+          "by_source": {
+            "road": 63.65
+          }
+        },
+        "midday": {
+          "by_source": {
+            "road": 64.8
+          }
+        },
+        "evening_rush": {
+          "by_source": {
+            "road": 64.44
+          }
+        },
+        "evening": {
+          "by_source": {
+            "road": 61.12
+          }
+        }
+      },
+      "shielded_source": "road",
+      "alpha_deg": 2.0,
+      "source_distance_m": 15.0,
+      "orientation_loss_db": 0.05,
+      "barrier_loss_db": 0.0,
+      "foliage_loss_db": 0.0,
+      "rows_loss_db": 0.0,
+      "total_shielding_db": 0.05
+    },
+    {
+      "wall": "living-s-balcony",
+      "room": "living",
+      "azimuth_deg": 178.0,
+      "blocks": {
+        "overnight": {
+          "by_source": {
+            "road": 54.65
+          }
+        },
+        "morning_rush": {
+          "by_source": {
+            "road": 60.79
+          }
+        },
+        "midday": {
+          "by_source": {
+            "road": 61.94
+          }
+        },
+        "evening_rush": {
+          "by_source": {
+            "road": 61.57
+          }
+        },
+        "evening": {
+          "by_source": {
+            "road": 58.25
+          }
+        }
+      },
+      "shielded_source": "road",
+      "alpha_deg": 88.0,
+      "source_distance_m": 15.0,
+      "orientation_loss_db": 2.91,
+      "barrier_loss_db": 0.0,
+      "foliage_loss_db": 0.0,
+      "rows_loss_db": 0.0,
+      "total_shielding_db": 2.91
+    },
+    {
+      "wall": "living-e-balcony",
+      "room": "living",
+      "azimuth_deg": 88.0,
+      "blocks": {
+        "overnight": {
+          "by_source": {
+            "road": 57.51
+          }
+        },
+        "morning_rush": {
+          "by_source": {
+            "road": 63.65
+          }
+        },
+        "midday": {
+          "by_source": {
+            "road": 64.8
+          }
+        },
+        "evening_rush": {
+          "by_source": {
+            "road": 64.44
+          }
+        },
+        "evening": {
+          "by_source": {
+            "road": 61.12
+          }
+        }
+      },
+      "shielded_source": "road",
+      "alpha_deg": 2.0,
+      "source_distance_m": 15.0,
+      "orientation_loss_db": 0.05,
+      "barrier_loss_db": 0.0,
+      "foliage_loss_db": 0.0,
+      "rows_loss_db": 0.0,
+      "total_shielding_db": 0.05
+    },
+    {
+      "wall": "bed1-n",
+      "room": "bed1",
+      "azimuth_deg": 358.0,
+      "blocks": {
+        "overnight": {
+          "by_source": {
+            "road": 54.45
+          }
+        },
+        "morning_rush": {
+          "by_source": {
+            "road": 60.59
+          }
+        },
+        "midday": {
+          "by_source": {
+            "road": 61.74
+          }
+        },
+        "evening_rush": {
+          "by_source": {
+            "road": 61.38
+          }
+        },
+        "evening": {
+          "by_source": {
+            "road": 58.06
+          }
+        }
+      },
+      "shielded_source": "road",
+      "alpha_deg": 92.0,
+      "source_distance_m": 15.0,
+      "orientation_loss_db": 3.11,
+      "barrier_loss_db": 0.0,
+      "foliage_loss_db": 0.0,
+      "rows_loss_db": 0.0,
+      "total_shielding_db": 3.11
+    },
+    {
+      "wall": "bed2-e",
+      "room": "bed2",
+      "azimuth_deg": 88.0,
+      "blocks": {
+        "overnight": {
+          "by_source": {
+            "road": 57.51
+          }
+        },
+        "morning_rush": {
+          "by_source": {
+            "road": 63.65
+          }
+        },
+        "midday": {
+          "by_source": {
+            "road": 64.8
+          }
+        },
+        "evening_rush": {
+          "by_source": {
+            "road": 64.44
+          }
+        },
+        "evening": {
+          "by_source": {
+            "road": 61.12
+          }
+        }
+      },
+      "shielded_source": "road",
+      "alpha_deg": 2.0,
+      "source_distance_m": 15.0,
+      "orientation_loss_db": 0.05,
+      "barrier_loss_db": 0.0,
+      "foliage_loss_db": 0.0,
+      "rows_loss_db": 0.0,
+      "total_shielding_db": 0.05
+    }
+  ],
+  "outdoor_free_field": {
+    "road": {
+      "blocks": {
+        "overnight": 57.56,
+        "morning_rush": 63.7,
+        "midday": 64.85,
+        "evening_rush": 64.49,
+        "evening": 61.17
+      },
+      "l24_dba": 62.97,
+      "dnl_dba": 66.78
+    }
+  },
+  "checks": {
+    "road_detailed_l24_dba": 62.97,
+    "road_bts_dba": 52.3,
+    "road_detailed_minus_bts_db": 10.67
+  },
+  "assumptions_used": {
+    "inputs": [
+      {
+        "input": "era",
+        "value": "2000_on",
+        "source": "docs/BUILD_BRIEF.md section 5: year built unknown (CoStar not reachable, R5); use the 2000 onward defaults"
+      },
+      {
+        "input": "unit_floor",
+        "value": 2,
+        "source": "Unit number 205 in the Matterport description, read as second floor. Not measured. Means: not the top floor (no roof exposure) and the 2000-onward upper-floor wall type applies."
+      },
+      {
+        "input": "door type of living-s-balcony",
+        "value": "sliding_glass",
+        "source": "R10 table 1: south wall onto the balcony, 1.22 x 2.87 m; full-lite glazed door 0.90 x 2.03 m plus transom window 0.85 x 0.49 m. Door rating: the only glass-door rating in assumptions.yaml (sliding glass, EWR 20); the door's own type was not measured"
+      },
+      {
+        "input": "door on p-living-bed1",
+        "value": "closed",
+        "source": "R10 table 4 (adjacency.py: 3.65 m x 2.87 m). Door: not measured (R10); one hollow-core door of the default size, closed, from bedroom 1 onto the living area (docs/BUILD_BRIEF.md section 5; colour plan)"
+      },
+      {
+        "input": "door on p-living-bed2-return",
+        "value": "closed",
+        "source": "R10 table 4 ('return near its door', 1.10 m x 2.86 m). Door: one hollow-core door of the default size, closed, from bedroom 2 onto the living area (docs/BUILD_BRIEF.md section 5)"
+      },
+      {
+        "input": "door on p-living-bath_b",
+        "value": "closed",
+        "source": "R10 table 4 (1.95 m x 2.52 m). Door: one hollow-core door of the default size, closed, from bathroom B onto the living area (docs/BUILD_BRIEF.md section 5; colour plan)"
+      },
+      {
+        "input": "door on p-corridor-bath_a",
+        "value": "closed",
+        "source": "R10 table 4 (2.35 m x 2.52 m, 0.85 m doorway gap seen in the mesh). Door: one hollow-core door of the default size, closed (docs/BUILD_BRIEF.md section 5)"
+      },
+      {
+        "input": "door on p-bath_b-closet_bath",
+        "value": "closed",
+        "source": "R10 table 4 (1.95 m x 2.52 m). The 4.04 m2 room is tagged closet and bathroom; it opens onto bathroom B on the colour plan. Door: one hollow-core door of the default size, closed (docs/BUILD_BRIEF.md section 5)"
+      },
+      {
+        "input": "door on p-bed1-closet_b",
+        "value": "opening",
+        "source": "R10 table 4: open doorway from bedroom 1 into the 2.14 m2 closet (colour plan). Size not measured: the default door area (partitions.door_area)"
+      },
+      {
+        "input": "traffic count of Yale St (placeholder)",
+        "value": 21301,
+        "source": "R7 Values (TxDOT 2020 Roadway Inventory, Yale St LS0000 KG): AADT 21,301 counted in 2016, AADT_SINGLE_UNIT 383 (medium trucks, R7 E7), AADT_COMBINATION 298 (heavy trucks), SPD_MAX 30 mph = 48.28 km/h"
+      }
+    ],
+    "values": {
+      "doors_exterior.default": {
+        "value": "hollow_core",
+        "status": "placeholder"
+      },
+      "doors_exterior.sliding_glass": {
+        "value": 20,
+        "status": "sourced"
+      },
+      "era_defaults.2000_on": {
+        "value": {
+          "wall": "brick_veneer",
+          "window": "double_pane_2000_on",
+          "leak": "2000_on",
+          "upper_floor_wall": "fiber_cement_upper_floor"
+        },
+        "status": "placeholder"
+      },
+      "facade.incidence_constant": {
+        "value": 3,
+        "status": "derived"
+      },
+      "facade.leak_area_cap_fraction": {
+        "value": 0.15,
+        "status": "placeholder"
+      },
+      "facade.windows_open_reduction": {
+        "value": 12,
+        "status": "sourced"
+      },
+      "leak_fraction.2000_on": {
+        "value": 0.001,
+        "status": "calibrated"
+      },
+      "leak_fraction.fixed_glazing": {
+        "value": 0.001,
+        "status": "placeholder"
+      },
+      "outdoor.bts.receptor_height": {
+        "value": 1.5,
+        "status": "sourced"
+      },
+      "partitions.default_door": {
+        "value": "door_hollow_core",
+        "status": "placeholder"
+      },
+      "partitions.default_wall": {
+        "value": "stud_wall",
+        "status": "placeholder"
+      },
+      "partitions.derating.door_leaf": {
+        "value": 5,
+        "status": "placeholder"
+      },
+      "partitions.derating.stud_wall": {
+        "value": 8,
+        "status": "sourced"
+      },
+      "partitions.door_area": {
+        "value": 1.6,
+        "status": "placeholder"
+      },
+      "partitions.door_hollow_core": {
+        "value": 21,
+        "status": "sourced"
+      },
+      "partitions.door_undercut_height": {
+        "value": 0.0127,
+        "status": "sourced"
+      },
+      "partitions.door_width": {
+        "value": 0.81,
+        "status": "placeholder"
+      },
+      "partitions.gap_and_open_door_r": {
+        "value": 0,
+        "status": "sourced"
+      },
+      "partitions.stud_wall": {
+        "value": 33,
+        "status": "sourced"
+      },
+      "propagation.barrier.plus_foliage_cap": {
+        "value": 20,
+        "status": "placeholder"
+      },
+      "propagation.building_rows.trees_plus_rows_cap": {
+        "value": 10,
+        "status": "sourced"
+      },
+      "propagation.foliage.max_tree_path_from_road": {
+        "value": 61,
+        "status": "placeholder"
+      },
+      "propagation.foliage.min_path": {
+        "value": 10,
+        "status": "sourced"
+      },
+      "propagation.foliage.tree_cover_input": {
+        "value": "Vexcel parcel-tree-cover.percent / 100 as the cover fraction along the whole path",
+        "status": "placeholder"
+      },
+      "propagation.orientation.back_wall_loss": {
+        "value": 10,
+        "status": "placeholder"
+      },
+      "propagation.shielding_total_cap": {
+        "value": 25,
+        "status": "placeholder"
+      },
+      "reporting.hud_interior_dnl": {
+        "value": 45,
+        "status": "sourced"
+      },
+      "reporting.plausible_output_range": {
+        "value": [
+          15,
+          100
+        ],
+        "status": "placeholder"
+      },
+      "reporting.range_default": {
+        "value": 5,
+        "status": "placeholder"
+      },
+      "reporting.range_measured_windows": {
+        "value": 3,
+        "status": "placeholder"
+      },
+      "reporting.who_bedroom_lamax": {
+        "value": 45,
+        "status": "sourced"
+      },
+      "reporting.who_bedroom_night": {
+        "value": 30,
+        "status": "sourced"
+      },
+      "road.alpha": {
+        "value": {
+          "hard": 0.0,
+          "soft": 0.5
+        },
+        "status": "sourced"
+      },
+      "road.emission_model": {
+        "value": "tnm",
+        "status": "sourced"
+      },
+      "road.flow_constant": {
+        "value": -25,
+        "status": "sourced"
+      },
+      "road.ground_default": {
+        "value": "soft",
+        "status": "placeholder"
+      },
+      "road.min_angle_distance": {
+        "value": 0.5,
+        "status": "placeholder"
+      },
+      "road.min_distance": {
+        "value": 15,
+        "status": "placeholder"
+      },
+      "road.reference_distance": {
+        "value": 15,
+        "status": "sourced"
+      },
+      "road.remel_tnm": {
+        "value": {
+          "auto": [
+            41.740807,
+            1.148546,
+            50.128316
+          ],
+          "medium_truck": [
+            33.918713,
+            20.591046,
+            68.002978
+          ],
+          "heavy_truck": [
+            35.87985,
+            21.019665,
+            74.298135
+          ]
+        },
+        "status": "sourced"
+      },
+      "road.segment_integration_steps": {
+        "value": 400,
+        "status": "derived"
+      },
+      "rooms.reverberation_time": {
+        "value": 0.5,
+        "status": "sourced"
+      },
+      "rooms.sabine_constant": {
+        "value": 0.161,
+        "status": "sourced"
+      },
+      "rooms.storey_height": {
+        "value": 3.0,
+        "status": "placeholder"
+      },
+      "solver.merge_coupling_limit": {
+        "value": 0.5,
+        "status": "placeholder"
+      },
+      "time.blocks": {
+        "value": {
+          "overnight": [
+            0,
+            6
+          ],
+          "morning_rush": [
+            6,
+            10
+          ],
+          "midday": [
+            10,
+            16
+          ],
+          "evening_rush": [
+            16,
+            20
+          ],
+          "evening": [
+            20,
+            24
+          ]
+        },
+        "status": "sourced"
+      },
+      "time.dnl_night_hours": {
+        "value": [
+          22,
+          7
+        ],
+        "status": "sourced"
+      },
+      "time.dnl_night_penalty": {
+        "value": 10,
+        "status": "sourced"
+      },
+      "time.hourly_share.arterial": {
+        "value": [
+          0.88,
+          0.58,
+          0.54,
+          0.64,
+          1.28,
+          2.73,
+          4.26,
+          5.64,
+          5.34,
+          5.04,
+          5.19,
+          5.61,
+          6.07,
+          6.08,
+          6.34,
+          7.01,
+          7.64,
+          7.81,
+          6.39,
+          4.78,
+          3.74,
+          2.93,
+          2.11,
+          1.39
+        ],
+        "status": "sourced"
+      },
+      "time.truck_periods": {
+        "value": {
+          "am": [
+            7,
+            10
+          ],
+          "midday": [
+            10,
+            16
+          ],
+          "pm": [
+            16,
+            20
+          ],
+          "overnight": [
+            20,
+            7
+          ]
+        },
+        "status": "sourced"
+      },
+      "time.truck_share_by_period.arterial": {
+        "value": {
+          "single_unit": {
+            "am": 0.0333,
+            "midday": 0.0442,
+            "pm": 0.0246,
+            "overnight": 0.0232
+          },
+          "combination": {
+            "am": 0.0435,
+            "midday": 0.0649,
+            "pm": 0.0359,
+            "overnight": 0.0851
+          }
+        },
+        "status": "sourced"
+      },
+      "walls.fiber_cement_upper_floor": {
+        "value": 37,
+        "status": "sourced"
+      },
+      "windows.double_pane_2000_on": {
+        "value": 22,
+        "status": "sourced"
+      }
+    }
+  },
+  "warnings": [
+    "Road yale-st is closer than 15 m to the facade point; the distance term is clamped at 15 m (R7 E6, placeholder)."
+  ]
+}

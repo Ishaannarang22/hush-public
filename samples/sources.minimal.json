@@ -1,0 +1,4 @@
+{
+  "property_id": "minimal-example",
+  "outdoor_levels_dba": {"road": 65.0, "source": "example value, not a measurement"}
+}

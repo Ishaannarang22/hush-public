@@ -1,0 +1,42 @@
+{
+  "id": "minimal-example",
+  "lat": 29.7604,
+  "lon": -95.3698,
+  "era": {
+    "value": "1980_1999"
+  },
+  "rooms": [
+    {
+      "id": "bedroom",
+      "name": "Bedroom",
+      "type": "bedroom",
+      "area_m2": 14.0,
+      "height_m": 2.4,
+      "exterior_walls": [
+        {
+          "id": "bedroom-south",
+          "azimuth_deg": 180,
+          "area_m2": 9.6,
+          "window_area_m2": 1.44
+        }
+      ]
+    },
+    {
+      "id": "hall",
+      "name": "Hallway",
+      "type": "corridor",
+      "area_m2": 6.0,
+      "height_m": 2.4,
+      "exterior_walls": []
+    }
+  ],
+  "partitions": [
+    {
+      "id": "p-bedroom-hall",
+      "room_a": "bedroom",
+      "room_b": "hall",
+      "area_m2": 7.2,
+      "door": "closed"
+    }
+  ]
+}

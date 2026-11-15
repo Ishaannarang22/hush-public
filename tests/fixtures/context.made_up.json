@@ -1,0 +1,23 @@
+{
+  "source": "Made-up context records for tests (docs/UNIT_PROFILE_PLAN.md section 9). Not CoStar data.",
+  "properties": [
+    {
+      "matterportModelId": "zzvymDx5ty7",
+      "name": "Test building A",
+      "stories": 4,
+      "constructionMaterial": "Masonry",
+      "yearBuilt": 1995,
+      "renovationYear": 2012,
+      "unitFloor": 2,
+      "amenities": ["Pool", "Fitness Center"],
+      "listingFeatures": ["Double Pane Windows", "Insulated Doors", "Ceiling Fan"]
+    },
+    {
+      "matterportModelId": "D9CVkjeMoQx",
+      "name": "Test building B",
+      "stories": 5,
+      "constructionMaterial": "Wood Frame",
+      "listingFeatures": ["Hardwood Floors"]
+    }
+  ]
+}

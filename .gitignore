@@ -1,0 +1,27 @@
+.env
+.env.local
+.env*.local
+.DS_Store
+node_modules/
+.playwright-mcp/
+dist/
+.vercel
+.env*
+!.env.example
+
+# Downloaded Matterport runtime
+web/public/matterport-bundle/
+
+# Python model runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated standalone model artifact (rebuild with npm run artifact:model)
+web/public/model-walkthrough.html
+
+# Local model environment, private sponsor inputs, and generated results
+.venv/
+work/
+outputs/
+/LOCAL-WORKSPACE.md

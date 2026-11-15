@@ -1,0 +1,893 @@
+{
+  "id": "matterport-zzvymDx5ty7",
+  "matterport_model_id": "zzvymDx5ty7",
+  "name": "1BR, 1BA - 664SF",
+  "address": "2219 Greenhouse Rd, Houston, TX, 77084, US",
+  "lat": 29.7955898,
+  "lon": -95.7051799,
+  "source": "samples/matterport_model_zzvymDx5ty7.json: address and geolocation (geocoordinates source 'processing')",
+  "north_offset_deg": 0,
+  "north_offset_note": "Added to every wall azimuth. North comes from Matterport's georeference (source 'processing'), which R10 found can be wrong; correct it here in one place.",
+  "model_frame": {
+    "axis_bearings_deg": {
+      "+x": 353.98,
+      "+y": 264.06
+    },
+    "method": "geoLocationOf at the model origin and 10 m along +x and +y (R10)",
+    "note": "Model plan x/y in metres; the simulation's scene uses x = model x, z = model y, y up (web/src/acoustics/engine/importer.ts)."
+  },
+  "facade_point": {
+    "lat": 29.7955823,
+    "lon": -95.7051361,
+    "model_xy": [
+      0.707,
+      -7.87
+    ],
+    "source": "area-weighted midpoint of the exposed walls, placed with the model georeference (geoLocationOf at the model origin and 10 m along +x and +y (R10)). Used as the receiver for every exterior wall."
+  },
+  "year_built": null,
+  "construction": null,
+  "era": {
+    "value": "2000_on",
+    "status": "assumed",
+    "source": "docs/BUILD_BRIEF.md section 5 step 4: year built not in the response; 2000 onward defaults, overridable with --set property.era=..."
+  },
+  "storeys": null,
+  "unit_floor": 1,
+  "unit_floor_status": "assumed",
+  "unit_floor_source": "Not in the response (the scan's floor sequence is not the building storey); ground floor assumed",
+  "geometry_quality": "measured",
+  "geometry_source": "Rooms, partitions and boundary walls from samples/matterport_model_zzvymDx5ty7.json (noisemodel/matterport.py). Windows and exposure from samples/windows.zzvymDx5ty7.json.",
+  "rooms": [
+    {
+      "id": "h26t7ky77ew74yb0pg8qqf5rd",
+      "name": "Untagged room h26t7k",
+      "type": "other",
+      "matterport_id": "h26t7ky77ew74yb0pg8qqf5rd",
+      "tags": [],
+      "area_m2": 0.706,
+      "height_m": 2.4,
+      "height_status": "assumed",
+      "volume_m3": 1.696,
+      "floor_id": "tsmq1wak12rhgn0mawksxcwcd",
+      "base_elevation_m": 0.0,
+      "outline_m": [
+        [
+          1.5112,
+          -2.0335
+        ],
+        [
+          1.6663,
+          -2.0333
+        ],
+        [
+          1.6677,
+          -3.002
+        ],
+        [
+          0.9385,
+          -3.0031
+        ],
+        [
+          0.937,
+          -2.0343
+        ]
+      ],
+      "source": "samples/matterport_model_zzvymDx5ty7.json: room h26t7ky77ew74yb0pg8qqf5rd; floor area from the stitched boundary outline (5 edges); height from rooms.height_default (assumed)",
+      "exterior_walls": []
+    },
+    {
+      "id": "613htqkzf66zz7hf7n8kzszed",
+      "name": "Kitchen and living",
+      "type": "living",
+      "matterport_id": "613htqkzf66zz7hf7n8kzszed",
+      "tags": [
+        "kitchen",
+        "living"
+      ],
+      "area_m2": 31.841,
+      "height_m": 2.75,
+      "height_status": "measured",
+      "volume_m3": 87.562,
+      "floor_id": "tsmq1wak12rhgn0mawksxcwcd",
+      "base_elevation_m": -0.027,
+      "outline_m": [
+        [
+          0.9385,
+          -3.0031
+        ],
+        [
+          0.9398,
+          -3.8887
+        ],
+        [
+          0.9457,
+          -7.8699
+        ],
+        [
+          -2.9546,
+          -7.8757
+        ],
+        [
+          -2.9612,
+          -3.4828
+        ],
+        [
+          -2.2761,
+          -3.4818
+        ],
+        [
+          -2.2773,
+          -2.6812
+        ],
+        [
+          -2.9623,
+          -2.6822
+        ],
+        [
+          -2.9667,
+          0.3073
+        ],
+        [
+          0.7421,
+          0.3128
+        ],
+        [
+          0.7438,
+          -0.8298
+        ],
+        [
+          1.5094,
+          -0.8287
+        ],
+        [
+          1.5112,
+          -2.0335
+        ],
+        [
+          0.937,
+          -2.0343
+        ]
+      ],
+      "source": "samples/matterport_model_zzvymDx5ty7.json: room 613htqkzf66zz7hf7n8kzszed; floor area from the stitched boundary outline (14 edges); height from dimensions.height",
+      "exterior_walls": [
+        {
+          "id": "xg384kwe2cs7c69dayf84kudd",
+          "azimuth_deg": 84.0,
+          "area_m2": 10.726,
+          "wall_type": null,
+          "exposure": "outdoor",
+          "exposure_source": "default rule: the wall has a surveyed window or glazed door",
+          "geometry": {
+            "a": [
+              -2.9546,
+              -7.8757
+            ],
+            "b": [
+              0.9457,
+              -7.8699
+            ],
+            "outward": [
+              0.0015,
+              -1.0
+            ],
+            "base_elevation_m": -0.027,
+            "height_m": 2.75,
+            "thickness_m": 0.08
+          },
+          "window_area_m2": 0,
+          "window_area_status": "measured",
+          "window_type": null,
+          "door_area_m2": 4.848,
+          "door_type": "sliding_glass",
+          "door_ids": [
+            "survey-living-east-sliding-door"
+          ],
+          "source": "samples/matterport_model_zzvymDx5ty7.json: boundary edge xg384kwe2cs7c69dayf84kudd, 3.90 m long x 2.75 m (room height); facing 84.0 deg from the edge's outward normal and geoLocationOf at the model origin and 10 m along +x and +y (R10); surveyed: no window, only the door(s) below; exterior doors survey-living-east-sliding-door, 4.85 m2 (type sliding_glass)"
+        }
+      ]
+    },
+    {
+      "id": "cdz3fkt38kae7tapstpt0eaeb",
+      "name": "Bedroom",
+      "type": "bedroom",
+      "matterport_id": "cdz3fkt38kae7tapstpt0eaeb",
+      "tags": [
+        "bedroom"
+      ],
+      "area_m2": 13.654,
+      "height_m": 2.74,
+      "height_status": "measured",
+      "volume_m3": 37.412,
+      "floor_id": "tsmq1wak12rhgn0mawksxcwcd",
+      "base_elevation_m": -0.001,
+      "outline_m": [
+        [
+          0.9457,
+          -7.8699
+        ],
+        [
+          0.9398,
+          -3.8887
+        ],
+        [
+          2.5504,
+          -3.8862
+        ],
+        [
+          4.3693,
+          -3.8835
+        ],
+        [
+          4.3754,
+          -7.8646
+        ]
+      ],
+      "source": "samples/matterport_model_zzvymDx5ty7.json: room cdz3fkt38kae7tapstpt0eaeb; floor area from the stitched boundary outline (5 edges); height from dimensionEstimates.height",
+      "exterior_walls": [
+        {
+          "id": "z6q9f2tfcd3aumsmgkzh94ssb",
+          "azimuth_deg": 84.0,
+          "area_m2": 9.397,
+          "wall_type": null,
+          "exposure": "outdoor",
+          "exposure_source": "default rule: the wall has a surveyed window or glazed door",
+          "geometry": {
+            "a": [
+              4.3754,
+              -7.8646
+            ],
+            "b": [
+              0.9457,
+              -7.8699
+            ],
+            "outward": [
+              0.0015,
+              -1.0
+            ],
+            "base_elevation_m": -0.001,
+            "height_m": 2.74,
+            "thickness_m": 0.17
+          },
+          "window_area_m2": 2.544,
+          "window_area_status": "measured",
+          "window_type": null,
+          "window_fixed": false,
+          "window_ids": [
+            "survey-bedroom-east-window"
+          ],
+          "door_area_m2": 0,
+          "door_type": null,
+          "source": "samples/matterport_model_zzvymDx5ty7.json: boundary edge z6q9f2tfcd3aumsmgkzh94ssb, 3.43 m long x 2.74 m (room height); facing 84.0 deg from the edge's outward normal and geoLocationOf at the model origin and 10 m along +x and +y (R10); windows survey-bedroom-east-window, 2.54 m2 in all (measured; samples/windows.zzvymDx5ty7.json)"
+        }
+      ]
+    },
+    {
+      "id": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "name": "Bathroom",
+      "type": "bathroom",
+      "matterport_id": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "tags": [
+        "bathroom"
+      ],
+      "area_m2": 8.637,
+      "height_m": 2.75,
+      "height_status": "measured",
+      "volume_m3": 23.751,
+      "floor_id": "tsmq1wak12rhgn0mawksxcwcd",
+      "base_elevation_m": -0.031,
+      "outline_m": [
+        [
+          1.5112,
+          -2.0335
+        ],
+        [
+          1.6663,
+          -2.0333
+        ],
+        [
+          2.5476,
+          -2.0319
+        ],
+        [
+          2.5504,
+          -3.8862
+        ],
+        [
+          4.3693,
+          -3.8835
+        ],
+        [
+          4.3678,
+          -3.0893
+        ],
+        [
+          4.3626,
+          0.2984
+        ],
+        [
+          2.7376,
+          0.2959
+        ],
+        [
+          2.7393,
+          -0.8268
+        ],
+        [
+          1.5094,
+          -0.8287
+        ]
+      ],
+      "source": "samples/matterport_model_zzvymDx5ty7.json: room xy2x8mpaaqknp7q2c3nnbw1ma; floor area from the stitched boundary outline (10 edges); height from dimensionEstimates.height",
+      "exterior_walls": []
+    },
+    {
+      "id": "tt6gm2a0463x9wmnx7rn6gugc",
+      "name": "Closet",
+      "type": "closet",
+      "matterport_id": "tt6gm2a0463x9wmnx7rn6gugc",
+      "tags": [
+        "closet"
+      ],
+      "area_m2": 2.28,
+      "height_m": 2.74,
+      "height_status": "measured",
+      "volume_m3": 6.248,
+      "floor_id": "tsmq1wak12rhgn0mawksxcwcd",
+      "base_elevation_m": -0.005,
+      "outline_m": [
+        [
+          0.9385,
+          -3.0031
+        ],
+        [
+          0.9398,
+          -3.8887
+        ],
+        [
+          2.5504,
+          -3.8862
+        ],
+        [
+          2.5476,
+          -2.0319
+        ],
+        [
+          1.6663,
+          -2.0333
+        ],
+        [
+          1.6677,
+          -3.002
+        ]
+      ],
+      "source": "samples/matterport_model_zzvymDx5ty7.json: room tt6gm2a0463x9wmnx7rn6gugc; floor area from the stitched boundary outline (6 edges); height from dimensionEstimates.height",
+      "exterior_walls": []
+    }
+  ],
+  "partitions": [
+    {
+      "id": "p-ep9c1m4frps7tf1ic9ti8x66d",
+      "room_a": "613htqkzf66zz7hf7n8kzszed",
+      "room_b": "h26t7ky77ew74yb0pg8qqf5rd",
+      "kind": "wall",
+      "area_m2": 2.325,
+      "partition_type": null,
+      "door_area_m2": 1.961,
+      "edge_id": "ep9c1m4frps7tf1ic9ti8x66d",
+      "opening_id": "h129xhnr54t5wmxd5y37pquac",
+      "door": "closed",
+      "door_type": null,
+      "door_status": "assumed",
+      "source": "samples/matterport_model_zzvymDx5ty7.json: edge ep9c1m4frps7tf1ic9ti8x66d shared by rooms 613htqkzf66zz7hf7n8kzszed and h26t7ky77ew74yb0pg8qqf5rd, 0.97 m long x 2.40 m (lower of the two room heights); doorway h129xhnr54t5wmxd5y37pquac 0.89 m wide x 2.21 m high (Model API vector opening, metres). A door leaf, its type and its state are not in the scan: a closed hollow-core door is assumed (partitions.default_door)"
+    },
+    {
+      "id": "p-i338igku71q095mi3kw6b1wsd",
+      "room_a": "613htqkzf66zz7hf7n8kzszed",
+      "room_b": "tt6gm2a0463x9wmnx7rn6gugc",
+      "kind": "wall",
+      "area_m2": 2.426,
+      "partition_type": null,
+      "door": "none",
+      "edge_id": "i338igku71q095mi3kw6b1wsd",
+      "source": "samples/matterport_model_zzvymDx5ty7.json: edge i338igku71q095mi3kw6b1wsd shared by rooms 613htqkzf66zz7hf7n8kzszed and tt6gm2a0463x9wmnx7rn6gugc, 0.89 m long x 2.74 m (lower of the two room heights)"
+    },
+    {
+      "id": "p-p3m1dmrcc2kq185dkt87kw20d",
+      "room_a": "613htqkzf66zz7hf7n8kzszed",
+      "room_b": "cdz3fkt38kae7tapstpt0eaeb",
+      "kind": "wall",
+      "area_m2": 10.908,
+      "partition_type": null,
+      "door_area_m2": 1.603,
+      "edge_id": "p3m1dmrcc2kq185dkt87kw20d",
+      "opening_id": "0qhf69d77nh6mas5q6a94nrqc",
+      "door": "open",
+      "source": "samples/matterport_model_zzvymDx5ty7.json: edge p3m1dmrcc2kq185dkt87kw20d shared by rooms 613htqkzf66zz7hf7n8kzszed and cdz3fkt38kae7tapstpt0eaeb, 3.98 m long x 2.74 m (lower of the two room heights); opening 0qhf69d77nh6mas5q6a94nrqc 0.80 m wide x 2.01 m high (Model API vector opening, metres). Type 'opening': an open aperture with no door leaf"
+    },
+    {
+      "id": "p-sr72kx21t3k0aywfzwmp16skb",
+      "room_a": "613htqkzf66zz7hf7n8kzszed",
+      "room_b": "h26t7ky77ew74yb0pg8qqf5rd",
+      "kind": "wall",
+      "area_m2": 1.378,
+      "partition_type": null,
+      "door": "none",
+      "edge_id": "sr72kx21t3k0aywfzwmp16skb",
+      "source": "samples/matterport_model_zzvymDx5ty7.json: edge sr72kx21t3k0aywfzwmp16skb shared by rooms 613htqkzf66zz7hf7n8kzszed and h26t7ky77ew74yb0pg8qqf5rd, 0.57 m long x 2.40 m (lower of the two room heights)"
+    },
+    {
+      "id": "p-xnanfa7f1q3tnkc2w613hydna",
+      "room_a": "613htqkzf66zz7hf7n8kzszed",
+      "room_b": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "kind": "wall",
+      "area_m2": 3.313,
+      "partition_type": null,
+      "door_area_m2": 1.749,
+      "edge_id": "xnanfa7f1q3tnkc2w613hydna",
+      "opening_id": "dxhz6yfktd3aaptz3aha5rafa",
+      "door": "open",
+      "source": "samples/matterport_model_zzvymDx5ty7.json: edge xnanfa7f1q3tnkc2w613hydna shared by rooms 613htqkzf66zz7hf7n8kzszed and xy2x8mpaaqknp7q2c3nnbw1ma, 1.20 m long x 2.75 m (lower of the two room heights); opening dxhz6yfktd3aaptz3aha5rafa 0.86 m wide x 2.03 m high (Model API vector opening, metres). Type 'opening': an open aperture with no door leaf"
+    },
+    {
+      "id": "p-5h8yzbs8yi0mzqgyr9c2bsh4d",
+      "room_a": "cdz3fkt38kae7tapstpt0eaeb",
+      "room_b": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "kind": "wall",
+      "area_m2": 4.984,
+      "partition_type": null,
+      "door_area_m2": 1.763,
+      "edge_id": "5h8yzbs8yi0mzqgyr9c2bsh4d",
+      "opening_id": "9pancsfb3z60xbekxfir6zqfc",
+      "door": "open",
+      "source": "samples/matterport_model_zzvymDx5ty7.json: edge 5h8yzbs8yi0mzqgyr9c2bsh4d shared by rooms cdz3fkt38kae7tapstpt0eaeb and xy2x8mpaaqknp7q2c3nnbw1ma, 1.82 m long x 2.74 m (lower of the two room heights); opening 9pancsfb3z60xbekxfir6zqfc 0.87 m wide x 2.04 m high (Model API vector opening, metres). Type 'opening': an open aperture with no door leaf"
+    },
+    {
+      "id": "p-b8qf8qm6xztdafm5mrwwbu47c",
+      "room_a": "cdz3fkt38kae7tapstpt0eaeb",
+      "room_b": "tt6gm2a0463x9wmnx7rn6gugc",
+      "kind": "wall",
+      "area_m2": 4.413,
+      "partition_type": null,
+      "door": "none",
+      "edge_id": "b8qf8qm6xztdafm5mrwwbu47c",
+      "source": "samples/matterport_model_zzvymDx5ty7.json: edge b8qf8qm6xztdafm5mrwwbu47c shared by rooms cdz3fkt38kae7tapstpt0eaeb and tt6gm2a0463x9wmnx7rn6gugc, 1.61 m long x 2.74 m (lower of the two room heights)"
+    },
+    {
+      "id": "p-2h6k887wdz5a663bc5hddch1b",
+      "room_a": "h26t7ky77ew74yb0pg8qqf5rd",
+      "room_b": "tt6gm2a0463x9wmnx7rn6gugc",
+      "kind": "wall",
+      "area_m2": 1.75,
+      "partition_type": null,
+      "door": "none",
+      "edge_id": "2h6k887wdz5a663bc5hddch1b",
+      "source": "samples/matterport_model_zzvymDx5ty7.json: edge 2h6k887wdz5a663bc5hddch1b shared by rooms h26t7ky77ew74yb0pg8qqf5rd and tt6gm2a0463x9wmnx7rn6gugc, 0.73 m long x 2.40 m (lower of the two room heights)"
+    },
+    {
+      "id": "p-k7spbbu5ydr8wf0itg2ami1na",
+      "room_a": "h26t7ky77ew74yb0pg8qqf5rd",
+      "room_b": "tt6gm2a0463x9wmnx7rn6gugc",
+      "kind": "wall",
+      "area_m2": 2.325,
+      "partition_type": null,
+      "door": "none",
+      "edge_id": "k7spbbu5ydr8wf0itg2ami1na",
+      "source": "samples/matterport_model_zzvymDx5ty7.json: edge k7spbbu5ydr8wf0itg2ami1na shared by rooms h26t7ky77ew74yb0pg8qqf5rd and tt6gm2a0463x9wmnx7rn6gugc, 0.97 m long x 2.40 m (lower of the two room heights)"
+    },
+    {
+      "id": "p-yw3gebxa248kis0qte0tnqcga",
+      "room_a": "h26t7ky77ew74yb0pg8qqf5rd",
+      "room_b": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "kind": "wall",
+      "area_m2": 0.372,
+      "partition_type": null,
+      "door": "none",
+      "edge_id": "yw3gebxa248kis0qte0tnqcga",
+      "source": "samples/matterport_model_zzvymDx5ty7.json: edge yw3gebxa248kis0qte0tnqcga shared by rooms h26t7ky77ew74yb0pg8qqf5rd and xy2x8mpaaqknp7q2c3nnbw1ma, 0.16 m long x 2.40 m (lower of the two room heights)"
+    },
+    {
+      "id": "p-3np8ybd5tii27wx7wybb031td",
+      "room_a": "tt6gm2a0463x9wmnx7rn6gugc",
+      "room_b": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "kind": "wall",
+      "area_m2": 5.081,
+      "partition_type": null,
+      "door_area_m2": 1.789,
+      "edge_id": "3np8ybd5tii27wx7wybb031td",
+      "opening_id": "m1txs2grx3hentu9e190a33ia",
+      "door": "open",
+      "source": "samples/matterport_model_zzvymDx5ty7.json: edge 3np8ybd5tii27wx7wybb031td shared by rooms tt6gm2a0463x9wmnx7rn6gugc and xy2x8mpaaqknp7q2c3nnbw1ma, 1.85 m long x 2.74 m (lower of the two room heights); opening m1txs2grx3hentu9e190a33ia 0.86 m wide x 2.08 m high (Model API vector opening, metres). Type 'opening': an open aperture with no door leaf"
+    },
+    {
+      "id": "p-chkah241kcf6xc66szyren78c",
+      "room_a": "tt6gm2a0463x9wmnx7rn6gugc",
+      "room_b": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "kind": "wall",
+      "area_m2": 2.415,
+      "partition_type": null,
+      "door": "none",
+      "edge_id": "chkah241kcf6xc66szyren78c",
+      "source": "samples/matterport_model_zzvymDx5ty7.json: edge chkah241kcf6xc66szyren78c shared by rooms tt6gm2a0463x9wmnx7rn6gugc and xy2x8mpaaqknp7q2c3nnbw1ma, 0.88 m long x 2.74 m (lower of the two room heights)"
+    }
+  ],
+  "other_boundary_walls": [
+    {
+      "id": "2wktbnfuc8atf7ib1pqe816pd",
+      "room": "613htqkzf66zz7hf7n8kzszed",
+      "exposure": "not_outdoor",
+      "exposure_source": "survey file: Room outline: one of three walls around a 0.68 x 0.80 m closet notch entered by a 0.70 m API doorway (8w1xdcimsana9c3tmckb4hydb); R10 behind-wall test 65,000 points per m2 (the living room lies beyond it) (derived)",
+      "azimuth_deg": 264.0,
+      "area_m2": 1.884,
+      "openings": [],
+      "geometry": {
+        "a": [
+          -2.9612,
+          -3.4828
+        ],
+        "b": [
+          -2.2761,
+          -3.4818
+        ],
+        "outward": [
+          -0.0015,
+          1.0
+        ],
+        "base_elevation_m": -0.027,
+        "height_m": 2.75,
+        "thickness_m": 0.12
+      }
+    },
+    {
+      "id": "39qwa63z3ytdk06dipfq6bd2b",
+      "room": "613htqkzf66zz7hf7n8kzszed",
+      "exposure": "unknown",
+      "exposure_source": "survey file: MatterPak elevation: kitchen cabinets and counter over the whole wall; no recess or see-through points visible, so no window found (a window behind upper cabinets cannot be ruled out) (measured)",
+      "azimuth_deg": 173.9,
+      "area_m2": 8.221,
+      "openings": [],
+      "geometry": {
+        "a": [
+          -2.9623,
+          -2.6822
+        ],
+        "b": [
+          -2.9667,
+          0.3073
+        ],
+        "outward": [
+          -1.0,
+          -0.0015
+        ],
+        "base_elevation_m": -0.027,
+        "height_m": 2.75,
+        "thickness_m": 0.12
+      }
+    },
+    {
+      "id": "8ragbhf06bb6tx14aebedwk4a",
+      "room": "613htqkzf66zz7hf7n8kzszed",
+      "exposure": "not_outdoor",
+      "exposure_source": "survey file: Room outline: closet notch wall; R10 behind-wall test 61,000 points per m2 (the living room lies beyond it) (derived)",
+      "azimuth_deg": 84.0,
+      "area_m2": 1.884,
+      "openings": [],
+      "geometry": {
+        "a": [
+          -2.9623,
+          -2.6822
+        ],
+        "b": [
+          -2.2773,
+          -2.6812
+        ],
+        "outward": [
+          0.0015,
+          -1.0
+        ],
+        "base_elevation_m": -0.027,
+        "height_m": 2.75,
+        "thickness_m": 0.12
+      }
+    },
+    {
+      "id": "8w1xdcimsana9c3tmckb4hydb",
+      "room": "613htqkzf66zz7hf7n8kzszed",
+      "exposure": "not_outdoor",
+      "exposure_source": "survey file: Room outline: the 0.70 m doorway into the closet notch, inside the unit (derived)",
+      "azimuth_deg": 173.9,
+      "area_m2": 2.202,
+      "openings": [
+        "dh7qe0wu55c0pkwnfmggck3ua"
+      ],
+      "geometry": {
+        "a": [
+          -2.2761,
+          -3.4818
+        ],
+        "b": [
+          -2.2773,
+          -2.6812
+        ],
+        "outward": [
+          -1.0,
+          -0.0015
+        ],
+        "base_elevation_m": -0.027,
+        "height_m": 2.75,
+        "thickness_m": 0.12
+      }
+    },
+    {
+      "id": "be68b8eei8s2aebxqwttx81xb",
+      "room": "613htqkzf66zz7hf7n8kzszed",
+      "exposure": "not_outdoor",
+      "exposure_source": "survey file: Room outlines: faces the same unscanned space inside the unit (see iwqxer7qtpy39r054rcg25hcc) (derived)",
+      "azimuth_deg": 264.0,
+      "area_m2": 2.105,
+      "openings": [],
+      "geometry": {
+        "a": [
+          0.7438,
+          -0.8298
+        ],
+        "b": [
+          1.5094,
+          -0.8287
+        ],
+        "outward": [
+          -0.0015,
+          1.0
+        ],
+        "base_elevation_m": -0.027,
+        "height_m": 2.75,
+        "thickness_m": 0.12
+      }
+    },
+    {
+      "id": "dspg7u52d6ue2q44zbnnex1fa",
+      "room": "613htqkzf66zz7hf7n8kzszed",
+      "exposure": "unknown",
+      "exposure_source": "survey file: MatterPak elevation: flat wall face 5 cm inside the line over its whole length (a painting, a sofa and plants in front); no recess and no see-through points, so no window (measured)",
+      "azimuth_deg": 173.9,
+      "area_m2": 12.08,
+      "openings": [],
+      "geometry": {
+        "a": [
+          -2.9546,
+          -7.8757
+        ],
+        "b": [
+          -2.9612,
+          -3.4828
+        ],
+        "outward": [
+          -1.0,
+          -0.0015
+        ],
+        "base_elevation_m": -0.027,
+        "height_m": 2.75,
+        "thickness_m": 0.12
+      }
+    },
+    {
+      "id": "dxi2egrhtf3w58ykn9uf22z6d",
+      "room": "613htqkzf66zz7hf7n8kzszed",
+      "exposure": "not_outdoor",
+      "exposure_source": "survey file: MatterPak elevation of the wall: the entry door (panel door with a deadbolt above the knob) at the API doorway, 1.08 x 2.56 m; nothing scanned beyond it (derived)",
+      "azimuth_deg": 264.0,
+      "area_m2": 10.199,
+      "openings": [
+        "s14f6xgzinhbu9y7849si26ub"
+      ],
+      "geometry": {
+        "a": [
+          0.7421,
+          0.3128
+        ],
+        "b": [
+          -2.9667,
+          0.3073
+        ],
+        "outward": [
+          -0.0015,
+          1.0
+        ],
+        "base_elevation_m": -0.027,
+        "height_m": 2.75,
+        "thickness_m": 0.12
+      }
+    },
+    {
+      "id": "iwqxer7qtpy39r054rcg25hcc",
+      "room": "613htqkzf66zz7hf7n8kzszed",
+      "exposure": "not_outdoor",
+      "exposure_source": "survey file: Room outlines: wall with a 1.03 m API doorway into an unscanned 2.0 x 1.1 m space that the bathroom also opens onto (1.15 m doorway on ggg5cyh3hkrhy3nss0her66pa); the space is enclosed by the living room and bathroom, so it is inside the unit (derived)",
+      "azimuth_deg": 353.9,
+      "area_m2": 3.142,
+      "openings": [
+        "rb07dyir1p9ih487289epca3d"
+      ],
+      "geometry": {
+        "a": [
+          0.7438,
+          -0.8298
+        ],
+        "b": [
+          0.7421,
+          0.3128
+        ],
+        "outward": [
+          1.0,
+          0.0015
+        ],
+        "base_elevation_m": -0.027,
+        "height_m": 2.75,
+        "thickness_m": 0.12
+      }
+    },
+    {
+      "id": "hfdi1ts2fsg6ph5cky3xhit7a",
+      "room": "cdz3fkt38kae7tapstpt0eaeb",
+      "exposure": "unknown",
+      "exposure_source": "survey file: MatterPak elevation: flat wall face on the edge line from 0.6 to 2.7 m over its whole length (bed headboard in front); no recess, so no window (measured)",
+      "azimuth_deg": 353.9,
+      "area_m2": 10.908,
+      "openings": [],
+      "geometry": {
+        "a": [
+          4.3754,
+          -7.8646
+        ],
+        "b": [
+          4.3693,
+          -3.8835
+        ],
+        "outward": [
+          1.0,
+          0.0015
+        ],
+        "base_elevation_m": -0.001,
+        "height_m": 2.74,
+        "thickness_m": 0.09
+      }
+    },
+    {
+      "id": "6w62tz9kgpaazdn5wn7m0nkac",
+      "room": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "exposure": "unknown",
+      "exposure_source": "survey file: MatterPak elevation: bath tub wall, shower curtain in front up to 2.2 m; flat wall above it. A small window behind the curtain cannot be ruled out (measured)",
+      "azimuth_deg": 264.0,
+      "area_m2": 4.469,
+      "openings": [],
+      "geometry": {
+        "a": [
+          4.3626,
+          0.2984
+        ],
+        "b": [
+          2.7376,
+          0.2959
+        ],
+        "outward": [
+          -0.0015,
+          1.0
+        ],
+        "base_elevation_m": -0.031,
+        "height_m": 2.75,
+        "thickness_m": 0.12
+      }
+    },
+    {
+      "id": "dy87i3p45na5y7ngg9kbbr3ia",
+      "room": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "exposure": "unknown",
+      "exposure_source": "survey file: MatterPak elevation: shower curtain, toilet, a picture and a framed mirror over the vanity. The points 1.2 to 2.6 m beyond this wall are the mirror's reflection (the scan's geometry behind the mirror), not a view outside (measured)",
+      "azimuth_deg": 353.9,
+      "area_m2": 9.316,
+      "openings": [],
+      "geometry": {
+        "a": [
+          4.3626,
+          0.2984
+        ],
+        "b": [
+          4.3678,
+          -3.0893
+        ],
+        "outward": [
+          1.0,
+          0.0015
+        ],
+        "base_elevation_m": -0.031,
+        "height_m": 2.75,
+        "thickness_m": 0.13
+      }
+    },
+    {
+      "id": "ggg5cyh3hkrhy3nss0her66pa",
+      "room": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "exposure": "not_outdoor",
+      "exposure_source": "survey file: Room outlines: bathroom wall with a 1.15 m API doorway into the same unscanned space inside the unit (derived)",
+      "azimuth_deg": 264.0,
+      "area_m2": 3.382,
+      "openings": [
+        "s581gqicipw2u4dekxfzt59bd"
+      ],
+      "geometry": {
+        "a": [
+          2.7393,
+          -0.8268
+        ],
+        "b": [
+          1.5094,
+          -0.8287
+        ],
+        "outward": [
+          -0.0015,
+          1.0
+        ],
+        "base_elevation_m": -0.031,
+        "height_m": 2.75,
+        "thickness_m": 0.12
+      }
+    },
+    {
+      "id": "uzuqexsz5mwbhb953gwq598tb",
+      "room": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "exposure": "not_outdoor",
+      "exposure_source": "survey file: Room outlines: bathroom wall facing the same unscanned space inside the unit; R10 behind-wall test 23,000 points per m2 (derived)",
+      "azimuth_deg": 173.9,
+      "area_m2": 3.087,
+      "openings": [],
+      "geometry": {
+        "a": [
+          2.7393,
+          -0.8268
+        ],
+        "b": [
+          2.7376,
+          0.2959
+        ],
+        "outward": [
+          -1.0,
+          -0.0015
+        ],
+        "base_elevation_m": -0.031,
+        "height_m": 2.75,
+        "thickness_m": 0.12
+      }
+    },
+    {
+      "id": "w5ksrwzecq08c205nt7dt1uba",
+      "room": "xy2x8mpaaqknp7q2c3nnbw1ma",
+      "exposure": "unknown",
+      "exposure_source": "survey file: MatterPak elevation: points beyond this short wall are the bathroom mirror's reflection (see dy87i3p45na5y7ngg9kbbr3ia); no window (measured)",
+      "azimuth_deg": 353.9,
+      "area_m2": 2.184,
+      "openings": [],
+      "geometry": {
+        "a": [
+          4.3678,
+          -3.0893
+        ],
+        "b": [
+          4.3693,
+          -3.8835
+        ],
+        "outward": [
+          1.0,
+          0.0019
+        ],
+        "base_elevation_m": -0.031,
+        "height_m": 2.75,
+        "thickness_m": 0.12
+      }
+    }
+  ],
+  "loader_warnings": [
+    "Room h26t7ky77ew74yb0pg8qqf5rd: no height in the response; 2.40 m from rooms.height_default is used (placeholder).",
+    "Room xy2x8mpaaqknp7q2c3nnbw1ma: edge ts5cwxdwesdx42n5kptuweyya is not part of the closed outline (a spur inside the room); it is not used as a wall.",
+    "Boundary walls with unknown exposure, treated as not exposed to outdoor noise: 39qwa63z3ytdk06dipfq6bd2b, dspg7u52d6ue2q44zbnnex1fa, hfdi1ts2fsg6ph5cky3xhit7a, 6w62tz9kgpaazdn5wn7m0nkac, dy87i3p45na5y7ngg9kbbr3ia, w5ksrwzecq08c205nt7dt1uba."
+  ]
+}

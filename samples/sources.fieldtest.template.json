@@ -1,0 +1,31 @@
+{
+  "_comments": {
+    "how_to_use": "Blank template for field test mode (docs/BUILD_BRIEF.md section 8a). Fill the 'measured' block, run python -m noisemodel.predict <property> <this file> --out levels.json --report, and read the field_test block or the 'Field test' section of the report. Keys starting with '_' are ignored by the model.",
+    "outdoor_sources": "Leave roads, flights and outdoor_levels_dba empty for a pure field test. The measured wall is the only wall that gets sound in the field test."
+  },
+  "property_id": null,
+  "roads": [],
+  "flights": [],
+  "construction": [],
+  "outdoor_levels_dba": {"road": null, "rail": null, "aviation": null, "source": null},
+  "measured": {
+    "_comments": {
+      "wall": "Id of the exterior wall in the property file that faces the noise (e.g. room1-wall1).",
+      "mode": "'ambient' for real outdoor noise (traffic, general background): uses the normal +3 dB random-incidence constant. 'speaker' for a loudspeaker outside the wall: uses the single-direction constant 6 + 10*log10(cos(angle)) from R3 E1.",
+      "outdoor_dba": "Measured outdoor A-weighted Leq, dBA, over the same period as the indoor readings (10 minutes or more; same meter or app, A weighting, slow or Leq setting).",
+      "outdoor_position": "'2m_from_wall' if the meter was held about 2 m in front of the wall (the reading includes the wall's reflection; the model removes 3 dB). 'free_field' if it was well away from any wall, e.g. in the open at the same distance from the source.",
+      "speaker_angle_deg": "Speaker mode only: angle between the line from the speaker to the wall centre and the straight-out direction of the wall, 0 = straight on, must be below 90. Null for ambient.",
+      "indoor_dba": "Measured indoor Leq per room id, dBA, windows and doors as described in the property file. Hold the meter at several points in the middle of the room (not near walls) and average.",
+      "indoor_background_dba": "Indoor Leq per room id with the source off (speaker off, or quietest comparable period), same meter. Used to remove background energy; a room less than 10 dB above it is flagged as not reliable. Null or omit if not measured.",
+      "note": "Meter or app, calibration, date and time, duration, weather, windows and doors state."
+    },
+    "wall": null,
+    "mode": "ambient",
+    "outdoor_dba": null,
+    "outdoor_position": "2m_from_wall",
+    "speaker_angle_deg": null,
+    "indoor_dba": {"room1": null, "room2": null},
+    "indoor_background_dba": {"room1": null, "room2": null},
+    "note": null
+  }
+}

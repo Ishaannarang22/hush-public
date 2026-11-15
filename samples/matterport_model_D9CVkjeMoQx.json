@@ -1,0 +1,353 @@
+{
+  "data" : {
+    "model" : {
+      "id" : "D9CVkjeMoQx",
+      "name" : "2125 Yale / Kaplan I / 2 Bed / 1304 Sq Ft",
+      "description" : "2125 Yale, Kaplin 1 floor plan, Unit #205",
+      "created" : "2026-11-11T15:27:02Z",
+      "modified" : "2026-11-12T02:04:07Z",
+      "state" : "active",
+      "demo" : false,
+      "address" : {
+        "address" : "2125 Yale St, Houston, TX, 77008, US",
+        "locality" : "Houston",
+        "administrativeArea" : "TX",
+        "postalCode" : "77008",
+        "countryCode" : "US"
+      },
+      "geolocation" : {
+        "lat" : "29.8058666",
+        "long" : "-95.3993738",
+        "altitude" : "null"
+      },
+      "geocoordinates" : {
+        "latitude" : 29.805866568107938,
+        "longitude" : -95.3993737976162,
+        "altitude" : 0.0,
+        "source" : "processing",
+        "rotation" : {
+          "x" : 0.0,
+          "y" : 0.0,
+          "z" : -0.6988632229577755,
+          "w" : 0.7152553359444938
+        },
+        "translation" : {
+          "x" : -4.215685157697585,
+          "y" : -2.141505035710776,
+          "z" : 0.0
+        }
+      },
+      "propertyClassifications" : [ {
+        "classification" : "living_space",
+        "type" : "vision"
+      } ],
+      "roomClassifications" : [ {
+        "id" : "ge0tcan3iztta5mtgsfx99xpb",
+        "label" : "Balcony"
+      }, {
+        "id" : "4by2d70b54srbin43t5m0yh9c",
+        "label" : "Basement"
+      }, {
+        "id" : "ua1m0u8pm3yngrhzwec1ue5zc",
+        "label" : "Bathroom"
+      }, {
+        "id" : "pnf0xzq61xcegack4iai7xppd",
+        "label" : "Bedroom"
+      }, {
+        "id" : "y3xuprmywgrprnm0273u3pphd",
+        "label" : "Bonus Room"
+      }, {
+        "id" : "zp189tx2hdrry8k5nhaq5x45d",
+        "label" : "Closet"
+      }, {
+        "id" : "4gp8x21ni4i8y19r9pm4rb35a",
+        "label" : "Den"
+      }, {
+        "id" : "00258k0mqu8750du151be805c",
+        "label" : "Dining Room"
+      }, {
+        "id" : "91naa1k3hiim9z4mk8352enta",
+        "label" : "Driveway"
+      }, {
+        "id" : "rmu8pikcye0n7n9fsu5e4acda",
+        "label" : "Entrance"
+      }, {
+        "id" : "66psa4tqgazbnffr9huy2dnpd",
+        "label" : "Exercise Room"
+      }, {
+        "id" : "cqig2yw0p8q99t5n02w1kf40b",
+        "label" : "Exterior"
+      }, {
+        "id" : "4qq4e5hz84hcur7ry87uhtmua",
+        "label" : "Facade"
+      }, {
+        "id" : "mx6e2yfk0tg0zbkbzuw5mhkda",
+        "label" : "Family Room"
+      }, {
+        "id" : "0gnuunpwx63dmmqeq64aqfiyd",
+        "label" : "Game Room"
+      }, {
+        "id" : "izt39gytcbymc0qtd37nrb7xb",
+        "label" : "Garage"
+      }, {
+        "id" : "ei3kmtun2xpspbg3d5ff3t3zc",
+        "label" : "Garden"
+      }, {
+        "id" : "xwhhz63a0hw735qf81knp63ha",
+        "label" : "Great Room"
+      }, {
+        "id" : "ywtddu9hagraxhznwinn8t4zb",
+        "label" : "Gym"
+      }, {
+        "id" : "yeh1aa32fwgm72bh0g92ebruc",
+        "label" : "Hallway"
+      }, {
+        "id" : "zgh2304w5anu0t25ia06ytfxd",
+        "label" : "Kitchen"
+      }, {
+        "id" : "pr9h4zy7eak91f3b7un97u42c",
+        "label" : "Laundry"
+      }, {
+        "id" : "gqqw1zac1hzg1p8622ducg3zb",
+        "label" : "Library"
+      }, {
+        "id" : "w4tdggk5i5u2zpiryugktghgb",
+        "label" : "Living Room"
+      }, {
+        "id" : "e6md2spaqemc448pmau3azkhd",
+        "label" : "Loft"
+      }, {
+        "id" : "a11d2gi43h0etwedw0mx9pgwd",
+        "label" : "Media Room"
+      }, {
+        "id" : "ag5uphha72sak65qazgsp09yd",
+        "label" : "Office"
+      }, {
+        "id" : "byp7pz2tmt4ff47nhfx0uwzec",
+        "label" : "Other"
+      }, {
+        "id" : "2nx6maxxpaeut7kx96fuacdzc",
+        "label" : "Pantry"
+      }, {
+        "id" : "n07hhs9gky4cgrh7q65s9rp0d",
+        "label" : "Patio"
+      }, {
+        "id" : "s1h0hb8tpcc9i35dmupknsega",
+        "label" : "Pool"
+      }, {
+        "id" : "gba8cq0s2rdfg1zdb1epwty7d",
+        "label" : "Sauna"
+      }, {
+        "id" : "0an2rky24gb91fdnpzmbwadib",
+        "label" : "Staircase"
+      }, {
+        "id" : "qa21tqcsinnxde9gdmiphacza",
+        "label" : "Utility Room"
+      }, {
+        "id" : "k4ww3sk359ntmwgr8s75hq22a",
+        "label" : "Void"
+      }, {
+        "id" : "nqw75004dcg2bcr41047rhg6c",
+        "label" : "Workshop"
+      } ],
+      "dimensions" : {
+        "areaFloor" : 112.87810182571411,
+        "areaFloorIndoor" : 112.87810182571411,
+        "volume" : 318.578989982605,
+        "units" : "metric"
+      },
+      "floors" : [ {
+        "id" : "tsmq1wak12rhgn0mawksxcwcd",
+        "label" : "Floor 1",
+        "sequence" : 0,
+        "dimensions" : {
+          "areaFloor" : 112.87810182571411,
+          "units" : "metric"
+        },
+        "vertices" : [ ],
+        "edges" : [ ],
+        "rooms" : [ {
+          "id" : "613htqkzf66zz7hf7n8kzszed",
+          "tags" : [ "kitchen", "living", "dining" ],
+          "keywords" : [ ],
+          "classifications" : [ ],
+          "dimensions" : {
+            "areaFloor" : 45.07210159301758,
+            "areaFloorIndoor" : 45.07210159301758,
+            "areaWall" : 154.81289672851562,
+            "height" : 2.8727834224700928,
+            "width" : 7.412202835083008,
+            "depth" : 4.300731658935547,
+            "volume" : 129.48239135742188,
+            "units" : "metric"
+          },
+          "ceiling" : { },
+          "boundary" : {
+            "edges" : [ ]
+          },
+          "holes" : [ ]
+        }, {
+          "id" : "cdz3fkt38kae7tapstpt0eaeb",
+          "tags" : [ "bedroom" ],
+          "keywords" : [ ],
+          "classifications" : [ ],
+          "dimensions" : {
+            "areaFloor" : 19.784500122070312,
+            "areaFloorIndoor" : 19.784500122070312,
+            "areaWall" : 88.44731903076172,
+            "height" : 2.865008592605591,
+            "width" : 3.7031970024108887,
+            "depth" : 5.0796990394592285,
+            "volume" : 56.682762145996094,
+            "units" : "metric"
+          },
+          "ceiling" : { },
+          "boundary" : {
+            "edges" : [ ]
+          },
+          "holes" : [ ]
+        }, {
+          "id" : "xy2x8mpaaqknp7q2c3nnbw1ma",
+          "tags" : [ "bedroom" ],
+          "keywords" : [ ],
+          "classifications" : [ ],
+          "dimensions" : {
+            "areaFloor" : 15.11400032043457,
+            "areaFloorIndoor" : 15.11400032043457,
+            "areaWall" : 68.9996566772461,
+            "height" : 2.860729932785034,
+            "width" : 3.785261631011963,
+            "depth" : 3.8150599002838135,
+            "volume" : 43.23707580566406,
+            "units" : "metric"
+          },
+          "ceiling" : { },
+          "boundary" : {
+            "edges" : [ ]
+          },
+          "holes" : [ ]
+        }, {
+          "id" : "tt6gm2a0463x9wmnx7rn6gugc",
+          "tags" : [ "corridor" ],
+          "keywords" : [ ],
+          "classifications" : [ ],
+          "dimensions" : {
+            "areaFloor" : 8.031800270080566,
+            "areaFloorIndoor" : 8.031800270080566,
+            "areaWall" : 49.171321868896484,
+            "height" : 2.8930423259735107,
+            "width" : 1.4137638807296753,
+            "depth" : 4.626957416534424,
+            "volume" : 23.236339569091797,
+            "units" : "metric"
+          },
+          "ceiling" : { },
+          "boundary" : {
+            "edges" : [ ]
+          },
+          "holes" : [ ]
+        }, {
+          "id" : "h26t7ky77ew74yb0pg8qqf5rd",
+          "tags" : [ "bathroom" ],
+          "keywords" : [ ],
+          "classifications" : [ ],
+          "dimensions" : {
+            "areaFloor" : 8.132499694824219,
+            "areaFloorIndoor" : 8.132499694824219,
+            "areaWall" : 40.58916473388672,
+            "height" : 2.5176987648010254,
+            "width" : 2.6430037021636963,
+            "depth" : 2.7585608959198,
+            "volume" : 20.47518539428711,
+            "units" : "metric"
+          },
+          "ceiling" : { },
+          "boundary" : {
+            "edges" : [ ]
+          },
+          "holes" : [ ]
+        }, {
+          "id" : "3m54yff1z7crxaywd8if9rb0d",
+          "tags" : [ "bathroom" ],
+          "keywords" : [ ],
+          "classifications" : [ ],
+          "dimensions" : {
+            "areaFloor" : 7.568999767303467,
+            "areaFloorIndoor" : 7.568999767303467,
+            "areaWall" : 38.372772216796875,
+            "height" : 2.524641513824463,
+            "width" : 2.6242525577545166,
+            "depth" : 2.747330665588379,
+            "volume" : 19.109010696411133,
+            "units" : "metric"
+          },
+          "ceiling" : { },
+          "boundary" : {
+            "edges" : [ ]
+          },
+          "holes" : [ ]
+        }, {
+          "id" : "2qdmc5i9byxi79ry1pxdkqzea",
+          "tags" : [ "closet", "bathroom" ],
+          "keywords" : [ ],
+          "classifications" : [ ],
+          "dimensions" : {
+            "areaFloor" : 4.039400100708008,
+            "areaFloorIndoor" : 4.039400100708008,
+            "areaWall" : 28.90211296081543,
+            "height" : 2.8687679767608643,
+            "width" : 1.9495402574539185,
+            "depth" : 2.033271551132202,
+            "volume" : 11.588101387023926,
+            "units" : "metric"
+          },
+          "ceiling" : { },
+          "boundary" : {
+            "edges" : [ ]
+          },
+          "holes" : [ ]
+        }, {
+          "id" : "a5f9age4zzxewres6iqux2emc",
+          "tags" : [ "closet" ],
+          "keywords" : [ ],
+          "classifications" : [ ],
+          "dimensions" : {
+            "areaFloor" : 2.9953999519348145,
+            "areaFloorIndoor" : 2.9953999519348145,
+            "areaWall" : 23.17450523376465,
+            "height" : 2.8629403114318848,
+            "width" : 2.5093624591827393,
+            "depth" : 0.9482086300849915,
+            "volume" : 8.575651168823242,
+            "units" : "metric"
+          },
+          "ceiling" : { },
+          "boundary" : {
+            "edges" : [ ]
+          },
+          "holes" : [ ]
+        }, {
+          "id" : "19ab05tns5h6y4qm42esqqpea",
+          "tags" : [ "closet" ],
+          "keywords" : [ ],
+          "classifications" : [ ],
+          "dimensions" : {
+            "areaFloor" : 2.139400005340576,
+            "areaFloorIndoor" : 2.139400005340576,
+            "areaWall" : 15.082761764526367,
+            "height" : 2.8944902420043945,
+            "width" : 1.887381672859192,
+            "depth" : 0.9704973697662354,
+            "volume" : 6.192472457885742,
+            "units" : "metric"
+          },
+          "ceiling" : { },
+          "boundary" : {
+            "edges" : [ ]
+          },
+          "holes" : [ ]
+        } ]
+      } ]
+    }
+  }
+}

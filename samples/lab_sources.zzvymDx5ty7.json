@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "modelId": "zzvymDx5ty7",
+  "coordinateSystem": "local-meters-y-up",
+  "frame": "The simulation's scene frame (web/src/acoustics/engine/importer.ts): x = Matterport plan x, z = Matterport plan y, y = elevation, metres. The Showcase overlay may mirror z when it draws on the 3D view (alignPolygon); the solver, the grid and the demo sources use this unmirrored frame.",
+  "spectrum": "spectrumDbAt1m: unweighted sound pressure level at 1 m in the octave bands [63, 125, 250, 500, 1000, 2000, 4000, 8000] Hz.",
+  "blockHours": {
+    "overnight": [
+      0,
+      6
+    ],
+    "morning_rush": [
+      6,
+      10
+    ],
+    "midday": [
+      10,
+      16
+    ],
+    "evening_rush": [
+      16,
+      20
+    ],
+    "evening": [
+      20,
+      24
+    ]
+  },
+  "blocks": {
+    "overnight": [
+      {
+        "id": "road:s-greenhouse-rd",
+        "position": {
+          "x": -0.968,
+          "y": 1.473,
+          "z": -32.298
+        },
+        "spectrumDbAt1m": [
+          89.33,
+          89.33,
+          87.33,
+          85.33,
+          82.33,
+          79.33,
+          75.33,
+          69.33
+        ],
+        "enabled": true,
+        "evidence": {
+          "kind": "derived",
+          "source": "Hush noise model 0.2.0, overnight block: S Greenhouse Rd level at wall xg384kwe2cs7c69dayf84kudd",
+          "note": "A point source stands in for a road (a line source). Spectrum shape assumed: the simulation's own 'road' profile (web/src/acoustics/demo.ts), because no research file gives the band values of the OITC reference transportation spectrum (ASTM E1332) that R3 cites. Only the A-weighted total is the model's."
+        }
+      }
+    ],
+    "morning_rush": [
+      {
+        "id": "road:s-greenhouse-rd",
+        "position": {
+          "x": -0.968,
+          "y": 1.473,
+          "z": -32.298
+        },
+        "spectrumDbAt1m": [
+          95.73,
+          95.73,
+          93.73,
+          91.73,
+          88.73,
+          85.73,
+          81.73,
+          75.73
+        ],
+        "enabled": true,
+        "evidence": {
+          "kind": "derived",
+          "source": "Hush noise model 0.2.0, morning_rush block: S Greenhouse Rd level at wall xg384kwe2cs7c69dayf84kudd",
+          "note": "A point source stands in for a road (a line source). Spectrum shape assumed: the simulation's own 'road' profile (web/src/acoustics/demo.ts), because no research file gives the band values of the OITC reference transportation spectrum (ASTM E1332) that R3 cites. Only the A-weighted total is the model's."
+        }
+      }
+    ],
+    "midday": [
+      {
+        "id": "road:s-greenhouse-rd",
+        "position": {
+          "x": -0.968,
+          "y": 1.473,
+          "z": -32.298
+        },
+        "spectrumDbAt1m": [
+          96.66,
+          96.66,
+          94.66,
+          92.66,
+          89.66,
+          86.66,
+          82.66,
+          76.66
+        ],
+        "enabled": true,
+        "evidence": {
+          "kind": "derived",
+          "source": "Hush noise model 0.2.0, midday block: S Greenhouse Rd level at wall xg384kwe2cs7c69dayf84kudd",
+          "note": "A point source stands in for a road (a line source). Spectrum shape assumed: the simulation's own 'road' profile (web/src/acoustics/demo.ts), because no research file gives the band values of the OITC reference transportation spectrum (ASTM E1332) that R3 cites. Only the A-weighted total is the model's."
+        }
+      }
+    ],
+    "evening_rush": [
+      {
+        "id": "road:s-greenhouse-rd",
+        "position": {
+          "x": -0.968,
+          "y": 1.473,
+          "z": -32.298
+        },
+        "spectrumDbAt1m": [
+          96.74,
+          96.74,
+          94.74,
+          92.74,
+          89.74,
+          86.74,
+          82.74,
+          76.74
+        ],
+        "enabled": true,
+        "evidence": {
+          "kind": "derived",
+          "source": "Hush noise model 0.2.0, evening_rush block: S Greenhouse Rd level at wall xg384kwe2cs7c69dayf84kudd",
+          "note": "A point source stands in for a road (a line source). Spectrum shape assumed: the simulation's own 'road' profile (web/src/acoustics/demo.ts), because no research file gives the band values of the OITC reference transportation spectrum (ASTM E1332) that R3 cites. Only the A-weighted total is the model's."
+        }
+      }
+    ],
+    "evening": [
+      {
+        "id": "road:s-greenhouse-rd",
+        "position": {
+          "x": -0.968,
+          "y": 1.473,
+          "z": -32.298
+        },
+        "spectrumDbAt1m": [
+          92.94,
+          92.94,
+          90.94,
+          88.94,
+          85.94,
+          82.94,
+          78.94,
+          72.94
+        ],
+        "enabled": true,
+        "evidence": {
+          "kind": "derived",
+          "source": "Hush noise model 0.2.0, evening block: S Greenhouse Rd level at wall xg384kwe2cs7c69dayf84kudd",
+          "note": "A point source stands in for a road (a line source). Spectrum shape assumed: the simulation's own 'road' profile (web/src/acoustics/demo.ts), because no research file gives the band values of the OITC reference transportation spectrum (ASTM E1332) that R3 cites. Only the A-weighted total is the model's."
+        }
+      }
+    ]
+  },
+  "derivation": {
+    "road:s-greenhouse-rd": {
+      "mode": "road",
+      "name": "S Greenhouse Rd",
+      "reference_wall": "xg384kwe2cs7c69dayf84kudd",
+      "reference_room": "613htqkzf66zz7hf7n8kzszed",
+      "wall_level_dba": {
+        "overnight": 59.99,
+        "morning_rush": 66.38,
+        "midday": 67.32,
+        "evening_rush": 67.4,
+        "evening": 63.59
+      },
+      "other_walls_dba": {
+        "z6q9f2tfcd3aumsmgkzh94ssb": {
+          "overnight": 59.99,
+          "morning_rush": 66.38,
+          "midday": 67.32,
+          "evening_rush": 67.4,
+          "evening": 63.59
+        }
+      },
+      "distance_to_source_m": 24.43,
+      "receiver": {
+        "x": -1.004,
+        "y": 1.173,
+        "z": -7.873
+      },
+      "receiver_to_source_m": 24.427,
+      "check": "A-weighted total of spectrumDbAt1m - 20*log10(receiver_to_source_m) = wall_level_dba",
+      "shielding_at_reference_wall_db": 0.56
+    }
+  },
+  "omitted": []
+}

@@ -1,0 +1,83 @@
+{
+  "_comments": {
+    "how_to_use": "Blank template for one room tested in field test mode (docs/BUILD_BRIEF.md section 8a). Fill every null, delete rooms or walls you do not need, and keep the ids consistent with sources.fieldtest.template.json. Keys starting with '_' are ignored by the model.",
+    "id": "Any short name for the home, e.g. 'alejandro-flat'.",
+    "lat_lon": "Latitude and longitude of the tested wall in decimal degrees (a phone map pin is fine). Only used if outdoor sources are also given.",
+    "year_built": "Year the building was finished, if known. Leave null to use the era below.",
+    "era": "One of before_1960, 1960_1979, 1980_1999, 2000_on. Sets the default wall and window ratings and the leak fraction when wall_type or window_type are null.",
+    "unit_floor": "Floor the room is on, 1 = ground floor.",
+    "storeys": "Number of storeys in the building.",
+    "rooms.area_m2": "Floor area: length x width with a tape measure or laser, in m2.",
+    "rooms.height_m": "Floor to ceiling, in m.",
+    "rooms.volume_m3": "Leave null to use area x height.",
+    "exterior_walls.azimuth_deg": "Compass direction the outside face of the wall points, 0 = north, 90 = east (phone compass held flat against the wall, facing out).",
+    "exterior_walls.area_m2": "Inside width x room height of the wall, in m2, including the window.",
+    "exterior_walls.window_area_m2": "Outer frame width x height of all windows in this wall, in m2. Measure, do not leave null: null means the 15 percent default and a wider range.",
+    "exterior_walls.window_type": "One of single_pane, double_pane_1980_1999, double_pane_2000_on, double_pane_fixed, with_storm, laminated_acoustic; null = era default.",
+    "exterior_walls.window_fixed": "true if the glass cannot be opened (sealed unit), else false.",
+    "exterior_walls.wall_type": "One of vinyl_siding_2x4, vinyl_siding_2x6, aluminum_siding_2x6, eifs_stucco_2x6, cement_stucco_2x6, brick_veneer, fiber_cement_upper_floor, concrete_block; null = era default.",
+    "exterior_walls.door_area_m2": "Width x height of any door to the outside in this wall, in m2; 0 if none.",
+    "exterior_walls.door_type": "One of hollow_core, solid_core, sliding_glass, solid_core_storm; null = hollow_core.",
+    "partitions": "One entry per wall shared with another room you also measure. area_m2 = width x height of the shared wall; door = none, closed or open (as it was during the test); door_area_m2 = door width x height, null = 1.6 m2.",
+    "source": "Write how and when each value was measured."
+  },
+  "id": null,
+  "address": null,
+  "lat": null,
+  "lon": null,
+  "north_offset_deg": 0,
+  "year_built": null,
+  "era": {"value": null, "status": "assumed", "source": null},
+  "storeys": null,
+  "unit_floor": null,
+  "geometry_quality": "measured",
+  "rooms": [
+    {
+      "id": "room1",
+      "name": null,
+      "type": "bedroom",
+      "area_m2": null,
+      "height_m": null,
+      "volume_m3": null,
+      "source": null,
+      "exterior_walls": [
+        {
+          "id": "room1-wall1",
+          "azimuth_deg": null,
+          "area_m2": null,
+          "wall_type": null,
+          "window_area_m2": null,
+          "window_type": null,
+          "window_fixed": false,
+          "door_area_m2": 0,
+          "door_type": null,
+          "source": null
+        }
+      ]
+    },
+    {
+      "id": "room2",
+      "name": null,
+      "type": "corridor",
+      "area_m2": null,
+      "height_m": null,
+      "volume_m3": null,
+      "source": null,
+      "exterior_walls": []
+    }
+  ],
+  "partitions": [
+    {
+      "id": "p-room1-room2",
+      "room_a": "room1",
+      "room_b": "room2",
+      "area_m2": null,
+      "kind": "wall",
+      "partition_type": null,
+      "door": "closed",
+      "door_area_m2": null,
+      "door_type": null,
+      "source": null
+    }
+  ]
+}
